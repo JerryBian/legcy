@@ -1,0 +1,1856 @@
+10712: 13:39:34.943 - ---
+10712: 13:39:34.943 - Service: "Photon Socket Server" starting
+10712: 13:39:34.943 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+10712: 13:39:34.943 - Will produce at most: 10 crash dumps
+10712: 13:39:34.943 - Action: run as exe
+10712: 13:39:34.943 - Server Starting...
+10712: 13:39:34.943 -    Tick count: 71300593 (wraps in: 48.885 days)
+10712: 13:39:34.943 - Tick count 64: 71300593
+10712: 13:39:34.943 - Photon Version: 4.0.28.2962
+10712: 13:39:34.943 - PID: 10788
+10712: 13:39:34.943 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+10712: 13:39:34.943 - Will NOT log unimportant exceptions
+10712: 13:39:34.943 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+10712: 13:39:34.943 - Shutdown timeout enabled: 30000ms
+10712: 13:39:34.943 - Starting I/O thread pool with 2 threads
+10712: 13:39:34.943 - Using Standard allocator
+10712: 13:39:34.943 - Max message size: 512000
+10712: 13:39:34.943 - Starting business logic thread pool with the following settings
+10712: 13:39:34.943 - InitialThreads: 4 threads
+10712: 13:39:34.943 - MinThreads: 4 threads
+10712: 13:39:34.943 - Thread pool is fixed size
+10712: 13:39:34.943 - Starting ENet thread pool with the following settings
+10712: 13:39:34.943 - InitialThreads: 2 threads
+10712: 13:39:34.943 - MinThreads: 2 threads
+10712: 13:39:34.943 - Thread pool is fixed size
+10712: 13:39:34.943 - OnlyDispatchTimers: False
+10712: 13:39:34.943 - S2S: flow control: Max pending writes: 50
+10712: 13:39:34.943 - S2S: flow control: Max queued buffers: 200
+10712: 13:39:34.943 - S2S: flow control: Max pending writes MUX: 500
+10712: 13:39:34.943 - S2S: flow control: Max queued buffers MUX: 2000
+10712: 13:39:34.943 - S2S: MaxInboundMessageSize: 512000
+10712: 13:39:34.943 - S2S: MaxOutboundMessageSize: 512000
+10712: 13:39:34.943 - S2S: No inactivity timeout
+10712: 13:39:34.943 - WebSocket S2S: MaxInboundMessageSize: 512000
+10712: 13:39:34.943 - WebSocket S2S: MaxOutboundMessageSize: 512000
+10712: 13:39:34.943 - WebSocket S2S: No inactivity timeout
+10712: 13:39:34.943 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+10712: 13:39:34.943 - Per peer bandwidth limit
+10712: 13:39:34.943 - Transmit Rate Limit: 256 KB/Sec
+10712: 13:39:34.943 - Limit period: 200ms
+10712: 13:39:34.943 - Limit per period: 52428 bytes
+10712: 13:39:34.943 - Max queued data for transmission per peer: 512000 bytes
+10712: 13:39:34.943 - Minimum retransmit timeout: 200
+10712: 13:39:34.943 - No Maximum retransmit timeout
+10712: 13:39:34.943 - Minimum ENet timeout: 5000ms
+10712: 13:39:34.943 - Maximum ENet timeout: 30000ms
+10712: 13:39:34.943 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+10712: 13:39:34.943 - No RTT ACK adjustment timeout
+10712: 13:39:34.943 - Outbound ENet: MaxInboundMessageSize: 512000
+10712: 13:39:34.943 - Outbound ENet: MaxOutboundMessageSize: 512000
+10712: 13:39:34.959 - GetRuntime - About to load CLR - versions available:
+10712: 13:39:34.959 - v2.0.50727
+10712: 13:39:34.959 - v4.0.30319
+10712: 13:39:34.959 - Configuration requests: "v2.0.50727"
+10712: 13:39:34.959 - About to load version: "v2.0.50727"
+10712: 13:39:35.043 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+10712: 13:39:35.043 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+10712: 13:39:35.043 - Optimising event broadcast for 20 or more peers
+10712: 13:39:35.043 - Start: About to load CLR - versions available:
+10712: 13:39:35.043 - v2.0.50727
+10712: 13:39:35.043 - v4.0.30319
+10712: 13:39:35.043 - No preference in configuration file, will load latest.
+10712: 13:39:35.043 - About to load version: "v4.0.30319"
+10712: 13:39:35.043 - Loaded version: "v4.0.30319"
+10712: 13:39:36.424 - Photon host runtime loaded
+10712: 13:39:38.804 - LICENSE: No license file was found. Starting with Bootstrap License.
+10712: 13:39:38.804 - License is valid.
+10712: 13:39:38.804 - Licensed for 20 concurrent connections.
+10712: 13:39:38.804 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+10712: 13:39:38.804 - ENet: Per peer bandwidth limit
+10712: 13:39:38.804 - ENet: Transmit Rate Limit: 256 KB/Sec
+10712: 13:39:38.804 - ENet: Limit period: 200ms
+10712: 13:39:38.804 - ENet: Limit per period: 52428 bytes
+10712: 13:39:38.804 - ENet: Max queued data for transmission per peer: 512000 bytes
+10712: 13:39:38.804 - ENet: Minimum retransmit timeout: 200
+10712: 13:39:38.804 - No Maximum retransmit timeout
+10712: 13:39:38.804 - ENet: Minimum timeout: 5000ms
+10712: 13:39:38.804 - ENet: Maximum timeout: 30000ms
+10712: 13:39:38.804 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+10712: 13:39:38.804 - No RTT ACK adjustment timeout
+10712: 13:39:38.804 - About to load application: MasterServer from Chat.MasterServer
+10712: 13:39:38.804 - Auto restart is enabled for application, existing connections will be terminated during restart
+10712: 13:39:38.804 - Application will restart 1000ms after the last change detected
+10712: 13:39:38.804 - Application will restart if files matching the following are changed: "dll;config"
+10712: 13:39:38.804 - Application will NOT restart if files matching the following are changed: "log4net.config"
+10712: 13:39:39.174 - Taking reference on default app domain
+10712: 13:39:39.690 - Application: "MasterServer" started in app domain: 2
+10712: 13:39:39.690 - About to load application: GameServer from Chat.GameServer
+10712: 13:39:39.690 - Auto restart is enabled for application, existing connections will be terminated during restart
+10712: 13:39:39.690 - Application will restart 1000ms after the last change detected
+10712: 13:39:39.690 - Application will restart if files matching the following are changed: "dll;config"
+10712: 13:39:39.690 - Application will NOT restart if files matching the following are changed: "log4net.config"
+10712: 13:39:40.074 - Taking reference on default app domain
+10712: 13:39:40.760 - Application: "GameServer" started in app domain: 3
+10712: 13:39:40.760 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+10712: 13:39:40.760 - TCP inactivity timeout: 5000ms
+10712: 13:39:40.760 - TCP disconnect timeout: 120000ms
+10712: 13:39:40.760 - MaxInboundMessageSize: 512000
+10712: 13:39:40.760 - MaxOutboundMessageSize: 512000
+10712: 13:39:40.760 - Forcing all applications ids to: "MasterServer"
+10712: 13:39:40.760 - MaxInboundMessageSize: 512000
+10712: 13:39:40.760 - MaxOutboundMessageSize: 512000
+10712: 13:39:40.760 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+10712: 13:39:40.760 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+10712: 13:39:40.760 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+10712: 13:39:40.760 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+10712: 13:39:40.760 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+10712: 13:39:40.760 - Forcing all applications ids to: "GameServer"
+10712: 13:39:40.760 - MaxInboundMessageSize: 512000
+10712: 13:39:40.760 - MaxOutboundMessageSize: 512000
+10712: 13:39:40.760 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+10712: 13:39:40.760 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+10712: 13:39:40.760 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+10712: 13:39:40.760 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+10712: 13:39:40.760 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+10712: 13:39:40.775 - Service is running...
+14112: 14:16:55.015 - ---
+14112: 14:16:55.015 - Service: "Photon Socket Server" starting
+14112: 14:16:55.015 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+14112: 14:16:55.016 - Will produce at most: 10 crash dumps
+14112: 14:16:55.016 - Action: run as exe
+14112: 14:16:55.016 - Server Starting...
+14112: 14:16:55.016 -    Tick count: 73540671 (wraps in: 48.8591 days)
+14112: 14:16:55.016 - Tick count 64: 73540671
+14112: 14:16:55.017 - Photon Version: 4.0.28.2962
+14112: 14:16:55.017 - PID: 11792
+14112: 14:16:55.017 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+14112: 14:16:55.017 - Will NOT log unimportant exceptions
+14112: 14:16:55.017 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+14112: 14:16:55.019 - Shutdown timeout enabled: 30000ms
+14112: 14:16:55.019 - Starting I/O thread pool with 2 threads
+14112: 14:16:55.020 - Using Standard allocator
+14112: 14:16:55.020 - Max message size: 512000
+14112: 14:16:55.020 - Starting business logic thread pool with the following settings
+14112: 14:16:55.020 - InitialThreads: 4 threads
+14112: 14:16:55.020 - MinThreads: 4 threads
+14112: 14:16:55.020 - Thread pool is fixed size
+14112: 14:16:55.023 - Starting ENet thread pool with the following settings
+14112: 14:16:55.023 - InitialThreads: 2 threads
+14112: 14:16:55.023 - MinThreads: 2 threads
+14112: 14:16:55.023 - Thread pool is fixed size
+14112: 14:16:55.023 - OnlyDispatchTimers: False
+14112: 14:16:55.023 - S2S: flow control: Max pending writes: 50
+14112: 14:16:55.023 - S2S: flow control: Max queued buffers: 200
+14112: 14:16:55.023 - S2S: flow control: Max pending writes MUX: 500
+14112: 14:16:55.023 - S2S: flow control: Max queued buffers MUX: 2000
+14112: 14:16:55.023 - S2S: MaxInboundMessageSize: 512000
+14112: 14:16:55.024 - S2S: MaxOutboundMessageSize: 512000
+14112: 14:16:55.024 - S2S: No inactivity timeout
+14112: 14:16:55.026 - WebSocket S2S: MaxInboundMessageSize: 512000
+14112: 14:16:55.026 - WebSocket S2S: MaxOutboundMessageSize: 512000
+14112: 14:16:55.026 - WebSocket S2S: No inactivity timeout
+14112: 14:16:55.027 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+14112: 14:16:55.027 - Per peer bandwidth limit
+14112: 14:16:55.027 - Transmit Rate Limit: 256 KB/Sec
+14112: 14:16:55.027 - Limit period: 200ms
+14112: 14:16:55.027 - Limit per period: 52428 bytes
+14112: 14:16:55.027 - Max queued data for transmission per peer: 512000 bytes
+14112: 14:16:55.027 - Minimum retransmit timeout: 200
+14112: 14:16:55.028 - No Maximum retransmit timeout
+14112: 14:16:55.028 - Minimum ENet timeout: 5000ms
+14112: 14:16:55.028 - Maximum ENet timeout: 30000ms
+14112: 14:16:55.028 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+14112: 14:16:55.028 - No RTT ACK adjustment timeout
+14112: 14:16:55.028 - Outbound ENet: MaxInboundMessageSize: 512000
+14112: 14:16:55.028 - Outbound ENet: MaxOutboundMessageSize: 512000
+14112: 14:16:55.029 - GetRuntime - About to load CLR - versions available:
+14112: 14:16:55.029 - v2.0.50727
+14112: 14:16:55.029 - v4.0.30319
+14112: 14:16:55.029 - Configuration requests: "v2.0.50727"
+14112: 14:16:55.029 - About to load version: "v2.0.50727"
+14112: 14:16:55.036 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+14112: 14:16:55.036 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+14112: 14:16:55.036 - Optimising event broadcast for 20 or more peers
+14112: 14:16:55.037 - Start: About to load CLR - versions available:
+14112: 14:16:55.037 - v2.0.50727
+14112: 14:16:55.037 - v4.0.30319
+14112: 14:16:55.037 - No preference in configuration file, will load latest.
+14112: 14:16:55.037 - About to load version: "v4.0.30319"
+14112: 14:16:55.039 - Loaded version: "v4.0.30319"
+14112: 14:16:57.730 - Photon host runtime loaded
+14112: 14:16:59.925 - LICENSE: No license file was found. Starting with Bootstrap License.
+14112: 14:16:59.925 - License is valid.
+14112: 14:16:59.925 - Licensed for 20 concurrent connections.
+14112: 14:16:59.925 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+14112: 14:16:59.925 - ENet: Per peer bandwidth limit
+14112: 14:16:59.925 - ENet: Transmit Rate Limit: 256 KB/Sec
+14112: 14:16:59.925 - ENet: Limit period: 200ms
+14112: 14:16:59.925 - ENet: Limit per period: 52428 bytes
+14112: 14:16:59.925 - ENet: Max queued data for transmission per peer: 512000 bytes
+14112: 14:16:59.925 - ENet: Minimum retransmit timeout: 200
+14112: 14:16:59.925 - No Maximum retransmit timeout
+14112: 14:16:59.925 - ENet: Minimum timeout: 5000ms
+14112: 14:16:59.925 - ENet: Maximum timeout: 30000ms
+14112: 14:16:59.925 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+14112: 14:16:59.925 - No RTT ACK adjustment timeout
+14112: 14:16:59.925 - About to load application: MasterServer from Chat.MasterServer
+14112: 14:16:59.925 - Auto restart is enabled for application, existing connections will be terminated during restart
+14112: 14:16:59.925 - Application will restart 1000ms after the last change detected
+14112: 14:16:59.925 - Application will restart if files matching the following are changed: "dll;config"
+14112: 14:16:59.925 - Application will NOT restart if files matching the following are changed: "log4net.config"
+14112: 14:17:00.187 - Taking reference on default app domain
+14112: 14:17:01.428 - Application: "MasterServer" started in app domain: 2
+14112: 14:17:01.429 - About to load application: GameServer from Chat.GameServer
+14112: 14:17:01.429 - Auto restart is enabled for application, existing connections will be terminated during restart
+14112: 14:17:01.429 - Application will restart 1000ms after the last change detected
+14112: 14:17:01.429 - Application will restart if files matching the following are changed: "dll;config"
+14112: 14:17:01.429 - Application will NOT restart if files matching the following are changed: "log4net.config"
+14112: 14:17:01.660 - Taking reference on default app domain
+14112: 14:17:03.102 - Application: "GameServer" started in app domain: 3
+14112: 14:17:03.102 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+14112: 14:17:03.102 - TCP inactivity timeout: 5000ms
+14112: 14:17:03.102 - TCP disconnect timeout: 120000ms
+14112: 14:17:03.102 - MaxInboundMessageSize: 512000
+14112: 14:17:03.102 - MaxOutboundMessageSize: 512000
+14112: 14:17:03.102 - Forcing all applications ids to: "MasterServer"
+14112: 14:17:03.102 - MaxInboundMessageSize: 512000
+14112: 14:17:03.102 - MaxOutboundMessageSize: 512000
+14112: 14:17:03.102 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+14112: 14:17:03.103 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+14112: 14:17:03.103 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+14112: 14:17:03.103 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+14112: 14:17:03.103 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+14112: 14:17:03.103 - Forcing all applications ids to: "GameServer"
+14112: 14:17:03.103 - MaxInboundMessageSize: 512000
+14112: 14:17:03.103 - MaxOutboundMessageSize: 512000
+14112: 14:17:03.103 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+14112: 14:17:03.103 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+14112: 14:17:03.103 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+14112: 14:17:03.103 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+14112: 14:17:03.103 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+14112: 14:17:03.127 - Service is running...
+8144: 14:18:31.177 - ---
+8144: 14:18:31.177 - Service: "Photon Socket Server" starting
+8144: 14:18:31.177 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+8144: 14:18:31.178 - Will produce at most: 10 crash dumps
+8144: 14:18:31.178 - Action: run as exe
+8144: 14:18:31.178 - Server Starting...
+8144: 14:18:31.178 -    Tick count: 73636828 (wraps in: 48.858 days)
+8144: 14:18:31.178 - Tick count 64: 73636828
+8144: 14:18:31.179 - Photon Version: 4.0.28.2962
+8144: 14:18:31.179 - PID: 12092
+8144: 14:18:31.179 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+8144: 14:18:31.179 - Will NOT log unimportant exceptions
+8144: 14:18:31.179 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+8144: 14:18:31.181 - Shutdown timeout enabled: 30000ms
+8144: 14:18:31.181 - Starting I/O thread pool with 2 threads
+8144: 14:18:31.182 - Using Standard allocator
+8144: 14:18:31.182 - Max message size: 512000
+8144: 14:18:31.182 - Starting business logic thread pool with the following settings
+8144: 14:18:31.182 - InitialThreads: 4 threads
+8144: 14:18:31.182 - MinThreads: 4 threads
+8144: 14:18:31.183 - Thread pool is fixed size
+8144: 14:18:31.186 - Starting ENet thread pool with the following settings
+8144: 14:18:31.186 - InitialThreads: 2 threads
+8144: 14:18:31.186 - MinThreads: 2 threads
+8144: 14:18:31.186 - Thread pool is fixed size
+8144: 14:18:31.186 - OnlyDispatchTimers: False
+8144: 14:18:31.187 - S2S: flow control: Max pending writes: 50
+8144: 14:18:31.187 - S2S: flow control: Max queued buffers: 200
+8144: 14:18:31.187 - S2S: flow control: Max pending writes MUX: 500
+8144: 14:18:31.188 - S2S: flow control: Max queued buffers MUX: 2000
+8144: 14:18:31.188 - S2S: MaxInboundMessageSize: 512000
+8144: 14:18:31.188 - S2S: MaxOutboundMessageSize: 512000
+8144: 14:18:31.188 - S2S: No inactivity timeout
+8144: 14:18:31.190 - WebSocket S2S: MaxInboundMessageSize: 512000
+8144: 14:18:31.190 - WebSocket S2S: MaxOutboundMessageSize: 512000
+8144: 14:18:31.190 - WebSocket S2S: No inactivity timeout
+8144: 14:18:31.191 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+8144: 14:18:31.191 - Per peer bandwidth limit
+8144: 14:18:31.191 - Transmit Rate Limit: 256 KB/Sec
+8144: 14:18:31.191 - Limit period: 200ms
+8144: 14:18:31.191 - Limit per period: 52428 bytes
+8144: 14:18:31.191 - Max queued data for transmission per peer: 512000 bytes
+8144: 14:18:31.191 - Minimum retransmit timeout: 200
+8144: 14:18:31.191 - No Maximum retransmit timeout
+8144: 14:18:31.191 - Minimum ENet timeout: 5000ms
+8144: 14:18:31.191 - Maximum ENet timeout: 30000ms
+8144: 14:18:31.191 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+8144: 14:18:31.191 - No RTT ACK adjustment timeout
+8144: 14:18:31.191 - Outbound ENet: MaxInboundMessageSize: 512000
+8144: 14:18:31.191 - Outbound ENet: MaxOutboundMessageSize: 512000
+8144: 14:18:31.193 - GetRuntime - About to load CLR - versions available:
+8144: 14:18:31.193 - v2.0.50727
+8144: 14:18:31.193 - v4.0.30319
+8144: 14:18:31.193 - Configuration requests: "v2.0.50727"
+8144: 14:18:31.193 - About to load version: "v2.0.50727"
+8144: 14:18:31.200 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+8144: 14:18:31.200 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+8144: 14:18:31.200 - Optimising event broadcast for 20 or more peers
+8144: 14:18:31.201 - Start: About to load CLR - versions available:
+8144: 14:18:31.201 - v2.0.50727
+8144: 14:18:31.201 - v4.0.30319
+8144: 14:18:31.201 - No preference in configuration file, will load latest.
+8144: 14:18:31.201 - About to load version: "v4.0.30319"
+8144: 14:18:31.203 - Loaded version: "v4.0.30319"
+8144: 14:18:32.847 - Photon host runtime loaded
+8144: 14:18:34.847 - LICENSE: No license file was found. Starting with Bootstrap License.
+8144: 14:18:34.847 - License is valid.
+8144: 14:18:34.847 - Licensed for 20 concurrent connections.
+8144: 14:18:34.847 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+8144: 14:18:34.847 - ENet: Per peer bandwidth limit
+8144: 14:18:34.847 - ENet: Transmit Rate Limit: 256 KB/Sec
+8144: 14:18:34.847 - ENet: Limit period: 200ms
+8144: 14:18:34.847 - ENet: Limit per period: 52428 bytes
+8144: 14:18:34.847 - ENet: Max queued data for transmission per peer: 512000 bytes
+8144: 14:18:34.847 - ENet: Minimum retransmit timeout: 200
+8144: 14:18:34.847 - No Maximum retransmit timeout
+8144: 14:18:34.847 - ENet: Minimum timeout: 5000ms
+8144: 14:18:34.847 - ENet: Maximum timeout: 30000ms
+8144: 14:18:34.847 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+8144: 14:18:34.847 - No RTT ACK adjustment timeout
+8144: 14:18:34.847 - About to load application: MasterServer from Chat.MasterServer
+8144: 14:18:34.847 - Auto restart is enabled for application, existing connections will be terminated during restart
+8144: 14:18:34.847 - Application will restart 1000ms after the last change detected
+8144: 14:18:34.847 - Application will restart if files matching the following are changed: "dll;config"
+8144: 14:18:34.847 - Application will NOT restart if files matching the following are changed: "log4net.config"
+8144: 14:18:35.094 - Taking reference on default app domain
+8144: 14:18:35.420 - Application: "MasterServer" started in app domain: 2
+8144: 14:18:35.420 - About to load application: GameServer from Chat.GameServer
+8144: 14:18:35.420 - Auto restart is enabled for application, existing connections will be terminated during restart
+8144: 14:18:35.420 - Application will restart 1000ms after the last change detected
+8144: 14:18:35.420 - Application will restart if files matching the following are changed: "dll;config"
+8144: 14:18:35.420 - Application will NOT restart if files matching the following are changed: "log4net.config"
+8144: 14:18:35.654 - Taking reference on default app domain
+8144: 14:18:36.187 - Application: "GameServer" started in app domain: 3
+8144: 14:18:36.187 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+8144: 14:18:36.187 - TCP inactivity timeout: 5000ms
+8144: 14:18:36.187 - TCP disconnect timeout: 120000ms
+8144: 14:18:36.187 - MaxInboundMessageSize: 512000
+8144: 14:18:36.187 - MaxOutboundMessageSize: 512000
+8144: 14:18:36.187 - Forcing all applications ids to: "MasterServer"
+8144: 14:18:36.187 - MaxInboundMessageSize: 512000
+8144: 14:18:36.187 - MaxOutboundMessageSize: 512000
+8144: 14:18:36.187 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+8144: 14:18:36.188 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+8144: 14:18:36.188 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+8144: 14:18:36.188 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+8144: 14:18:36.189 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+8144: 14:18:36.189 - Forcing all applications ids to: "GameServer"
+8144: 14:18:36.189 - MaxInboundMessageSize: 512000
+8144: 14:18:36.189 - MaxOutboundMessageSize: 512000
+8144: 14:18:36.189 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+8144: 14:18:36.189 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+8144: 14:18:36.189 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+8144: 14:18:36.189 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+8144: 14:18:36.189 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+8144: 14:18:36.216 - Service is running...
+3624: 14:42:02.114 - ---
+3624: 14:42:02.114 - Service: "Photon Socket Server" starting
+3624: 14:42:02.114 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+3624: 14:42:02.115 - Will produce at most: 10 crash dumps
+3624: 14:42:02.115 - Action: run as exe
+3624: 14:42:02.116 - Server Starting...
+3624: 14:42:02.116 -    Tick count: 1212765 (wraps in: 49.6962 days)
+3624: 14:42:02.116 - Tick count 64: 1212765
+3624: 14:42:02.116 - Photon Version: 4.0.28.2962
+3624: 14:42:02.116 - PID: 2012
+3624: 14:42:02.116 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+3624: 14:42:02.116 - Will NOT log unimportant exceptions
+3624: 14:42:02.117 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+3624: 14:42:02.118 - Shutdown timeout enabled: 30000ms
+3624: 14:42:02.118 - Starting I/O thread pool with 2 threads
+3624: 14:42:02.118 - Using Standard allocator
+3624: 14:42:02.118 - Max message size: 512000
+3624: 14:42:02.118 - Starting business logic thread pool with the following settings
+3624: 14:42:02.118 - InitialThreads: 4 threads
+3624: 14:42:02.118 - MinThreads: 4 threads
+3624: 14:42:02.118 - Thread pool is fixed size
+3624: 14:42:02.119 - Starting ENet thread pool with the following settings
+3624: 14:42:02.119 - InitialThreads: 2 threads
+3624: 14:42:02.119 - MinThreads: 2 threads
+3624: 14:42:02.119 - Thread pool is fixed size
+3624: 14:42:02.119 - OnlyDispatchTimers: False
+3624: 14:42:02.119 - S2S: flow control: Max pending writes: 50
+3624: 14:42:02.119 - S2S: flow control: Max queued buffers: 200
+3624: 14:42:02.119 - S2S: flow control: Max pending writes MUX: 500
+3624: 14:42:02.119 - S2S: flow control: Max queued buffers MUX: 2000
+3624: 14:42:02.119 - S2S: MaxInboundMessageSize: 512000
+3624: 14:42:02.119 - S2S: MaxOutboundMessageSize: 512000
+3624: 14:42:02.119 - S2S: No inactivity timeout
+3624: 14:42:02.125 - WebSocket S2S: MaxInboundMessageSize: 512000
+3624: 14:42:02.125 - WebSocket S2S: MaxOutboundMessageSize: 512000
+3624: 14:42:02.125 - WebSocket S2S: No inactivity timeout
+3624: 14:42:02.126 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+3624: 14:42:02.126 - Per peer bandwidth limit
+3624: 14:42:02.126 - Transmit Rate Limit: 256 KB/Sec
+3624: 14:42:02.126 - Limit period: 200ms
+3624: 14:42:02.126 - Limit per period: 52428 bytes
+3624: 14:42:02.126 - Max queued data for transmission per peer: 512000 bytes
+3624: 14:42:02.126 - Minimum retransmit timeout: 200
+3624: 14:42:02.126 - No Maximum retransmit timeout
+3624: 14:42:02.126 - Minimum ENet timeout: 5000ms
+3624: 14:42:02.126 - Maximum ENet timeout: 30000ms
+3624: 14:42:02.126 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+3624: 14:42:02.126 - No RTT ACK adjustment timeout
+3624: 14:42:02.126 - Outbound ENet: MaxInboundMessageSize: 512000
+3624: 14:42:02.126 - Outbound ENet: MaxOutboundMessageSize: 512000
+3624: 14:42:02.139 - GetRuntime - About to load CLR - versions available:
+3624: 14:42:02.139 - v2.0.50727
+3624: 14:42:02.139 - v4.0.30319
+3624: 14:42:02.139 - Configuration requests: "v2.0.50727"
+3624: 14:42:02.139 - About to load version: "v2.0.50727"
+3624: 14:42:02.194 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+3624: 14:42:02.194 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+3624: 14:42:02.194 - Optimising event broadcast for 20 or more peers
+3624: 14:42:02.194 - Start: About to load CLR - versions available:
+3624: 14:42:02.194 - v2.0.50727
+3624: 14:42:02.194 - v4.0.30319
+3624: 14:42:02.194 - No preference in configuration file, will load latest.
+3624: 14:42:02.194 - About to load version: "v4.0.30319"
+3624: 14:42:02.195 - Loaded version: "v4.0.30319"
+3624: 14:42:03.084 - Photon host runtime loaded
+3624: 14:42:06.252 - LICENSE: No license file was found. Starting with Bootstrap License.
+3624: 14:42:06.252 - License is valid.
+3624: 14:42:06.252 - Licensed for 20 concurrent connections.
+3624: 14:42:06.252 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+3624: 14:42:06.252 - ENet: Per peer bandwidth limit
+3624: 14:42:06.252 - ENet: Transmit Rate Limit: 256 KB/Sec
+3624: 14:42:06.252 - ENet: Limit period: 200ms
+3624: 14:42:06.252 - ENet: Limit per period: 52428 bytes
+3624: 14:42:06.252 - ENet: Max queued data for transmission per peer: 512000 bytes
+3624: 14:42:06.252 - ENet: Minimum retransmit timeout: 200
+3624: 14:42:06.252 - No Maximum retransmit timeout
+3624: 14:42:06.252 - ENet: Minimum timeout: 5000ms
+3624: 14:42:06.252 - ENet: Maximum timeout: 30000ms
+3624: 14:42:06.252 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+3624: 14:42:06.252 - No RTT ACK adjustment timeout
+3624: 14:42:06.252 - About to load application: MasterServer from Chat.MasterServer
+3624: 14:42:06.252 - Auto restart is enabled for application, existing connections will be terminated during restart
+3624: 14:42:06.252 - Application will restart 1000ms after the last change detected
+3624: 14:42:06.252 - Application will restart if files matching the following are changed: "dll;config"
+3624: 14:42:06.252 - Application will NOT restart if files matching the following are changed: "log4net.config"
+3624: 14:42:06.578 - Taking reference on default app domain
+3624: 14:42:07.024 - Application: "MasterServer" started in app domain: 2
+3624: 14:42:07.024 - About to load application: GameServer from Chat.GameServer
+3624: 14:42:07.024 - Auto restart is enabled for application, existing connections will be terminated during restart
+3624: 14:42:07.024 - Application will restart 1000ms after the last change detected
+3624: 14:42:07.025 - Application will restart if files matching the following are changed: "dll;config"
+3624: 14:42:07.025 - Application will NOT restart if files matching the following are changed: "log4net.config"
+3624: 14:42:07.438 - Taking reference on default app domain
+3624: 14:42:07.994 - Application: "GameServer" started in app domain: 3
+3624: 14:42:07.994 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+3624: 14:42:07.994 - TCP inactivity timeout: 5000ms
+3624: 14:42:07.994 - TCP disconnect timeout: 120000ms
+3624: 14:42:07.994 - MaxInboundMessageSize: 512000
+3624: 14:42:07.994 - MaxOutboundMessageSize: 512000
+3624: 14:42:07.994 - Forcing all applications ids to: "MasterServer"
+3624: 14:42:07.994 - MaxInboundMessageSize: 512000
+3624: 14:42:07.994 - MaxOutboundMessageSize: 512000
+3624: 14:42:07.995 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+3624: 14:42:07.995 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+3624: 14:42:07.995 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+3624: 14:42:07.995 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+3624: 14:42:07.995 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+3624: 14:42:07.995 - Forcing all applications ids to: "GameServer"
+3624: 14:42:07.995 - MaxInboundMessageSize: 512000
+3624: 14:42:07.995 - MaxOutboundMessageSize: 512000
+3624: 14:42:07.995 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+3624: 14:42:07.996 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+3624: 14:42:07.996 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+3624: 14:42:07.996 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+3624: 14:42:07.996 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+3624: 14:42:08.017 - Service is running...
+8356: 14:51:31.531 - ---
+8356: 14:51:31.531 - Service: "Photon Socket Server" starting
+8356: 14:51:31.531 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+8356: 14:51:31.532 - Will produce at most: 10 crash dumps
+8356: 14:51:31.532 - Action: run as exe
+8356: 14:51:31.533 - Server Starting...
+8356: 14:51:31.533 -    Tick count: 1782187 (wraps in: 49.6896 days)
+8356: 14:51:31.533 - Tick count 64: 1782187
+8356: 14:51:31.533 - Photon Version: 4.0.28.2962
+8356: 14:51:31.533 - PID: 8904
+8356: 14:51:31.533 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+8356: 14:51:31.533 - Will NOT log unimportant exceptions
+8356: 14:51:31.533 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+8356: 14:51:31.535 - Shutdown timeout enabled: 30000ms
+8356: 14:51:31.536 - Starting I/O thread pool with 2 threads
+8356: 14:51:31.537 - Using Standard allocator
+8356: 14:51:31.537 - Max message size: 512000
+8356: 14:51:31.537 - Starting business logic thread pool with the following settings
+8356: 14:51:31.537 - InitialThreads: 4 threads
+8356: 14:51:31.537 - MinThreads: 4 threads
+8356: 14:51:31.537 - Thread pool is fixed size
+8356: 14:51:31.539 - Starting ENet thread pool with the following settings
+8356: 14:51:31.539 - InitialThreads: 2 threads
+8356: 14:51:31.539 - MinThreads: 2 threads
+8356: 14:51:31.539 - Thread pool is fixed size
+8356: 14:51:31.539 - OnlyDispatchTimers: False
+8356: 14:51:31.539 - S2S: flow control: Max pending writes: 50
+8356: 14:51:31.539 - S2S: flow control: Max queued buffers: 200
+8356: 14:51:31.539 - S2S: flow control: Max pending writes MUX: 500
+8356: 14:51:31.539 - S2S: flow control: Max queued buffers MUX: 2000
+8356: 14:51:31.539 - S2S: MaxInboundMessageSize: 512000
+8356: 14:51:31.539 - S2S: MaxOutboundMessageSize: 512000
+8356: 14:51:31.539 - S2S: No inactivity timeout
+8356: 14:51:31.543 - WebSocket S2S: MaxInboundMessageSize: 512000
+8356: 14:51:31.543 - WebSocket S2S: MaxOutboundMessageSize: 512000
+8356: 14:51:31.543 - WebSocket S2S: No inactivity timeout
+8356: 14:51:31.544 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+8356: 14:51:31.544 - Per peer bandwidth limit
+8356: 14:51:31.544 - Transmit Rate Limit: 256 KB/Sec
+8356: 14:51:31.544 - Limit period: 200ms
+8356: 14:51:31.544 - Limit per period: 52428 bytes
+8356: 14:51:31.544 - Max queued data for transmission per peer: 512000 bytes
+8356: 14:51:31.544 - Minimum retransmit timeout: 200
+8356: 14:51:31.544 - No Maximum retransmit timeout
+8356: 14:51:31.544 - Minimum ENet timeout: 5000ms
+8356: 14:51:31.544 - Maximum ENet timeout: 30000ms
+8356: 14:51:31.544 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+8356: 14:51:31.544 - No RTT ACK adjustment timeout
+8356: 14:51:31.544 - Outbound ENet: MaxInboundMessageSize: 512000
+8356: 14:51:31.544 - Outbound ENet: MaxOutboundMessageSize: 512000
+8356: 14:51:31.546 - GetRuntime - About to load CLR - versions available:
+8356: 14:51:31.546 - v2.0.50727
+8356: 14:51:31.546 - v4.0.30319
+8356: 14:51:31.546 - Configuration requests: "v2.0.50727"
+8356: 14:51:31.546 - About to load version: "v2.0.50727"
+8356: 14:51:31.551 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+8356: 14:51:31.551 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+8356: 14:51:31.551 - Optimising event broadcast for 20 or more peers
+8356: 14:51:31.552 - Start: About to load CLR - versions available:
+8356: 14:51:31.552 - v2.0.50727
+8356: 14:51:31.552 - v4.0.30319
+8356: 14:51:31.552 - No preference in configuration file, will load latest.
+8356: 14:51:31.552 - About to load version: "v4.0.30319"
+8356: 14:51:31.553 - Loaded version: "v4.0.30319"
+8356: 14:51:31.970 - Photon host runtime loaded
+8356: 14:51:34.394 - LICENSE: No license file was found. Starting with Bootstrap License.
+8356: 14:51:34.394 - License is valid.
+8356: 14:51:34.394 - Licensed for 20 concurrent connections.
+8356: 14:51:34.394 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+8356: 14:51:34.394 - ENet: Per peer bandwidth limit
+8356: 14:51:34.394 - ENet: Transmit Rate Limit: 256 KB/Sec
+8356: 14:51:34.394 - ENet: Limit period: 200ms
+8356: 14:51:34.394 - ENet: Limit per period: 52428 bytes
+8356: 14:51:34.394 - ENet: Max queued data for transmission per peer: 512000 bytes
+8356: 14:51:34.394 - ENet: Minimum retransmit timeout: 200
+8356: 14:51:34.394 - No Maximum retransmit timeout
+8356: 14:51:34.394 - ENet: Minimum timeout: 5000ms
+8356: 14:51:34.394 - ENet: Maximum timeout: 30000ms
+8356: 14:51:34.394 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+8356: 14:51:34.394 - No RTT ACK adjustment timeout
+8356: 14:51:34.394 - About to load application: MasterServer from Chat.MasterServer
+8356: 14:51:34.394 - Auto restart is enabled for application, existing connections will be terminated during restart
+8356: 14:51:34.394 - Application will restart 1000ms after the last change detected
+8356: 14:51:34.394 - Application will restart if files matching the following are changed: "dll;config"
+8356: 14:51:34.394 - Application will NOT restart if files matching the following are changed: "log4net.config"
+8356: 14:51:34.669 - Taking reference on default app domain
+8356: 14:51:35.010 - Application: "MasterServer" started in app domain: 2
+8356: 14:51:35.010 - About to load application: GameServer from Chat.GameServer
+8356: 14:51:35.010 - Auto restart is enabled for application, existing connections will be terminated during restart
+8356: 14:51:35.010 - Application will restart 1000ms after the last change detected
+8356: 14:51:35.010 - Application will restart if files matching the following are changed: "dll;config"
+8356: 14:51:35.010 - Application will NOT restart if files matching the following are changed: "log4net.config"
+8356: 14:51:35.280 - Taking reference on default app domain
+8356: 14:51:35.761 - Application: "GameServer" started in app domain: 3
+8356: 14:51:35.761 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+8356: 14:51:35.761 - TCP inactivity timeout: 5000ms
+8356: 14:51:35.761 - TCP disconnect timeout: 120000ms
+8356: 14:51:35.761 - MaxInboundMessageSize: 512000
+8356: 14:51:35.761 - MaxOutboundMessageSize: 512000
+8356: 14:51:35.761 - Forcing all applications ids to: "MasterServer"
+8356: 14:51:35.761 - MaxInboundMessageSize: 512000
+8356: 14:51:35.761 - MaxOutboundMessageSize: 512000
+8356: 14:51:35.761 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+8356: 14:51:35.761 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+8356: 14:51:35.761 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+8356: 14:51:35.761 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+8356: 14:51:35.761 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+8356: 14:51:35.761 - Forcing all applications ids to: "GameServer"
+8356: 14:51:35.761 - MaxInboundMessageSize: 512000
+8356: 14:51:35.761 - MaxOutboundMessageSize: 512000
+8356: 14:51:35.761 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+8356: 14:51:35.762 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+8356: 14:51:35.762 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+8356: 14:51:35.762 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+8356: 14:51:35.762 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+8356: 14:51:35.786 - Service is running...
+9772: 15:42:35.653 - ---
+9772: 15:42:35.653 - Service: "Photon Socket Server" starting
+9772: 15:42:35.653 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+9772: 15:42:35.654 - Will produce at most: 10 crash dumps
+9772: 15:42:35.654 - Action: run as exe
+9772: 15:42:35.654 - Server Starting...
+9772: 15:42:35.654 -    Tick count: 4846312 (wraps in: 49.6542 days)
+9772: 15:42:35.655 - Tick count 64: 4846312
+9772: 15:42:35.655 - Photon Version: 4.0.28.2962
+9772: 15:42:35.655 - PID: 1320
+9772: 15:42:35.655 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+9772: 15:42:35.655 - Will NOT log unimportant exceptions
+9772: 15:42:35.655 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+9772: 15:42:35.656 - Shutdown timeout enabled: 30000ms
+9772: 15:42:35.656 - Starting I/O thread pool with 2 threads
+9772: 15:42:35.657 - Using Standard allocator
+9772: 15:42:35.657 - Max message size: 512000
+9772: 15:42:35.657 - Starting business logic thread pool with the following settings
+9772: 15:42:35.657 - InitialThreads: 4 threads
+9772: 15:42:35.657 - MinThreads: 4 threads
+9772: 15:42:35.657 - Thread pool is fixed size
+9772: 15:42:35.657 - Starting ENet thread pool with the following settings
+9772: 15:42:35.657 - InitialThreads: 2 threads
+9772: 15:42:35.657 - MinThreads: 2 threads
+9772: 15:42:35.657 - Thread pool is fixed size
+9772: 15:42:35.657 - OnlyDispatchTimers: False
+9772: 15:42:35.658 - S2S: flow control: Max pending writes: 50
+9772: 15:42:35.658 - S2S: flow control: Max queued buffers: 200
+9772: 15:42:35.658 - S2S: flow control: Max pending writes MUX: 500
+9772: 15:42:35.658 - S2S: flow control: Max queued buffers MUX: 2000
+9772: 15:42:35.658 - S2S: MaxInboundMessageSize: 512000
+9772: 15:42:35.658 - S2S: MaxOutboundMessageSize: 512000
+9772: 15:42:35.658 - S2S: No inactivity timeout
+9772: 15:42:35.659 - WebSocket S2S: MaxInboundMessageSize: 512000
+9772: 15:42:35.659 - WebSocket S2S: MaxOutboundMessageSize: 512000
+9772: 15:42:35.659 - WebSocket S2S: No inactivity timeout
+9772: 15:42:35.659 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+9772: 15:42:35.659 - Per peer bandwidth limit
+9772: 15:42:35.659 - Transmit Rate Limit: 256 KB/Sec
+9772: 15:42:35.659 - Limit period: 200ms
+9772: 15:42:35.659 - Limit per period: 52428 bytes
+9772: 15:42:35.659 - Max queued data for transmission per peer: 512000 bytes
+9772: 15:42:35.659 - Minimum retransmit timeout: 200
+9772: 15:42:35.659 - No Maximum retransmit timeout
+9772: 15:42:35.659 - Minimum ENet timeout: 5000ms
+9772: 15:42:35.659 - Maximum ENet timeout: 30000ms
+9772: 15:42:35.659 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+9772: 15:42:35.659 - No RTT ACK adjustment timeout
+9772: 15:42:35.659 - Outbound ENet: MaxInboundMessageSize: 512000
+9772: 15:42:35.659 - Outbound ENet: MaxOutboundMessageSize: 512000
+9772: 15:42:35.661 - GetRuntime - About to load CLR - versions available:
+9772: 15:42:35.661 - v2.0.50727
+9772: 15:42:35.661 - v4.0.30319
+9772: 15:42:35.661 - Configuration requests: "v2.0.50727"
+9772: 15:42:35.661 - About to load version: "v2.0.50727"
+9772: 15:42:35.664 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+9772: 15:42:35.664 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+9772: 15:42:35.664 - Optimising event broadcast for 20 or more peers
+9772: 15:42:35.665 - Start: About to load CLR - versions available:
+9772: 15:42:35.665 - v2.0.50727
+9772: 15:42:35.665 - v4.0.30319
+9772: 15:42:35.665 - No preference in configuration file, will load latest.
+9772: 15:42:35.665 - About to load version: "v4.0.30319"
+9772: 15:42:35.666 - Loaded version: "v4.0.30319"
+9772: 15:42:36.486 - Photon host runtime loaded
+9772: 15:42:38.703 - LICENSE: No license file was found. Starting with Bootstrap License.
+9772: 15:42:38.703 - License is valid.
+9772: 15:42:38.703 - Licensed for 20 concurrent connections.
+9772: 15:42:38.703 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+9772: 15:42:38.703 - ENet: Per peer bandwidth limit
+9772: 15:42:38.703 - ENet: Transmit Rate Limit: 256 KB/Sec
+9772: 15:42:38.703 - ENet: Limit period: 200ms
+9772: 15:42:38.703 - ENet: Limit per period: 52428 bytes
+9772: 15:42:38.703 - ENet: Max queued data for transmission per peer: 512000 bytes
+9772: 15:42:38.703 - ENet: Minimum retransmit timeout: 200
+9772: 15:42:38.703 - No Maximum retransmit timeout
+9772: 15:42:38.703 - ENet: Minimum timeout: 5000ms
+9772: 15:42:38.703 - ENet: Maximum timeout: 30000ms
+9772: 15:42:38.703 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+9772: 15:42:38.703 - No RTT ACK adjustment timeout
+9772: 15:42:38.703 - About to load application: MasterServer from Chat.MasterServer
+9772: 15:42:38.703 - Auto restart is enabled for application, existing connections will be terminated during restart
+9772: 15:42:38.703 - Application will restart 1000ms after the last change detected
+9772: 15:42:38.704 - Application will restart if files matching the following are changed: "dll;config"
+9772: 15:42:38.704 - Application will NOT restart if files matching the following are changed: "log4net.config"
+9772: 15:42:38.976 - Taking reference on default app domain
+9772: 15:42:39.319 - Application: "MasterServer" started in app domain: 2
+9772: 15:42:39.319 - About to load application: GameServer from Chat.GameServer
+9772: 15:42:39.319 - Auto restart is enabled for application, existing connections will be terminated during restart
+9772: 15:42:39.319 - Application will restart 1000ms after the last change detected
+9772: 15:42:39.319 - Application will restart if files matching the following are changed: "dll;config"
+9772: 15:42:39.319 - Application will NOT restart if files matching the following are changed: "log4net.config"
+9772: 15:42:39.553 - Taking reference on default app domain
+9772: 15:42:40.053 - Application: "GameServer" started in app domain: 3
+9772: 15:42:40.053 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+9772: 15:42:40.054 - TCP inactivity timeout: 5000ms
+9772: 15:42:40.054 - TCP disconnect timeout: 120000ms
+9772: 15:42:40.054 - MaxInboundMessageSize: 512000
+9772: 15:42:40.054 - MaxOutboundMessageSize: 512000
+9772: 15:42:40.054 - Forcing all applications ids to: "MasterServer"
+9772: 15:42:40.054 - MaxInboundMessageSize: 512000
+9772: 15:42:40.054 - MaxOutboundMessageSize: 512000
+9772: 15:42:40.054 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+9772: 15:42:40.054 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+9772: 15:42:40.054 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+9772: 15:42:40.054 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+9772: 15:42:40.054 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+9772: 15:42:40.054 - Forcing all applications ids to: "GameServer"
+9772: 15:42:40.054 - MaxInboundMessageSize: 512000
+9772: 15:42:40.054 - MaxOutboundMessageSize: 512000
+9772: 15:42:40.054 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+9772: 15:42:40.055 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+9772: 15:42:40.055 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+9772: 15:42:40.055 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+9772: 15:42:40.055 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+9772: 15:42:40.077 - Service is running...
+11744: 16:14:17.504 - ---
+11744: 16:14:17.504 - Service: "Photon Socket Server" starting
+11744: 16:14:17.504 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+11744: 16:14:17.505 - Will produce at most: 10 crash dumps
+11744: 16:14:17.505 - Action: run as exe
+11744: 16:14:17.506 - Server Starting...
+11744: 16:14:17.506 -    Tick count: 6748156 (wraps in: 49.6322 days)
+11744: 16:14:17.506 - Tick count 64: 6748156
+11744: 16:14:17.506 - Photon Version: 4.0.28.2962
+11744: 16:14:17.506 - PID: 5744
+11744: 16:14:17.506 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+11744: 16:14:17.506 - Will NOT log unimportant exceptions
+11744: 16:14:17.506 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+11744: 16:14:17.507 - Shutdown timeout enabled: 30000ms
+11744: 16:14:17.508 - Starting I/O thread pool with 2 threads
+11744: 16:14:17.508 - Using Standard allocator
+11744: 16:14:17.508 - Max message size: 512000
+11744: 16:14:17.508 - Starting business logic thread pool with the following settings
+11744: 16:14:17.508 - InitialThreads: 4 threads
+11744: 16:14:17.508 - MinThreads: 4 threads
+11744: 16:14:17.508 - Thread pool is fixed size
+11744: 16:14:17.509 - Starting ENet thread pool with the following settings
+11744: 16:14:17.509 - InitialThreads: 2 threads
+11744: 16:14:17.509 - MinThreads: 2 threads
+11744: 16:14:17.509 - Thread pool is fixed size
+11744: 16:14:17.509 - OnlyDispatchTimers: False
+11744: 16:14:17.509 - S2S: flow control: Max pending writes: 50
+11744: 16:14:17.509 - S2S: flow control: Max queued buffers: 200
+11744: 16:14:17.509 - S2S: flow control: Max pending writes MUX: 500
+11744: 16:14:17.509 - S2S: flow control: Max queued buffers MUX: 2000
+11744: 16:14:17.509 - S2S: MaxInboundMessageSize: 512000
+11744: 16:14:17.509 - S2S: MaxOutboundMessageSize: 512000
+11744: 16:14:17.509 - S2S: No inactivity timeout
+11744: 16:14:17.510 - WebSocket S2S: MaxInboundMessageSize: 512000
+11744: 16:14:17.510 - WebSocket S2S: MaxOutboundMessageSize: 512000
+11744: 16:14:17.510 - WebSocket S2S: No inactivity timeout
+11744: 16:14:17.511 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+11744: 16:14:17.511 - Per peer bandwidth limit
+11744: 16:14:17.511 - Transmit Rate Limit: 256 KB/Sec
+11744: 16:14:17.511 - Limit period: 200ms
+11744: 16:14:17.511 - Limit per period: 52428 bytes
+11744: 16:14:17.511 - Max queued data for transmission per peer: 512000 bytes
+11744: 16:14:17.511 - Minimum retransmit timeout: 200
+11744: 16:14:17.511 - No Maximum retransmit timeout
+11744: 16:14:17.511 - Minimum ENet timeout: 5000ms
+11744: 16:14:17.511 - Maximum ENet timeout: 30000ms
+11744: 16:14:17.511 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+11744: 16:14:17.511 - No RTT ACK adjustment timeout
+11744: 16:14:17.511 - Outbound ENet: MaxInboundMessageSize: 512000
+11744: 16:14:17.511 - Outbound ENet: MaxOutboundMessageSize: 512000
+11744: 16:14:17.513 - GetRuntime - About to load CLR - versions available:
+11744: 16:14:17.513 - v2.0.50727
+11744: 16:14:17.513 - v4.0.30319
+11744: 16:14:17.513 - Configuration requests: "v2.0.50727"
+11744: 16:14:17.513 - About to load version: "v2.0.50727"
+11744: 16:14:17.517 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+11744: 16:14:17.517 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+11744: 16:14:17.517 - Optimising event broadcast for 20 or more peers
+11744: 16:14:17.518 - Start: About to load CLR - versions available:
+11744: 16:14:17.518 - v2.0.50727
+11744: 16:14:17.518 - v4.0.30319
+11744: 16:14:17.518 - No preference in configuration file, will load latest.
+11744: 16:14:17.518 - About to load version: "v4.0.30319"
+11744: 16:14:17.519 - Loaded version: "v4.0.30319"
+11744: 16:14:18.814 - Photon host runtime loaded
+11744: 16:14:21.168 - LICENSE: No license file was found. Starting with Bootstrap License.
+11744: 16:14:21.168 - License is valid.
+11744: 16:14:21.168 - Licensed for 20 concurrent connections.
+11744: 16:14:21.168 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+11744: 16:14:21.168 - ENet: Per peer bandwidth limit
+11744: 16:14:21.168 - ENet: Transmit Rate Limit: 256 KB/Sec
+11744: 16:14:21.168 - ENet: Limit period: 200ms
+11744: 16:14:21.168 - ENet: Limit per period: 52428 bytes
+11744: 16:14:21.168 - ENet: Max queued data for transmission per peer: 512000 bytes
+11744: 16:14:21.168 - ENet: Minimum retransmit timeout: 200
+11744: 16:14:21.168 - No Maximum retransmit timeout
+11744: 16:14:21.168 - ENet: Minimum timeout: 5000ms
+11744: 16:14:21.168 - ENet: Maximum timeout: 30000ms
+11744: 16:14:21.168 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+11744: 16:14:21.168 - No RTT ACK adjustment timeout
+11744: 16:14:21.168 - About to load application: MasterServer from Chat.MasterServer
+11744: 16:14:21.168 - Auto restart is enabled for application, existing connections will be terminated during restart
+11744: 16:14:21.168 - Application will restart 1000ms after the last change detected
+11744: 16:14:21.168 - Application will restart if files matching the following are changed: "dll;config"
+11744: 16:14:21.168 - Application will NOT restart if files matching the following are changed: "log4net.config"
+11744: 16:14:21.427 - Taking reference on default app domain
+11744: 16:14:21.746 - Application: "MasterServer" started in app domain: 2
+11744: 16:14:21.746 - About to load application: GameServer from Chat.GameServer
+11744: 16:14:21.746 - Auto restart is enabled for application, existing connections will be terminated during restart
+11744: 16:14:21.746 - Application will restart 1000ms after the last change detected
+11744: 16:14:21.746 - Application will restart if files matching the following are changed: "dll;config"
+11744: 16:14:21.746 - Application will NOT restart if files matching the following are changed: "log4net.config"
+11744: 16:14:21.981 - Taking reference on default app domain
+11744: 16:14:22.481 - Application: "GameServer" started in app domain: 3
+11744: 16:14:22.481 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+11744: 16:14:22.481 - TCP inactivity timeout: 5000ms
+11744: 16:14:22.481 - TCP disconnect timeout: 120000ms
+11744: 16:14:22.481 - MaxInboundMessageSize: 512000
+11744: 16:14:22.481 - MaxOutboundMessageSize: 512000
+11744: 16:14:22.481 - Forcing all applications ids to: "MasterServer"
+11744: 16:14:22.482 - MaxInboundMessageSize: 512000
+11744: 16:14:22.482 - MaxOutboundMessageSize: 512000
+11744: 16:14:22.482 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+11744: 16:14:22.482 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+11744: 16:14:22.482 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+11744: 16:14:22.482 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+11744: 16:14:22.482 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+11744: 16:14:22.482 - Forcing all applications ids to: "GameServer"
+11744: 16:14:22.482 - MaxInboundMessageSize: 512000
+11744: 16:14:22.482 - MaxOutboundMessageSize: 512000
+11744: 16:14:22.482 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+11744: 16:14:22.483 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+11744: 16:14:22.483 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+11744: 16:14:22.483 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+11744: 16:14:22.483 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+11744: 16:14:22.507 - Service is running...
+4272: 16:19:25.286 - ---
+4272: 16:19:25.286 - Service: "Photon Socket Server" starting
+4272: 16:19:25.287 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+4272: 16:19:25.287 - Will produce at most: 10 crash dumps
+4272: 16:19:25.288 - Action: run as exe
+4272: 16:19:25.288 - Server Starting...
+4272: 16:19:25.288 -    Tick count: 7055937 (wraps in: 49.6286 days)
+4272: 16:19:25.288 - Tick count 64: 7055937
+4272: 16:19:25.288 - Photon Version: 4.0.28.2962
+4272: 16:19:25.288 - PID: 1828
+4272: 16:19:25.288 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+4272: 16:19:25.288 - Will NOT log unimportant exceptions
+4272: 16:19:25.289 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+4272: 16:19:25.290 - Shutdown timeout enabled: 30000ms
+4272: 16:19:25.291 - Starting I/O thread pool with 2 threads
+4272: 16:19:25.292 - Using Standard allocator
+4272: 16:19:25.293 - Max message size: 512000
+4272: 16:19:25.293 - Starting business logic thread pool with the following settings
+4272: 16:19:25.293 - InitialThreads: 4 threads
+4272: 16:19:25.293 - MinThreads: 4 threads
+4272: 16:19:25.293 - Thread pool is fixed size
+4272: 16:19:25.295 - Starting ENet thread pool with the following settings
+4272: 16:19:25.295 - InitialThreads: 2 threads
+4272: 16:19:25.295 - MinThreads: 2 threads
+4272: 16:19:25.295 - Thread pool is fixed size
+4272: 16:19:25.295 - OnlyDispatchTimers: False
+4272: 16:19:25.296 - S2S: flow control: Max pending writes: 50
+4272: 16:19:25.296 - S2S: flow control: Max queued buffers: 200
+4272: 16:19:25.296 - S2S: flow control: Max pending writes MUX: 500
+4272: 16:19:25.296 - S2S: flow control: Max queued buffers MUX: 2000
+4272: 16:19:25.296 - S2S: MaxInboundMessageSize: 512000
+4272: 16:19:25.296 - S2S: MaxOutboundMessageSize: 512000
+4272: 16:19:25.296 - S2S: No inactivity timeout
+4272: 16:19:25.299 - WebSocket S2S: MaxInboundMessageSize: 512000
+4272: 16:19:25.299 - WebSocket S2S: MaxOutboundMessageSize: 512000
+4272: 16:19:25.299 - WebSocket S2S: No inactivity timeout
+4272: 16:19:25.300 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+4272: 16:19:25.300 - Per peer bandwidth limit
+4272: 16:19:25.301 - Transmit Rate Limit: 256 KB/Sec
+4272: 16:19:25.301 - Limit period: 200ms
+4272: 16:19:25.301 - Limit per period: 52428 bytes
+4272: 16:19:25.301 - Max queued data for transmission per peer: 512000 bytes
+4272: 16:19:25.301 - Minimum retransmit timeout: 200
+4272: 16:19:25.301 - No Maximum retransmit timeout
+4272: 16:19:25.301 - Minimum ENet timeout: 5000ms
+4272: 16:19:25.301 - Maximum ENet timeout: 30000ms
+4272: 16:19:25.301 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+4272: 16:19:25.301 - No RTT ACK adjustment timeout
+4272: 16:19:25.301 - Outbound ENet: MaxInboundMessageSize: 512000
+4272: 16:19:25.301 - Outbound ENet: MaxOutboundMessageSize: 512000
+4272: 16:19:25.304 - GetRuntime - About to load CLR - versions available:
+4272: 16:19:25.304 - v2.0.50727
+4272: 16:19:25.304 - v4.0.30319
+4272: 16:19:25.304 - Configuration requests: "v2.0.50727"
+4272: 16:19:25.304 - About to load version: "v2.0.50727"
+4272: 16:19:25.309 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+4272: 16:19:25.309 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+4272: 16:19:25.309 - Optimising event broadcast for 20 or more peers
+4272: 16:19:25.310 - Start: About to load CLR - versions available:
+4272: 16:19:25.310 - v2.0.50727
+4272: 16:19:25.310 - v4.0.30319
+4272: 16:19:25.310 - No preference in configuration file, will load latest.
+4272: 16:19:25.310 - About to load version: "v4.0.30319"
+4272: 16:19:25.312 - Loaded version: "v4.0.30319"
+4272: 16:19:26.719 - Photon host runtime loaded
+4272: 16:19:28.972 - LICENSE: No license file was found. Starting with Bootstrap License.
+4272: 16:19:28.972 - License is valid.
+4272: 16:19:28.972 - Licensed for 20 concurrent connections.
+4272: 16:19:28.972 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+4272: 16:19:28.972 - ENet: Per peer bandwidth limit
+4272: 16:19:28.972 - ENet: Transmit Rate Limit: 256 KB/Sec
+4272: 16:19:28.972 - ENet: Limit period: 200ms
+4272: 16:19:28.972 - ENet: Limit per period: 52428 bytes
+4272: 16:19:28.972 - ENet: Max queued data for transmission per peer: 512000 bytes
+4272: 16:19:28.972 - ENet: Minimum retransmit timeout: 200
+4272: 16:19:28.972 - No Maximum retransmit timeout
+4272: 16:19:28.972 - ENet: Minimum timeout: 5000ms
+4272: 16:19:28.972 - ENet: Maximum timeout: 30000ms
+4272: 16:19:28.972 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+4272: 16:19:28.972 - No RTT ACK adjustment timeout
+4272: 16:19:28.973 - About to load application: MasterServer from Chat.MasterServer
+4272: 16:19:28.973 - Auto restart is enabled for application, existing connections will be terminated during restart
+4272: 16:19:28.973 - Application will restart 1000ms after the last change detected
+4272: 16:19:28.973 - Application will restart if files matching the following are changed: "dll;config"
+4272: 16:19:28.973 - Application will NOT restart if files matching the following are changed: "log4net.config"
+4272: 16:19:29.287 - Taking reference on default app domain
+4272: 16:19:29.606 - Application: "MasterServer" started in app domain: 2
+4272: 16:19:29.606 - About to load application: GameServer from Chat.GameServer
+4272: 16:19:29.606 - Auto restart is enabled for application, existing connections will be terminated during restart
+4272: 16:19:29.606 - Application will restart 1000ms after the last change detected
+4272: 16:19:29.606 - Application will restart if files matching the following are changed: "dll;config"
+4272: 16:19:29.606 - Application will NOT restart if files matching the following are changed: "log4net.config"
+4272: 16:19:29.833 - Taking reference on default app domain
+4272: 16:19:30.371 - Application: "GameServer" started in app domain: 3
+4272: 16:19:30.371 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+4272: 16:19:30.371 - TCP inactivity timeout: 5000ms
+4272: 16:19:30.371 - TCP disconnect timeout: 120000ms
+4272: 16:19:30.371 - MaxInboundMessageSize: 512000
+4272: 16:19:30.371 - MaxOutboundMessageSize: 512000
+4272: 16:19:30.372 - Forcing all applications ids to: "MasterServer"
+4272: 16:19:30.372 - MaxInboundMessageSize: 512000
+4272: 16:19:30.372 - MaxOutboundMessageSize: 512000
+4272: 16:19:30.372 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+4272: 16:19:30.372 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+4272: 16:19:30.372 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+4272: 16:19:30.372 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+4272: 16:19:30.372 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+4272: 16:19:30.372 - Forcing all applications ids to: "GameServer"
+4272: 16:19:30.372 - MaxInboundMessageSize: 512000
+4272: 16:19:30.372 - MaxOutboundMessageSize: 512000
+4272: 16:19:30.372 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+4272: 16:19:30.373 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+4272: 16:19:30.373 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+4272: 16:19:30.373 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+4272: 16:19:30.373 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+4272: 16:19:30.394 - Service is running...
+11472: 16:21:23.759 - ---
+11472: 16:21:23.759 - Service: "Photon Socket Server" starting
+11472: 16:21:23.760 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+11472: 16:21:23.761 - Will produce at most: 10 crash dumps
+11472: 16:21:23.761 - Action: run as exe
+11472: 16:21:23.761 - Server Starting...
+11472: 16:21:23.761 -    Tick count: 7174406 (wraps in: 49.6272 days)
+11472: 16:21:23.761 - Tick count 64: 7174406
+11472: 16:21:23.761 - Photon Version: 4.0.28.2962
+11472: 16:21:23.761 - PID: 9372
+11472: 16:21:23.761 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+11472: 16:21:23.762 - Will NOT log unimportant exceptions
+11472: 16:21:23.762 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+11472: 16:21:23.764 - Shutdown timeout enabled: 30000ms
+11472: 16:21:23.766 - Starting I/O thread pool with 2 threads
+11472: 16:21:23.767 - Using Standard allocator
+11472: 16:21:23.767 - Max message size: 512000
+11472: 16:21:23.768 - Starting business logic thread pool with the following settings
+11472: 16:21:23.768 - InitialThreads: 4 threads
+11472: 16:21:23.768 - MinThreads: 4 threads
+11472: 16:21:23.768 - Thread pool is fixed size
+11472: 16:21:23.771 - Starting ENet thread pool with the following settings
+11472: 16:21:23.771 - InitialThreads: 2 threads
+11472: 16:21:23.771 - MinThreads: 2 threads
+11472: 16:21:23.771 - Thread pool is fixed size
+11472: 16:21:23.771 - OnlyDispatchTimers: False
+11472: 16:21:23.773 - S2S: flow control: Max pending writes: 50
+11472: 16:21:23.773 - S2S: flow control: Max queued buffers: 200
+11472: 16:21:23.773 - S2S: flow control: Max pending writes MUX: 500
+11472: 16:21:23.773 - S2S: flow control: Max queued buffers MUX: 2000
+11472: 16:21:23.773 - S2S: MaxInboundMessageSize: 512000
+11472: 16:21:23.773 - S2S: MaxOutboundMessageSize: 512000
+11472: 16:21:23.773 - S2S: No inactivity timeout
+11472: 16:21:23.779 - WebSocket S2S: MaxInboundMessageSize: 512000
+11472: 16:21:23.779 - WebSocket S2S: MaxOutboundMessageSize: 512000
+11472: 16:21:23.779 - WebSocket S2S: No inactivity timeout
+11472: 16:21:23.781 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+11472: 16:21:23.781 - Per peer bandwidth limit
+11472: 16:21:23.781 - Transmit Rate Limit: 256 KB/Sec
+11472: 16:21:23.781 - Limit period: 200ms
+11472: 16:21:23.781 - Limit per period: 52428 bytes
+11472: 16:21:23.781 - Max queued data for transmission per peer: 512000 bytes
+11472: 16:21:23.781 - Minimum retransmit timeout: 200
+11472: 16:21:23.781 - No Maximum retransmit timeout
+11472: 16:21:23.781 - Minimum ENet timeout: 5000ms
+11472: 16:21:23.781 - Maximum ENet timeout: 30000ms
+11472: 16:21:23.781 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+11472: 16:21:23.781 - No RTT ACK adjustment timeout
+11472: 16:21:23.781 - Outbound ENet: MaxInboundMessageSize: 512000
+11472: 16:21:23.781 - Outbound ENet: MaxOutboundMessageSize: 512000
+11472: 16:21:23.784 - GetRuntime - About to load CLR - versions available:
+11472: 16:21:23.784 - v2.0.50727
+11472: 16:21:23.784 - v4.0.30319
+11472: 16:21:23.784 - Configuration requests: "v2.0.50727"
+11472: 16:21:23.784 - About to load version: "v2.0.50727"
+11472: 16:21:23.789 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+11472: 16:21:23.789 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+11472: 16:21:23.789 - Optimising event broadcast for 20 or more peers
+11472: 16:21:23.790 - Start: About to load CLR - versions available:
+11472: 16:21:23.790 - v2.0.50727
+11472: 16:21:23.790 - v4.0.30319
+11472: 16:21:23.790 - No preference in configuration file, will load latest.
+11472: 16:21:23.790 - About to load version: "v4.0.30319"
+11472: 16:21:23.793 - Loaded version: "v4.0.30319"
+11472: 16:21:25.112 - Photon host runtime loaded
+11472: 16:21:27.071 - LICENSE: No license file was found. Starting with Bootstrap License.
+11472: 16:21:27.071 - License is valid.
+11472: 16:21:27.071 - Licensed for 20 concurrent connections.
+11472: 16:21:27.071 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+11472: 16:21:27.071 - ENet: Per peer bandwidth limit
+11472: 16:21:27.071 - ENet: Transmit Rate Limit: 256 KB/Sec
+11472: 16:21:27.071 - ENet: Limit period: 200ms
+11472: 16:21:27.071 - ENet: Limit per period: 52428 bytes
+11472: 16:21:27.071 - ENet: Max queued data for transmission per peer: 512000 bytes
+11472: 16:21:27.071 - ENet: Minimum retransmit timeout: 200
+11472: 16:21:27.071 - No Maximum retransmit timeout
+11472: 16:21:27.071 - ENet: Minimum timeout: 5000ms
+11472: 16:21:27.071 - ENet: Maximum timeout: 30000ms
+11472: 16:21:27.071 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+11472: 16:21:27.071 - No RTT ACK adjustment timeout
+11472: 16:21:27.071 - About to load application: MasterServer from Chat.MasterServer
+11472: 16:21:27.071 - Auto restart is enabled for application, existing connections will be terminated during restart
+11472: 16:21:27.071 - Application will restart 1000ms after the last change detected
+11472: 16:21:27.071 - Application will restart if files matching the following are changed: "dll;config"
+11472: 16:21:27.071 - Application will NOT restart if files matching the following are changed: "log4net.config"
+11472: 16:21:27.318 - Taking reference on default app domain
+11472: 16:21:27.621 - Application: "MasterServer" started in app domain: 2
+11472: 16:21:27.621 - About to load application: GameServer from Chat.GameServer
+11472: 16:21:27.621 - Auto restart is enabled for application, existing connections will be terminated during restart
+11472: 16:21:27.621 - Application will restart 1000ms after the last change detected
+11472: 16:21:27.621 - Application will restart if files matching the following are changed: "dll;config"
+11472: 16:21:27.621 - Application will NOT restart if files matching the following are changed: "log4net.config"
+11472: 16:21:27.857 - Taking reference on default app domain
+11472: 16:21:28.310 - Application: "GameServer" started in app domain: 3
+11472: 16:21:28.310 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+11472: 16:21:28.310 - TCP inactivity timeout: 5000ms
+11472: 16:21:28.310 - TCP disconnect timeout: 120000ms
+11472: 16:21:28.310 - MaxInboundMessageSize: 512000
+11472: 16:21:28.310 - MaxOutboundMessageSize: 512000
+11472: 16:21:28.310 - Forcing all applications ids to: "MasterServer"
+11472: 16:21:28.310 - MaxInboundMessageSize: 512000
+11472: 16:21:28.310 - MaxOutboundMessageSize: 512000
+11472: 16:21:28.310 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+11472: 16:21:28.311 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+11472: 16:21:28.311 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+11472: 16:21:28.311 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+11472: 16:21:28.311 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+11472: 16:21:28.311 - Forcing all applications ids to: "GameServer"
+11472: 16:21:28.311 - MaxInboundMessageSize: 512000
+11472: 16:21:28.311 - MaxOutboundMessageSize: 512000
+11472: 16:21:28.311 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+11472: 16:21:28.311 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+11472: 16:21:28.311 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+11472: 16:21:28.311 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+11472: 16:21:28.311 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+11472: 16:21:28.333 - Service is running...
+9732: 16:26:09.531 - ---
+9732: 16:26:09.531 - Service: "Photon Socket Server" starting
+9732: 16:26:09.531 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+9732: 16:26:09.532 - Will produce at most: 10 crash dumps
+9732: 16:26:09.533 - Action: run as exe
+9732: 16:26:09.533 - Server Starting...
+9732: 16:26:09.533 -    Tick count: 7460187 (wraps in: 49.6239 days)
+9732: 16:26:09.533 - Tick count 64: 7460187
+9732: 16:26:09.533 - Photon Version: 4.0.28.2962
+9732: 16:26:09.533 - PID: 6764
+9732: 16:26:09.534 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+9732: 16:26:09.534 - Will NOT log unimportant exceptions
+9732: 16:26:09.535 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+9732: 16:26:09.537 - Shutdown timeout enabled: 30000ms
+9732: 16:26:09.537 - Starting I/O thread pool with 2 threads
+9732: 16:26:09.537 - Using Standard allocator
+9732: 16:26:09.537 - Max message size: 512000
+9732: 16:26:09.538 - Starting business logic thread pool with the following settings
+9732: 16:26:09.538 - InitialThreads: 4 threads
+9732: 16:26:09.538 - MinThreads: 4 threads
+9732: 16:26:09.538 - Thread pool is fixed size
+9732: 16:26:09.539 - Starting ENet thread pool with the following settings
+9732: 16:26:09.539 - InitialThreads: 2 threads
+9732: 16:26:09.539 - MinThreads: 2 threads
+9732: 16:26:09.539 - Thread pool is fixed size
+9732: 16:26:09.539 - OnlyDispatchTimers: False
+9732: 16:26:09.539 - S2S: flow control: Max pending writes: 50
+9732: 16:26:09.539 - S2S: flow control: Max queued buffers: 200
+9732: 16:26:09.539 - S2S: flow control: Max pending writes MUX: 500
+9732: 16:26:09.539 - S2S: flow control: Max queued buffers MUX: 2000
+9732: 16:26:09.539 - S2S: MaxInboundMessageSize: 512000
+9732: 16:26:09.539 - S2S: MaxOutboundMessageSize: 512000
+9732: 16:26:09.539 - S2S: No inactivity timeout
+9732: 16:26:09.541 - WebSocket S2S: MaxInboundMessageSize: 512000
+9732: 16:26:09.541 - WebSocket S2S: MaxOutboundMessageSize: 512000
+9732: 16:26:09.541 - WebSocket S2S: No inactivity timeout
+9732: 16:26:09.542 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+9732: 16:26:09.542 - Per peer bandwidth limit
+9732: 16:26:09.542 - Transmit Rate Limit: 256 KB/Sec
+9732: 16:26:09.542 - Limit period: 200ms
+9732: 16:26:09.542 - Limit per period: 52428 bytes
+9732: 16:26:09.542 - Max queued data for transmission per peer: 512000 bytes
+9732: 16:26:09.542 - Minimum retransmit timeout: 200
+9732: 16:26:09.542 - No Maximum retransmit timeout
+9732: 16:26:09.542 - Minimum ENet timeout: 5000ms
+9732: 16:26:09.542 - Maximum ENet timeout: 30000ms
+9732: 16:26:09.542 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+9732: 16:26:09.542 - No RTT ACK adjustment timeout
+9732: 16:26:09.542 - Outbound ENet: MaxInboundMessageSize: 512000
+9732: 16:26:09.542 - Outbound ENet: MaxOutboundMessageSize: 512000
+9732: 16:26:09.543 - GetRuntime - About to load CLR - versions available:
+9732: 16:26:09.543 - v2.0.50727
+9732: 16:26:09.543 - v4.0.30319
+9732: 16:26:09.543 - Configuration requests: "v2.0.50727"
+9732: 16:26:09.543 - About to load version: "v2.0.50727"
+9732: 16:26:09.548 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+9732: 16:26:09.548 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+9732: 16:26:09.548 - Optimising event broadcast for 20 or more peers
+9732: 16:26:09.548 - Start: About to load CLR - versions available:
+9732: 16:26:09.548 - v2.0.50727
+9732: 16:26:09.548 - v4.0.30319
+9732: 16:26:09.548 - No preference in configuration file, will load latest.
+9732: 16:26:09.548 - About to load version: "v4.0.30319"
+9732: 16:26:09.550 - Loaded version: "v4.0.30319"
+9732: 16:26:10.685 - Photon host runtime loaded
+9732: 16:26:12.889 - LICENSE: No license file was found. Starting with Bootstrap License.
+9732: 16:26:12.889 - License is valid.
+9732: 16:26:12.889 - Licensed for 20 concurrent connections.
+9732: 16:26:12.889 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+9732: 16:26:12.889 - ENet: Per peer bandwidth limit
+9732: 16:26:12.889 - ENet: Transmit Rate Limit: 256 KB/Sec
+9732: 16:26:12.889 - ENet: Limit period: 200ms
+9732: 16:26:12.890 - ENet: Limit per period: 52428 bytes
+9732: 16:26:12.890 - ENet: Max queued data for transmission per peer: 512000 bytes
+9732: 16:26:12.890 - ENet: Minimum retransmit timeout: 200
+9732: 16:26:12.890 - No Maximum retransmit timeout
+9732: 16:26:12.890 - ENet: Minimum timeout: 5000ms
+9732: 16:26:12.890 - ENet: Maximum timeout: 30000ms
+9732: 16:26:12.890 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+9732: 16:26:12.890 - No RTT ACK adjustment timeout
+9732: 16:26:12.890 - About to load application: MasterServer from Chat.MasterServer
+9732: 16:26:12.890 - Auto restart is enabled for application, existing connections will be terminated during restart
+9732: 16:26:12.890 - Application will restart 1000ms after the last change detected
+9732: 16:26:12.890 - Application will restart if files matching the following are changed: "dll;config"
+9732: 16:26:12.890 - Application will NOT restart if files matching the following are changed: "log4net.config"
+9732: 16:26:13.165 - Taking reference on default app domain
+9732: 16:26:13.488 - Application: "MasterServer" started in app domain: 2
+9732: 16:26:13.488 - About to load application: GameServer from Chat.GameServer
+9732: 16:26:13.488 - Auto restart is enabled for application, existing connections will be terminated during restart
+9732: 16:26:13.488 - Application will restart 1000ms after the last change detected
+9732: 16:26:13.488 - Application will restart if files matching the following are changed: "dll;config"
+9732: 16:26:13.488 - Application will NOT restart if files matching the following are changed: "log4net.config"
+9732: 16:26:13.729 - Taking reference on default app domain
+9732: 16:26:14.185 - Application: "GameServer" started in app domain: 3
+9732: 16:26:14.185 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+9732: 16:26:14.185 - TCP inactivity timeout: 5000ms
+9732: 16:26:14.185 - TCP disconnect timeout: 120000ms
+9732: 16:26:14.185 - MaxInboundMessageSize: 512000
+9732: 16:26:14.185 - MaxOutboundMessageSize: 512000
+9732: 16:26:14.185 - Forcing all applications ids to: "MasterServer"
+9732: 16:26:14.185 - MaxInboundMessageSize: 512000
+9732: 16:26:14.185 - MaxOutboundMessageSize: 512000
+9732: 16:26:14.185 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+9732: 16:26:14.186 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+9732: 16:26:14.186 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+9732: 16:26:14.186 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+9732: 16:26:14.186 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+9732: 16:26:14.186 - Forcing all applications ids to: "GameServer"
+9732: 16:26:14.186 - MaxInboundMessageSize: 512000
+9732: 16:26:14.186 - MaxOutboundMessageSize: 512000
+9732: 16:26:14.186 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+9732: 16:26:14.186 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+9732: 16:26:14.186 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+9732: 16:26:14.186 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+9732: 16:26:14.186 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+9732: 16:26:14.210 - Service is running...
+3464: 16:28:02.763 - ---
+3464: 16:28:02.763 - Service: "Photon Socket Server" starting
+3464: 16:28:02.763 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+3464: 16:28:02.764 - Will produce at most: 10 crash dumps
+3464: 16:28:02.764 - Action: run as exe
+3464: 16:28:02.764 - Server Starting...
+3464: 16:28:02.764 -    Tick count: 7573421 (wraps in: 49.6226 days)
+3464: 16:28:02.764 - Tick count 64: 7573421
+3464: 16:28:02.764 - Photon Version: 4.0.28.2962
+3464: 16:28:02.764 - PID: 11492
+3464: 16:28:02.764 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+3464: 16:28:02.764 - Will NOT log unimportant exceptions
+3464: 16:28:02.765 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+3464: 16:28:02.766 - Shutdown timeout enabled: 30000ms
+3464: 16:28:02.766 - Starting I/O thread pool with 2 threads
+3464: 16:28:02.767 - Using Standard allocator
+3464: 16:28:02.767 - Max message size: 512000
+3464: 16:28:02.767 - Starting business logic thread pool with the following settings
+3464: 16:28:02.767 - InitialThreads: 4 threads
+3464: 16:28:02.767 - MinThreads: 4 threads
+3464: 16:28:02.767 - Thread pool is fixed size
+3464: 16:28:02.769 - Starting ENet thread pool with the following settings
+3464: 16:28:02.769 - InitialThreads: 2 threads
+3464: 16:28:02.769 - MinThreads: 2 threads
+3464: 16:28:02.769 - Thread pool is fixed size
+3464: 16:28:02.769 - OnlyDispatchTimers: False
+3464: 16:28:02.773 - S2S: flow control: Max pending writes: 50
+3464: 16:28:02.773 - S2S: flow control: Max queued buffers: 200
+3464: 16:28:02.773 - S2S: flow control: Max pending writes MUX: 500
+3464: 16:28:02.773 - S2S: flow control: Max queued buffers MUX: 2000
+3464: 16:28:02.773 - S2S: MaxInboundMessageSize: 512000
+3464: 16:28:02.773 - S2S: MaxOutboundMessageSize: 512000
+3464: 16:28:02.773 - S2S: No inactivity timeout
+3464: 16:28:02.776 - WebSocket S2S: MaxInboundMessageSize: 512000
+3464: 16:28:02.776 - WebSocket S2S: MaxOutboundMessageSize: 512000
+3464: 16:28:02.776 - WebSocket S2S: No inactivity timeout
+3464: 16:28:02.776 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+3464: 16:28:02.776 - Per peer bandwidth limit
+3464: 16:28:02.776 - Transmit Rate Limit: 256 KB/Sec
+3464: 16:28:02.776 - Limit period: 200ms
+3464: 16:28:02.776 - Limit per period: 52428 bytes
+3464: 16:28:02.776 - Max queued data for transmission per peer: 512000 bytes
+3464: 16:28:02.776 - Minimum retransmit timeout: 200
+3464: 16:28:02.776 - No Maximum retransmit timeout
+3464: 16:28:02.777 - Minimum ENet timeout: 5000ms
+3464: 16:28:02.777 - Maximum ENet timeout: 30000ms
+3464: 16:28:02.777 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+3464: 16:28:02.777 - No RTT ACK adjustment timeout
+3464: 16:28:02.777 - Outbound ENet: MaxInboundMessageSize: 512000
+3464: 16:28:02.777 - Outbound ENet: MaxOutboundMessageSize: 512000
+3464: 16:28:02.779 - GetRuntime - About to load CLR - versions available:
+3464: 16:28:02.779 - v2.0.50727
+3464: 16:28:02.779 - v4.0.30319
+3464: 16:28:02.779 - Configuration requests: "v2.0.50727"
+3464: 16:28:02.779 - About to load version: "v2.0.50727"
+3464: 16:28:02.784 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+3464: 16:28:02.784 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+3464: 16:28:02.784 - Optimising event broadcast for 20 or more peers
+3464: 16:28:02.785 - Start: About to load CLR - versions available:
+3464: 16:28:02.785 - v2.0.50727
+3464: 16:28:02.785 - v4.0.30319
+3464: 16:28:02.785 - No preference in configuration file, will load latest.
+3464: 16:28:02.785 - About to load version: "v4.0.30319"
+3464: 16:28:02.787 - Loaded version: "v4.0.30319"
+3464: 16:28:04.042 - Photon host runtime loaded
+3464: 16:28:05.974 - LICENSE: No license file was found. Starting with Bootstrap License.
+3464: 16:28:05.974 - License is valid.
+3464: 16:28:05.974 - Licensed for 20 concurrent connections.
+3464: 16:28:05.974 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+3464: 16:28:05.974 - ENet: Per peer bandwidth limit
+3464: 16:28:05.974 - ENet: Transmit Rate Limit: 256 KB/Sec
+3464: 16:28:05.974 - ENet: Limit period: 200ms
+3464: 16:28:05.974 - ENet: Limit per period: 52428 bytes
+3464: 16:28:05.974 - ENet: Max queued data for transmission per peer: 512000 bytes
+3464: 16:28:05.974 - ENet: Minimum retransmit timeout: 200
+3464: 16:28:05.974 - No Maximum retransmit timeout
+3464: 16:28:05.974 - ENet: Minimum timeout: 5000ms
+3464: 16:28:05.974 - ENet: Maximum timeout: 30000ms
+3464: 16:28:05.975 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+3464: 16:28:05.975 - No RTT ACK adjustment timeout
+3464: 16:28:05.975 - About to load application: MasterServer from Chat.MasterServer
+3464: 16:28:05.975 - Auto restart is enabled for application, existing connections will be terminated during restart
+3464: 16:28:05.975 - Application will restart 1000ms after the last change detected
+3464: 16:28:05.975 - Application will restart if files matching the following are changed: "dll;config"
+3464: 16:28:05.975 - Application will NOT restart if files matching the following are changed: "log4net.config"
+3464: 16:28:06.222 - Taking reference on default app domain
+3464: 16:28:06.539 - Application: "MasterServer" started in app domain: 2
+3464: 16:28:06.539 - About to load application: GameServer from Chat.GameServer
+3464: 16:28:06.539 - Auto restart is enabled for application, existing connections will be terminated during restart
+3464: 16:28:06.539 - Application will restart 1000ms after the last change detected
+3464: 16:28:06.539 - Application will restart if files matching the following are changed: "dll;config"
+3464: 16:28:06.539 - Application will NOT restart if files matching the following are changed: "log4net.config"
+3464: 16:28:06.807 - Taking reference on default app domain
+3464: 16:28:07.221 - Application: "GameServer" started in app domain: 3
+3464: 16:28:07.221 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+3464: 16:28:07.221 - TCP inactivity timeout: 5000ms
+3464: 16:28:07.221 - TCP disconnect timeout: 120000ms
+3464: 16:28:07.222 - MaxInboundMessageSize: 512000
+3464: 16:28:07.222 - MaxOutboundMessageSize: 512000
+3464: 16:28:07.222 - Forcing all applications ids to: "MasterServer"
+3464: 16:28:07.222 - MaxInboundMessageSize: 512000
+3464: 16:28:07.222 - MaxOutboundMessageSize: 512000
+3464: 16:28:07.222 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+3464: 16:28:07.222 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+3464: 16:28:07.222 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+3464: 16:28:07.222 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+3464: 16:28:07.222 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+3464: 16:28:07.222 - Forcing all applications ids to: "GameServer"
+3464: 16:28:07.222 - MaxInboundMessageSize: 512000
+3464: 16:28:07.222 - MaxOutboundMessageSize: 512000
+3464: 16:28:07.222 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+3464: 16:28:07.223 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+3464: 16:28:07.223 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+3464: 16:28:07.223 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+3464: 16:28:07.223 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+3464: 16:28:07.247 - Service is running...
+4600: 16:36:28.181 - ---
+4600: 16:36:28.181 - Service: "Photon Socket Server" starting
+4600: 16:36:28.181 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+4600: 16:36:28.182 - Will produce at most: 10 crash dumps
+4600: 16:36:28.182 - Action: run as exe
+4600: 16:36:28.183 - Server Starting...
+4600: 16:36:28.183 -    Tick count: 8078828 (wraps in: 49.6168 days)
+4600: 16:36:28.183 - Tick count 64: 8078828
+4600: 16:36:28.183 - Photon Version: 4.0.28.2962
+4600: 16:36:28.183 - PID: 864
+4600: 16:36:28.183 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+4600: 16:36:28.183 - Will NOT log unimportant exceptions
+4600: 16:36:28.183 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+4600: 16:36:28.184 - Shutdown timeout enabled: 30000ms
+4600: 16:36:28.185 - Starting I/O thread pool with 2 threads
+4600: 16:36:28.185 - Using Standard allocator
+4600: 16:36:28.185 - Max message size: 512000
+4600: 16:36:28.185 - Starting business logic thread pool with the following settings
+4600: 16:36:28.185 - InitialThreads: 4 threads
+4600: 16:36:28.185 - MinThreads: 4 threads
+4600: 16:36:28.185 - Thread pool is fixed size
+4600: 16:36:28.185 - Starting ENet thread pool with the following settings
+4600: 16:36:28.185 - InitialThreads: 2 threads
+4600: 16:36:28.185 - MinThreads: 2 threads
+4600: 16:36:28.185 - Thread pool is fixed size
+4600: 16:36:28.185 - OnlyDispatchTimers: False
+4600: 16:36:28.185 - S2S: flow control: Max pending writes: 50
+4600: 16:36:28.185 - S2S: flow control: Max queued buffers: 200
+4600: 16:36:28.185 - S2S: flow control: Max pending writes MUX: 500
+4600: 16:36:28.185 - S2S: flow control: Max queued buffers MUX: 2000
+4600: 16:36:28.186 - S2S: MaxInboundMessageSize: 512000
+4600: 16:36:28.186 - S2S: MaxOutboundMessageSize: 512000
+4600: 16:36:28.186 - S2S: No inactivity timeout
+4600: 16:36:28.187 - WebSocket S2S: MaxInboundMessageSize: 512000
+4600: 16:36:28.187 - WebSocket S2S: MaxOutboundMessageSize: 512000
+4600: 16:36:28.187 - WebSocket S2S: No inactivity timeout
+4600: 16:36:28.187 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+4600: 16:36:28.187 - Per peer bandwidth limit
+4600: 16:36:28.187 - Transmit Rate Limit: 256 KB/Sec
+4600: 16:36:28.187 - Limit period: 200ms
+4600: 16:36:28.187 - Limit per period: 52428 bytes
+4600: 16:36:28.187 - Max queued data for transmission per peer: 512000 bytes
+4600: 16:36:28.187 - Minimum retransmit timeout: 200
+4600: 16:36:28.187 - No Maximum retransmit timeout
+4600: 16:36:28.187 - Minimum ENet timeout: 5000ms
+4600: 16:36:28.187 - Maximum ENet timeout: 30000ms
+4600: 16:36:28.187 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+4600: 16:36:28.187 - No RTT ACK adjustment timeout
+4600: 16:36:28.187 - Outbound ENet: MaxInboundMessageSize: 512000
+4600: 16:36:28.187 - Outbound ENet: MaxOutboundMessageSize: 512000
+4600: 16:36:28.188 - GetRuntime - About to load CLR - versions available:
+4600: 16:36:28.188 - v2.0.50727
+4600: 16:36:28.188 - v4.0.30319
+4600: 16:36:28.188 - Configuration requests: "v2.0.50727"
+4600: 16:36:28.188 - About to load version: "v2.0.50727"
+4600: 16:36:28.192 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+4600: 16:36:28.192 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+4600: 16:36:28.192 - Optimising event broadcast for 20 or more peers
+4600: 16:36:28.193 - Start: About to load CLR - versions available:
+4600: 16:36:28.193 - v2.0.50727
+4600: 16:36:28.193 - v4.0.30319
+4600: 16:36:28.193 - No preference in configuration file, will load latest.
+4600: 16:36:28.193 - About to load version: "v4.0.30319"
+4600: 16:36:28.194 - Loaded version: "v4.0.30319"
+4600: 16:36:29.498 - Photon host runtime loaded
+4600: 16:36:31.556 - LICENSE: No license file was found. Starting with Bootstrap License.
+4600: 16:36:31.556 - License is valid.
+4600: 16:36:31.556 - Licensed for 20 concurrent connections.
+4600: 16:36:31.556 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+4600: 16:36:31.556 - ENet: Per peer bandwidth limit
+4600: 16:36:31.556 - ENet: Transmit Rate Limit: 256 KB/Sec
+4600: 16:36:31.556 - ENet: Limit period: 200ms
+4600: 16:36:31.556 - ENet: Limit per period: 52428 bytes
+4600: 16:36:31.556 - ENet: Max queued data for transmission per peer: 512000 bytes
+4600: 16:36:31.556 - ENet: Minimum retransmit timeout: 200
+4600: 16:36:31.556 - No Maximum retransmit timeout
+4600: 16:36:31.556 - ENet: Minimum timeout: 5000ms
+4600: 16:36:31.556 - ENet: Maximum timeout: 30000ms
+4600: 16:36:31.556 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+4600: 16:36:31.556 - No RTT ACK adjustment timeout
+4600: 16:36:31.556 - About to load application: MasterServer from Chat.MasterServer
+4600: 16:36:31.556 - Auto restart is enabled for application, existing connections will be terminated during restart
+4600: 16:36:31.556 - Application will restart 1000ms after the last change detected
+4600: 16:36:31.556 - Application will restart if files matching the following are changed: "dll;config"
+4600: 16:36:31.556 - Application will NOT restart if files matching the following are changed: "log4net.config"
+4600: 16:36:31.829 - Taking reference on default app domain
+4600: 16:36:32.109 - Application: "MasterServer" started in app domain: 2
+4600: 16:36:32.109 - About to load application: GameServer from Chat.GameServer
+4600: 16:36:32.109 - Auto restart is enabled for application, existing connections will be terminated during restart
+4600: 16:36:32.109 - Application will restart 1000ms after the last change detected
+4600: 16:36:32.109 - Application will restart if files matching the following are changed: "dll;config"
+4600: 16:36:32.109 - Application will NOT restart if files matching the following are changed: "log4net.config"
+4600: 16:36:32.331 - Taking reference on default app domain
+4600: 16:36:32.785 - Application: "GameServer" started in app domain: 3
+4600: 16:36:32.785 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+4600: 16:36:32.785 - TCP inactivity timeout: 5000ms
+4600: 16:36:32.785 - TCP disconnect timeout: 120000ms
+4600: 16:36:32.785 - MaxInboundMessageSize: 512000
+4600: 16:36:32.785 - MaxOutboundMessageSize: 512000
+4600: 16:36:32.786 - Forcing all applications ids to: "MasterServer"
+4600: 16:36:32.786 - MaxInboundMessageSize: 512000
+4600: 16:36:32.786 - MaxOutboundMessageSize: 512000
+4600: 16:36:32.786 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+4600: 16:36:32.786 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+4600: 16:36:32.786 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+4600: 16:36:32.786 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+4600: 16:36:32.786 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+4600: 16:36:32.786 - Forcing all applications ids to: "GameServer"
+4600: 16:36:32.786 - MaxInboundMessageSize: 512000
+4600: 16:36:32.786 - MaxOutboundMessageSize: 512000
+4600: 16:36:32.786 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+4600: 16:36:32.786 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+4600: 16:36:32.786 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+4600: 16:36:32.786 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+4600: 16:36:32.786 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+4600: 16:36:32.810 - Service is running...
+5232: 16:37:30.886 - ---
+5232: 16:37:30.886 - Service: "Photon Socket Server" starting
+5232: 16:37:30.886 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+5232: 16:37:30.887 - Will produce at most: 10 crash dumps
+5232: 16:37:30.887 - Action: run as exe
+5232: 16:37:30.888 - Server Starting...
+5232: 16:37:30.888 -    Tick count: 8141546 (wraps in: 49.616 days)
+5232: 16:37:30.888 - Tick count 64: 8141546
+5232: 16:37:30.888 - Photon Version: 4.0.28.2962
+5232: 16:37:30.888 - PID: 12124
+5232: 16:37:30.888 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+5232: 16:37:30.889 - Will NOT log unimportant exceptions
+5232: 16:37:30.889 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+5232: 16:37:30.892 - Shutdown timeout enabled: 30000ms
+5232: 16:37:30.892 - Starting I/O thread pool with 2 threads
+5232: 16:37:30.893 - Using Standard allocator
+5232: 16:37:30.893 - Max message size: 512000
+5232: 16:37:30.893 - Starting business logic thread pool with the following settings
+5232: 16:37:30.893 - InitialThreads: 4 threads
+5232: 16:37:30.894 - MinThreads: 4 threads
+5232: 16:37:30.894 - Thread pool is fixed size
+5232: 16:37:30.894 - Starting ENet thread pool with the following settings
+5232: 16:37:30.895 - InitialThreads: 2 threads
+5232: 16:37:30.895 - MinThreads: 2 threads
+5232: 16:37:30.895 - Thread pool is fixed size
+5232: 16:37:30.895 - OnlyDispatchTimers: False
+5232: 16:37:30.895 - S2S: flow control: Max pending writes: 50
+5232: 16:37:30.895 - S2S: flow control: Max queued buffers: 200
+5232: 16:37:30.895 - S2S: flow control: Max pending writes MUX: 500
+5232: 16:37:30.895 - S2S: flow control: Max queued buffers MUX: 2000
+5232: 16:37:30.895 - S2S: MaxInboundMessageSize: 512000
+5232: 16:37:30.895 - S2S: MaxOutboundMessageSize: 512000
+5232: 16:37:30.895 - S2S: No inactivity timeout
+5232: 16:37:30.899 - WebSocket S2S: MaxInboundMessageSize: 512000
+5232: 16:37:30.899 - WebSocket S2S: MaxOutboundMessageSize: 512000
+5232: 16:37:30.899 - WebSocket S2S: No inactivity timeout
+5232: 16:37:30.899 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+5232: 16:37:30.899 - Per peer bandwidth limit
+5232: 16:37:30.900 - Transmit Rate Limit: 256 KB/Sec
+5232: 16:37:30.900 - Limit period: 200ms
+5232: 16:37:30.900 - Limit per period: 52428 bytes
+5232: 16:37:30.900 - Max queued data for transmission per peer: 512000 bytes
+5232: 16:37:30.900 - Minimum retransmit timeout: 200
+5232: 16:37:30.900 - No Maximum retransmit timeout
+5232: 16:37:30.900 - Minimum ENet timeout: 5000ms
+5232: 16:37:30.900 - Maximum ENet timeout: 30000ms
+5232: 16:37:30.900 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+5232: 16:37:30.900 - No RTT ACK adjustment timeout
+5232: 16:37:30.900 - Outbound ENet: MaxInboundMessageSize: 512000
+5232: 16:37:30.900 - Outbound ENet: MaxOutboundMessageSize: 512000
+5232: 16:37:30.902 - GetRuntime - About to load CLR - versions available:
+5232: 16:37:30.902 - v2.0.50727
+5232: 16:37:30.902 - v4.0.30319
+5232: 16:37:30.902 - Configuration requests: "v2.0.50727"
+5232: 16:37:30.902 - About to load version: "v2.0.50727"
+5232: 16:37:30.907 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+5232: 16:37:30.907 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+5232: 16:37:30.907 - Optimising event broadcast for 20 or more peers
+5232: 16:37:30.908 - Start: About to load CLR - versions available:
+5232: 16:37:30.908 - v2.0.50727
+5232: 16:37:30.908 - v4.0.30319
+5232: 16:37:30.908 - No preference in configuration file, will load latest.
+5232: 16:37:30.908 - About to load version: "v4.0.30319"
+5232: 16:37:30.911 - Loaded version: "v4.0.30319"
+5232: 16:37:32.078 - Photon host runtime loaded
+5232: 16:37:34.104 - LICENSE: No license file was found. Starting with Bootstrap License.
+5232: 16:37:34.104 - License is valid.
+5232: 16:37:34.104 - Licensed for 20 concurrent connections.
+5232: 16:37:34.104 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+5232: 16:37:34.104 - ENet: Per peer bandwidth limit
+5232: 16:37:34.104 - ENet: Transmit Rate Limit: 256 KB/Sec
+5232: 16:37:34.104 - ENet: Limit period: 200ms
+5232: 16:37:34.104 - ENet: Limit per period: 52428 bytes
+5232: 16:37:34.104 - ENet: Max queued data for transmission per peer: 512000 bytes
+5232: 16:37:34.104 - ENet: Minimum retransmit timeout: 200
+5232: 16:37:34.104 - No Maximum retransmit timeout
+5232: 16:37:34.104 - ENet: Minimum timeout: 5000ms
+5232: 16:37:34.104 - ENet: Maximum timeout: 30000ms
+5232: 16:37:34.104 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+5232: 16:37:34.104 - No RTT ACK adjustment timeout
+5232: 16:37:34.105 - About to load application: MasterServer from Chat.MasterServer
+5232: 16:37:34.105 - Auto restart is enabled for application, existing connections will be terminated during restart
+5232: 16:37:34.105 - Application will restart 1000ms after the last change detected
+5232: 16:37:34.105 - Application will restart if files matching the following are changed: "dll;config"
+5232: 16:37:34.105 - Application will NOT restart if files matching the following are changed: "log4net.config"
+5232: 16:37:34.397 - Taking reference on default app domain
+5232: 16:37:34.719 - Application: "MasterServer" started in app domain: 2
+5232: 16:37:34.719 - About to load application: GameServer from Chat.GameServer
+5232: 16:37:34.719 - Auto restart is enabled for application, existing connections will be terminated during restart
+5232: 16:37:34.719 - Application will restart 1000ms after the last change detected
+5232: 16:37:34.719 - Application will restart if files matching the following are changed: "dll;config"
+5232: 16:37:34.719 - Application will NOT restart if files matching the following are changed: "log4net.config"
+5232: 16:37:34.980 - Taking reference on default app domain
+5232: 16:37:35.478 - Application: "GameServer" started in app domain: 3
+5232: 16:37:35.478 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+5232: 16:37:35.478 - TCP inactivity timeout: 5000ms
+5232: 16:37:35.478 - TCP disconnect timeout: 120000ms
+5232: 16:37:35.478 - MaxInboundMessageSize: 512000
+5232: 16:37:35.478 - MaxOutboundMessageSize: 512000
+5232: 16:37:35.478 - Forcing all applications ids to: "MasterServer"
+5232: 16:37:35.478 - MaxInboundMessageSize: 512000
+5232: 16:37:35.478 - MaxOutboundMessageSize: 512000
+5232: 16:37:35.478 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+5232: 16:37:35.478 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+5232: 16:37:35.478 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+5232: 16:37:35.478 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+5232: 16:37:35.478 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+5232: 16:37:35.478 - Forcing all applications ids to: "GameServer"
+5232: 16:37:35.478 - MaxInboundMessageSize: 512000
+5232: 16:37:35.478 - MaxOutboundMessageSize: 512000
+5232: 16:37:35.478 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+5232: 16:37:35.479 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+5232: 16:37:35.479 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+5232: 16:37:35.479 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+5232: 16:37:35.479 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+5232: 16:37:35.501 - Service is running...
+4528: 16:39:13.769 - ---
+4528: 16:39:13.769 - Service: "Photon Socket Server" starting
+4528: 16:39:13.769 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+4528: 16:39:13.769 - Will produce at most: 10 crash dumps
+4528: 16:39:13.770 - Action: run as exe
+4528: 16:39:13.770 - Server Starting...
+4528: 16:39:13.770 -    Tick count: 8244421 (wraps in: 49.6148 days)
+4528: 16:39:13.770 - Tick count 64: 8244421
+4528: 16:39:13.770 - Photon Version: 4.0.28.2962
+4528: 16:39:13.770 - PID: 10152
+4528: 16:39:13.770 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+4528: 16:39:13.770 - Will NOT log unimportant exceptions
+4528: 16:39:13.771 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+4528: 16:39:13.772 - Shutdown timeout enabled: 30000ms
+4528: 16:39:13.772 - Starting I/O thread pool with 2 threads
+4528: 16:39:13.772 - Using Standard allocator
+4528: 16:39:13.772 - Max message size: 512000
+4528: 16:39:13.772 - Starting business logic thread pool with the following settings
+4528: 16:39:13.772 - InitialThreads: 4 threads
+4528: 16:39:13.772 - MinThreads: 4 threads
+4528: 16:39:13.772 - Thread pool is fixed size
+4528: 16:39:13.773 - Starting ENet thread pool with the following settings
+4528: 16:39:13.773 - InitialThreads: 2 threads
+4528: 16:39:13.773 - MinThreads: 2 threads
+4528: 16:39:13.773 - Thread pool is fixed size
+4528: 16:39:13.773 - OnlyDispatchTimers: False
+4528: 16:39:13.773 - S2S: flow control: Max pending writes: 50
+4528: 16:39:13.773 - S2S: flow control: Max queued buffers: 200
+4528: 16:39:13.773 - S2S: flow control: Max pending writes MUX: 500
+4528: 16:39:13.773 - S2S: flow control: Max queued buffers MUX: 2000
+4528: 16:39:13.773 - S2S: MaxInboundMessageSize: 512000
+4528: 16:39:13.773 - S2S: MaxOutboundMessageSize: 512000
+4528: 16:39:13.773 - S2S: No inactivity timeout
+4528: 16:39:13.775 - WebSocket S2S: MaxInboundMessageSize: 512000
+4528: 16:39:13.775 - WebSocket S2S: MaxOutboundMessageSize: 512000
+4528: 16:39:13.775 - WebSocket S2S: No inactivity timeout
+4528: 16:39:13.775 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+4528: 16:39:13.775 - Per peer bandwidth limit
+4528: 16:39:13.775 - Transmit Rate Limit: 256 KB/Sec
+4528: 16:39:13.775 - Limit period: 200ms
+4528: 16:39:13.775 - Limit per period: 52428 bytes
+4528: 16:39:13.775 - Max queued data for transmission per peer: 512000 bytes
+4528: 16:39:13.775 - Minimum retransmit timeout: 200
+4528: 16:39:13.775 - No Maximum retransmit timeout
+4528: 16:39:13.775 - Minimum ENet timeout: 5000ms
+4528: 16:39:13.775 - Maximum ENet timeout: 30000ms
+4528: 16:39:13.775 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+4528: 16:39:13.775 - No RTT ACK adjustment timeout
+4528: 16:39:13.775 - Outbound ENet: MaxInboundMessageSize: 512000
+4528: 16:39:13.775 - Outbound ENet: MaxOutboundMessageSize: 512000
+4528: 16:39:13.776 - GetRuntime - About to load CLR - versions available:
+4528: 16:39:13.776 - v2.0.50727
+4528: 16:39:13.776 - v4.0.30319
+4528: 16:39:13.776 - Configuration requests: "v2.0.50727"
+4528: 16:39:13.776 - About to load version: "v2.0.50727"
+4528: 16:39:13.780 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+4528: 16:39:13.780 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+4528: 16:39:13.780 - Optimising event broadcast for 20 or more peers
+4528: 16:39:13.780 - Start: About to load CLR - versions available:
+4528: 16:39:13.780 - v2.0.50727
+4528: 16:39:13.780 - v4.0.30319
+4528: 16:39:13.780 - No preference in configuration file, will load latest.
+4528: 16:39:13.780 - About to load version: "v4.0.30319"
+4528: 16:39:13.781 - Loaded version: "v4.0.30319"
+4528: 16:39:15.664 - Photon host runtime loaded
+4528: 16:39:17.740 - LICENSE: No license file was found. Starting with Bootstrap License.
+4528: 16:39:17.741 - License is valid.
+4528: 16:39:17.741 - Licensed for 20 concurrent connections.
+4528: 16:39:17.741 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+4528: 16:39:17.741 - ENet: Per peer bandwidth limit
+4528: 16:39:17.741 - ENet: Transmit Rate Limit: 256 KB/Sec
+4528: 16:39:17.741 - ENet: Limit period: 200ms
+4528: 16:39:17.741 - ENet: Limit per period: 52428 bytes
+4528: 16:39:17.741 - ENet: Max queued data for transmission per peer: 512000 bytes
+4528: 16:39:17.741 - ENet: Minimum retransmit timeout: 200
+4528: 16:39:17.741 - No Maximum retransmit timeout
+4528: 16:39:17.741 - ENet: Minimum timeout: 5000ms
+4528: 16:39:17.741 - ENet: Maximum timeout: 30000ms
+4528: 16:39:17.741 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+4528: 16:39:17.741 - No RTT ACK adjustment timeout
+4528: 16:39:17.741 - About to load application: MasterServer from Chat.MasterServer
+4528: 16:39:17.741 - Auto restart is enabled for application, existing connections will be terminated during restart
+4528: 16:39:17.741 - Application will restart 1000ms after the last change detected
+4528: 16:39:17.741 - Application will restart if files matching the following are changed: "dll;config"
+4528: 16:39:17.741 - Application will NOT restart if files matching the following are changed: "log4net.config"
+4528: 16:39:17.995 - Taking reference on default app domain
+4528: 16:39:18.338 - Application: "MasterServer" started in app domain: 2
+4528: 16:39:18.338 - About to load application: GameServer from Chat.GameServer
+4528: 16:39:18.338 - Auto restart is enabled for application, existing connections will be terminated during restart
+4528: 16:39:18.338 - Application will restart 1000ms after the last change detected
+4528: 16:39:18.338 - Application will restart if files matching the following are changed: "dll;config"
+4528: 16:39:18.338 - Application will NOT restart if files matching the following are changed: "log4net.config"
+4528: 16:39:18.590 - Taking reference on default app domain
+4528: 16:39:19.089 - Application: "GameServer" started in app domain: 3
+4528: 16:39:19.089 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+4528: 16:39:19.089 - TCP inactivity timeout: 5000ms
+4528: 16:39:19.089 - TCP disconnect timeout: 120000ms
+4528: 16:39:19.089 - MaxInboundMessageSize: 512000
+4528: 16:39:19.089 - MaxOutboundMessageSize: 512000
+4528: 16:39:19.089 - Forcing all applications ids to: "MasterServer"
+4528: 16:39:19.089 - MaxInboundMessageSize: 512000
+4528: 16:39:19.089 - MaxOutboundMessageSize: 512000
+4528: 16:39:19.089 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+4528: 16:39:19.089 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+4528: 16:39:19.090 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+4528: 16:39:19.090 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+4528: 16:39:19.090 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+4528: 16:39:19.090 - Forcing all applications ids to: "GameServer"
+4528: 16:39:19.090 - MaxInboundMessageSize: 512000
+4528: 16:39:19.090 - MaxOutboundMessageSize: 512000
+4528: 16:39:19.090 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+4528: 16:39:19.090 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+4528: 16:39:19.090 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+4528: 16:39:19.090 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+4528: 16:39:19.090 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+4528: 16:39:19.115 - Service is running...
+11636: 16:40:59.828 - ---
+11636: 16:40:59.828 - Service: "Photon Socket Server" starting
+11636: 16:40:59.828 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+11636: 16:40:59.829 - Will produce at most: 10 crash dumps
+11636: 16:40:59.829 - Action: run as exe
+11636: 16:40:59.829 - Server Starting...
+11636: 16:40:59.829 -    Tick count: 8350484 (wraps in: 49.6136 days)
+11636: 16:40:59.829 - Tick count 64: 8350484
+11636: 16:40:59.829 - Photon Version: 4.0.28.2962
+11636: 16:40:59.830 - PID: 9028
+11636: 16:40:59.830 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+11636: 16:40:59.830 - Will NOT log unimportant exceptions
+11636: 16:40:59.830 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+11636: 16:40:59.831 - Shutdown timeout enabled: 30000ms
+11636: 16:40:59.831 - Starting I/O thread pool with 2 threads
+11636: 16:40:59.831 - Using Standard allocator
+11636: 16:40:59.831 - Max message size: 512000
+11636: 16:40:59.831 - Starting business logic thread pool with the following settings
+11636: 16:40:59.831 - InitialThreads: 4 threads
+11636: 16:40:59.831 - MinThreads: 4 threads
+11636: 16:40:59.831 - Thread pool is fixed size
+11636: 16:40:59.832 - Starting ENet thread pool with the following settings
+11636: 16:40:59.832 - InitialThreads: 2 threads
+11636: 16:40:59.832 - MinThreads: 2 threads
+11636: 16:40:59.832 - Thread pool is fixed size
+11636: 16:40:59.832 - OnlyDispatchTimers: False
+11636: 16:40:59.832 - S2S: flow control: Max pending writes: 50
+11636: 16:40:59.832 - S2S: flow control: Max queued buffers: 200
+11636: 16:40:59.832 - S2S: flow control: Max pending writes MUX: 500
+11636: 16:40:59.832 - S2S: flow control: Max queued buffers MUX: 2000
+11636: 16:40:59.832 - S2S: MaxInboundMessageSize: 512000
+11636: 16:40:59.832 - S2S: MaxOutboundMessageSize: 512000
+11636: 16:40:59.832 - S2S: No inactivity timeout
+11636: 16:40:59.834 - WebSocket S2S: MaxInboundMessageSize: 512000
+11636: 16:40:59.834 - WebSocket S2S: MaxOutboundMessageSize: 512000
+11636: 16:40:59.834 - WebSocket S2S: No inactivity timeout
+11636: 16:40:59.834 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+11636: 16:40:59.834 - Per peer bandwidth limit
+11636: 16:40:59.834 - Transmit Rate Limit: 256 KB/Sec
+11636: 16:40:59.834 - Limit period: 200ms
+11636: 16:40:59.834 - Limit per period: 52428 bytes
+11636: 16:40:59.834 - Max queued data for transmission per peer: 512000 bytes
+11636: 16:40:59.834 - Minimum retransmit timeout: 200
+11636: 16:40:59.834 - No Maximum retransmit timeout
+11636: 16:40:59.834 - Minimum ENet timeout: 5000ms
+11636: 16:40:59.834 - Maximum ENet timeout: 30000ms
+11636: 16:40:59.834 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+11636: 16:40:59.834 - No RTT ACK adjustment timeout
+11636: 16:40:59.834 - Outbound ENet: MaxInboundMessageSize: 512000
+11636: 16:40:59.834 - Outbound ENet: MaxOutboundMessageSize: 512000
+11636: 16:40:59.835 - GetRuntime - About to load CLR - versions available:
+11636: 16:40:59.835 - v2.0.50727
+11636: 16:40:59.835 - v4.0.30319
+11636: 16:40:59.835 - Configuration requests: "v2.0.50727"
+11636: 16:40:59.835 - About to load version: "v2.0.50727"
+11636: 16:40:59.840 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+11636: 16:40:59.840 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+11636: 16:40:59.840 - Optimising event broadcast for 20 or more peers
+11636: 16:40:59.841 - Start: About to load CLR - versions available:
+11636: 16:40:59.841 - v2.0.50727
+11636: 16:40:59.841 - v4.0.30319
+11636: 16:40:59.841 - No preference in configuration file, will load latest.
+11636: 16:40:59.841 - About to load version: "v4.0.30319"
+11636: 16:40:59.842 - Loaded version: "v4.0.30319"
+11636: 16:41:01.043 - Photon host runtime loaded
+11636: 16:41:02.972 - LICENSE: No license file was found. Starting with Bootstrap License.
+11636: 16:41:02.972 - License is valid.
+11636: 16:41:02.972 - Licensed for 20 concurrent connections.
+11636: 16:41:02.972 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+11636: 16:41:02.972 - ENet: Per peer bandwidth limit
+11636: 16:41:02.972 - ENet: Transmit Rate Limit: 256 KB/Sec
+11636: 16:41:02.972 - ENet: Limit period: 200ms
+11636: 16:41:02.972 - ENet: Limit per period: 52428 bytes
+11636: 16:41:02.972 - ENet: Max queued data for transmission per peer: 512000 bytes
+11636: 16:41:02.972 - ENet: Minimum retransmit timeout: 200
+11636: 16:41:02.972 - No Maximum retransmit timeout
+11636: 16:41:02.972 - ENet: Minimum timeout: 5000ms
+11636: 16:41:02.972 - ENet: Maximum timeout: 30000ms
+11636: 16:41:02.972 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+11636: 16:41:02.972 - No RTT ACK adjustment timeout
+11636: 16:41:02.973 - About to load application: MasterServer from Chat.MasterServer
+11636: 16:41:02.973 - Auto restart is enabled for application, existing connections will be terminated during restart
+11636: 16:41:02.973 - Application will restart 1000ms after the last change detected
+11636: 16:41:02.973 - Application will restart if files matching the following are changed: "dll;config"
+11636: 16:41:02.973 - Application will NOT restart if files matching the following are changed: "log4net.config"
+11636: 16:41:03.251 - Taking reference on default app domain
+11636: 16:41:03.588 - Application: "MasterServer" started in app domain: 2
+11636: 16:41:03.588 - About to load application: GameServer from Chat.GameServer
+11636: 16:41:03.588 - Auto restart is enabled for application, existing connections will be terminated during restart
+11636: 16:41:03.588 - Application will restart 1000ms after the last change detected
+11636: 16:41:03.588 - Application will restart if files matching the following are changed: "dll;config"
+11636: 16:41:03.588 - Application will NOT restart if files matching the following are changed: "log4net.config"
+11636: 16:41:03.893 - Taking reference on default app domain
+11636: 16:41:04.424 - Application: "GameServer" started in app domain: 3
+11636: 16:41:04.424 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+11636: 16:41:04.424 - TCP inactivity timeout: 5000ms
+11636: 16:41:04.424 - TCP disconnect timeout: 120000ms
+11636: 16:41:04.424 - MaxInboundMessageSize: 512000
+11636: 16:41:04.424 - MaxOutboundMessageSize: 512000
+11636: 16:41:04.424 - Forcing all applications ids to: "MasterServer"
+11636: 16:41:04.424 - MaxInboundMessageSize: 512000
+11636: 16:41:04.424 - MaxOutboundMessageSize: 512000
+11636: 16:41:04.424 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+11636: 16:41:04.424 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+11636: 16:41:04.424 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+11636: 16:41:04.424 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+11636: 16:41:04.424 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+11636: 16:41:04.424 - Forcing all applications ids to: "GameServer"
+11636: 16:41:04.424 - MaxInboundMessageSize: 512000
+11636: 16:41:04.424 - MaxOutboundMessageSize: 512000
+11636: 16:41:04.424 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+11636: 16:41:04.425 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+11636: 16:41:04.425 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+11636: 16:41:04.425 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+11636: 16:41:04.425 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+11636: 16:41:04.449 - Service is running...
+11432: 16:42:47.548 - ---
+11432: 16:42:47.548 - Service: "Photon Socket Server" starting
+11432: 16:42:47.548 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+11432: 16:42:47.549 - Will produce at most: 10 crash dumps
+11432: 16:42:47.549 - Action: run as exe
+11432: 16:42:47.549 - Server Starting...
+11432: 16:42:47.549 -    Tick count: 8458203 (wraps in: 49.6124 days)
+11432: 16:42:47.549 - Tick count 64: 8458203
+11432: 16:42:47.550 - Photon Version: 4.0.28.2962
+11432: 16:42:47.550 - PID: 11484
+11432: 16:42:47.550 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+11432: 16:42:47.550 - Will NOT log unimportant exceptions
+11432: 16:42:47.550 - Performance counters NOT enabled, user must have SE_CREATE_GLOBAL_NAME privilege
+11432: 16:42:47.551 - Shutdown timeout enabled: 30000ms
+11432: 16:42:47.551 - Starting I/O thread pool with 2 threads
+11432: 16:42:47.551 - Using Standard allocator
+11432: 16:42:47.551 - Max message size: 512000
+11432: 16:42:47.551 - Starting business logic thread pool with the following settings
+11432: 16:42:47.551 - InitialThreads: 4 threads
+11432: 16:42:47.551 - MinThreads: 4 threads
+11432: 16:42:47.551 - Thread pool is fixed size
+11432: 16:42:47.552 - Starting ENet thread pool with the following settings
+11432: 16:42:47.552 - InitialThreads: 2 threads
+11432: 16:42:47.552 - MinThreads: 2 threads
+11432: 16:42:47.552 - Thread pool is fixed size
+11432: 16:42:47.552 - OnlyDispatchTimers: False
+11432: 16:42:47.552 - S2S: flow control: Max pending writes: 50
+11432: 16:42:47.552 - S2S: flow control: Max queued buffers: 200
+11432: 16:42:47.552 - S2S: flow control: Max pending writes MUX: 500
+11432: 16:42:47.552 - S2S: flow control: Max queued buffers MUX: 2000
+11432: 16:42:47.552 - S2S: MaxInboundMessageSize: 512000
+11432: 16:42:47.552 - S2S: MaxOutboundMessageSize: 512000
+11432: 16:42:47.552 - S2S: No inactivity timeout
+11432: 16:42:47.554 - WebSocket S2S: MaxInboundMessageSize: 512000
+11432: 16:42:47.554 - WebSocket S2S: MaxOutboundMessageSize: 512000
+11432: 16:42:47.554 - WebSocket S2S: No inactivity timeout
+11432: 16:42:47.554 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+11432: 16:42:47.554 - Per peer bandwidth limit
+11432: 16:42:47.554 - Transmit Rate Limit: 256 KB/Sec
+11432: 16:42:47.554 - Limit period: 200ms
+11432: 16:42:47.554 - Limit per period: 52428 bytes
+11432: 16:42:47.554 - Max queued data for transmission per peer: 512000 bytes
+11432: 16:42:47.554 - Minimum retransmit timeout: 200
+11432: 16:42:47.554 - No Maximum retransmit timeout
+11432: 16:42:47.554 - Minimum ENet timeout: 5000ms
+11432: 16:42:47.554 - Maximum ENet timeout: 30000ms
+11432: 16:42:47.554 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+11432: 16:42:47.554 - No RTT ACK adjustment timeout
+11432: 16:42:47.554 - Outbound ENet: MaxInboundMessageSize: 512000
+11432: 16:42:47.554 - Outbound ENet: MaxOutboundMessageSize: 512000
+11432: 16:42:47.555 - GetRuntime - About to load CLR - versions available:
+11432: 16:42:47.555 - v2.0.50727
+11432: 16:42:47.555 - v4.0.30319
+11432: 16:42:47.555 - Configuration requests: "v2.0.50727"
+11432: 16:42:47.555 - About to load version: "v2.0.50727"
+11432: 16:42:47.559 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+11432: 16:42:47.559 - CLRBaseDirectory set to "D:\PhotonSample\deploy"
+11432: 16:42:47.559 - Optimising event broadcast for 20 or more peers
+11432: 16:42:47.560 - Start: About to load CLR - versions available:
+11432: 16:42:47.560 - v2.0.50727
+11432: 16:42:47.560 - v4.0.30319
+11432: 16:42:47.560 - No preference in configuration file, will load latest.
+11432: 16:42:47.560 - About to load version: "v4.0.30319"
+11432: 16:42:47.560 - Loaded version: "v4.0.30319"
+11432: 16:42:49.065 - Photon host runtime loaded
+11432: 16:42:51.029 - LICENSE: No license file was found. Starting with Bootstrap License.
+11432: 16:42:51.029 - License is valid.
+11432: 16:42:51.029 - Licensed for 20 concurrent connections.
+11432: 16:42:51.029 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+11432: 16:42:51.029 - ENet: Per peer bandwidth limit
+11432: 16:42:51.029 - ENet: Transmit Rate Limit: 256 KB/Sec
+11432: 16:42:51.029 - ENet: Limit period: 200ms
+11432: 16:42:51.029 - ENet: Limit per period: 52428 bytes
+11432: 16:42:51.029 - ENet: Max queued data for transmission per peer: 512000 bytes
+11432: 16:42:51.029 - ENet: Minimum retransmit timeout: 200
+11432: 16:42:51.029 - No Maximum retransmit timeout
+11432: 16:42:51.029 - ENet: Minimum timeout: 5000ms
+11432: 16:42:51.029 - ENet: Maximum timeout: 30000ms
+11432: 16:42:51.029 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+11432: 16:42:51.029 - No RTT ACK adjustment timeout
+11432: 16:42:51.029 - About to load application: MasterServer from Chat.MasterServer
+11432: 16:42:51.029 - Auto restart is enabled for application, existing connections will be terminated during restart
+11432: 16:42:51.029 - Application will restart 1000ms after the last change detected
+11432: 16:42:51.029 - Application will restart if files matching the following are changed: "dll;config"
+11432: 16:42:51.029 - Application will NOT restart if files matching the following are changed: "log4net.config"
+11432: 16:42:51.294 - Taking reference on default app domain
+11432: 16:42:51.609 - Application: "MasterServer" started in app domain: 2
+11432: 16:42:51.609 - About to load application: GameServer from Chat.GameServer
+11432: 16:42:51.609 - Auto restart is enabled for application, existing connections will be terminated during restart
+11432: 16:42:51.609 - Application will restart 1000ms after the last change detected
+11432: 16:42:51.609 - Application will restart if files matching the following are changed: "dll;config"
+11432: 16:42:51.609 - Application will NOT restart if files matching the following are changed: "log4net.config"
+11432: 16:42:51.835 - Taking reference on default app domain
+11432: 16:42:52.274 - Application: "GameServer" started in app domain: 3
+11432: 16:42:52.274 - Adding TCP listener on: 0.0.0.0: 4520 with a listen backlog of: 150
+11432: 16:42:52.274 - TCP inactivity timeout: 5000ms
+11432: 16:42:52.274 - TCP disconnect timeout: 120000ms
+11432: 16:42:52.274 - MaxInboundMessageSize: 512000
+11432: 16:42:52.274 - MaxOutboundMessageSize: 512000
+11432: 16:42:52.274 - Forcing all applications ids to: "MasterServer"
+11432: 16:42:52.274 - MaxInboundMessageSize: 512000
+11432: 16:42:52.274 - MaxOutboundMessageSize: 512000
+11432: 16:42:52.274 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+11432: 16:42:52.275 - Adding UDP listener on: 169.254.80.80: 5055 with a listen backlog of: 500
+11432: 16:42:52.275 - Adding UDP listener on: 169.254.82.120: 5055 with a listen backlog of: 500
+11432: 16:42:52.275 - Adding UDP listener on: 10.122.85.193: 5055 with a listen backlog of: 500
+11432: 16:42:52.275 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+11432: 16:42:52.275 - Forcing all applications ids to: "GameServer"
+11432: 16:42:52.275 - MaxInboundMessageSize: 512000
+11432: 16:42:52.275 - MaxOutboundMessageSize: 512000
+11432: 16:42:52.275 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+11432: 16:42:52.275 - Adding UDP listener on: 169.254.80.80: 5056 with a listen backlog of: 500
+11432: 16:42:52.275 - Adding UDP listener on: 169.254.82.120: 5056 with a listen backlog of: 500
+11432: 16:42:52.275 - Adding UDP listener on: 10.122.85.193: 5056 with a listen backlog of: 500
+11432: 16:42:52.275 - Adding UDP listener on: 127.0.0.1: 5056 with a listen backlog of: 500
+11432: 16:42:52.298 - Service is running...

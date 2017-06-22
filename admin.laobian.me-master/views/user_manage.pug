@@ -1,0 +1,22 @@
+extends layout2.pug
+
+block content
+    table(class='table table-hover')
+        thead
+            tr
+                td Email
+                td User Name
+                td Create At
+                td Edit
+        tbody
+            each item in users
+                tr
+                    td #{item.email}
+                    td #{item.userName}
+                    td #{item.createAt}
+                    td 
+                        a(href='/user/edit?id=' + item.id) Edit
+ 
+block scripts
+    script(type='text/javascript').
+        $('#menu_user').addClass('active');                           

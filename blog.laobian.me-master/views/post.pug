@@ -1,0 +1,50 @@
+extends _layout.pug
+
+block content
+    link(href='http://static.laobian.me/lib/highlight.js/9.2.0/styles/tomorrow.css', rel='stylesheet')
+    link(href='http://static.laobian.me/lib/fancybox/2.1.5/source/jquery.fancybox.css', rel='stylesheet')
+    article
+        h2
+            a(href=post.url) #{post.title} 
+        small
+            | #{post.createAt} · #{post.visits} visits
+        section!= post.contentHtml
+        
+    div(id='comments')
+        div(id='disqus_thread')
+        
+block scripts
+    script(type='text/javascript' src='http://static.laobian.me/lib/highlight.js/9.2.0/highlight.pack.js')
+    script(type='text/javascript' src='http://static.laobian.me/lib/fancybox/2.1.5/lib/jquery.mousewheel-3.0.6.pack.js')
+    script(type='text/javascript' src='http://static.laobian.me/lib/fancybox/2.1.5/source/jquery.fancybox.pack.js')
+    script(type='text/javascript').
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//laobian.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            
+         hljs.initHighlightingOnLoad();
+         
+         $('img').each(function(){
+             var self = $(this);
+             var newStuffs = '<a class="fancybox" rel="gallery" href="' + self.attr('src') + '" title="' + self.attr('alt') + '">';
+             newStuffs += self.prop('outerHTML');
+             newStuffs += '</a>';
+             self.replaceWith(newStuffs);
+         });
+         
+         $(".fancybox").fancybox({
+            openEffect	: 'elastic',
+            closeEffect	: 'elastic',
+
+            helpers : {
+                title : {
+                    type : 'float'
+                }
+            }
+        });
+         

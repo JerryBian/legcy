@@ -1,0 +1,66 @@
+﻿@model IEnumerable<BlogPost>
+@{ 
+    ViewBag.Title = "Blogs";
+}
+
+<div active-index="1"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <aside active-index="0" category="@SidebarCategory.Blog"></aside>
+
+        <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+            <h1>Blog Overview</h1>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Visits</th>
+                        <th>Create At</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        for (var i = Model.Count() - 1; i >= 0; i--)
+                        {
+                            var item = Model.ElementAt(i);
+                            <tr>
+                                <td>@(i+1)</td>
+                                <td>@item.Title</td>
+                                <td>@item.Visits.ToString("##.#")</td>
+                                <td>@item.CreateTime.ToString("r")</td>
+                                <td>
+                                    <a href="/blog/update/@item.Id"> Update</a> |
+                                    <a href="javascript:;" onclick="deletePost(@item.Id)">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </main>
+    </div>
+</div>
+
+@section script{
+    <script type="text/javascript">
+        function deletePost(id) {
+            var result = confirm("Are you sure to delete this post?");
+            if (result == true) {
+                $.ajax({
+                    url: "/blog/delete/" + id,
+                    method: "DELETE",
+                    success: function () {
+                        window.location.reload();
+
+                    }
+                });
+
+            }
+
+        }
+    </script>
+}

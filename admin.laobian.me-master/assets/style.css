@@ -1,0 +1,6 @@
+html, body{}
+
+textarea{
+    resize: vertical;
+    min-height: 300px;
+}

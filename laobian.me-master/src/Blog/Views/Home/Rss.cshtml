@@ -1,0 +1,32 @@
+﻿@model IEnumerable<BlogPost>
+
+@{
+    Context.Response.ContentType = "application/rss+xml";
+    Layout = null;
+}
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0">
+    <channel>
+        <title>Jerry Bian's Blog</title>
+        <link>http://blog.laobian.me</link>
+        <description>Tech and Life, sometimes native.</description>
+        <lastBuildDate>@DateTime.UtcNow.ToString("r")</lastBuildDate>
+        <language>en-us</language>
+        @{ 
+            
+        }
+        @foreach (var post in Model)
+        {
+            var xml = new XElement("item");
+            xml.Add(new XElement("title", post.Title));
+            xml.Add(new XElement("link", $"http://blog.laobian.me/{post.FullUrl}"));
+            xml.Add(new XElement("guid", $"http://blog.laobian.me/{post.FullUrl}"));
+            xml.Add(new XElement("pubDate", post.CreateTime.ToString("r")));
+            xml.Add(new XElement("description", string.IsNullOrEmpty(post.HtmlContentEn) ? post.HtmlContentCh : post.HtmlContentEn));
+            <text>@Html.Raw(xml.ToString())</text>
+            
+
+        }
+    </channel>
+</rss>

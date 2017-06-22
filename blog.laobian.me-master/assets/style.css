@@ -1,0 +1,154 @@
+html, body,
+input, button,
+article, p, li {
+    font-family: Roboto, STXihei, Arial !important;
+    color: #333;
+}
+
+a,
+a:link,
+a:visited {
+    outline: none !important;
+    text-decoration: none !important;
+    border: none;
+    color: #3498db;
+}
+
+a:hover,
+a:active{
+    color: #2980b9;
+}
+
+
+h1, h2, h4, h5, h6 {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+aside>section ul,
+aside>section li{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+aside> section li{
+    border-bottom: 1px solid #EEE;
+    padding: 3px 0px;
+}
+
+aside > section li p{
+    margin-bottom: 1px;
+}
+
+aside > section li small,
+aside > section li small a{
+    font-size: 12px;
+    color: #999 !important;
+}
+
+.post-list ul,
+.post-list li{
+    list-style: none;
+    padding-left: 1%;
+    margin-left:0;
+}
+
+.post-list h2,
+article h2{
+    font-size: 22px;
+}
+
+.post-list time{
+    font-size: 80%;
+    color: #828282;
+    margin-right: 6px;
+}
+
+.post-list h3{
+    font-size: 18px;
+}
+
+article{
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 2.0em;
+    color: #333;
+    word-wrap: break-word;
+}
+
+article small{
+    display: block;
+    text-align: right;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+article > p{
+    margin: 18px 0;
+}
+
+article h3{
+    padding: 5px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 26px;
+    background-color: #ddd;
+}
+
+article h4{
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+article blockquote{
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff9e3;
+    border-left: 2px solid #ffeb8e;
+    width: 100%;
+    font-size: 1em;
+    font-style: normal;
+    margin-left: 0;
+}
+
+article li{
+    padding-left: 0;
+    margin-bottom: 4px;
+}
+
+article pre{
+    overflow: auto;
+    font-size: 13px;
+    padding: 5px;
+    width: auto;
+    width: 650px !ie7;
+    padding-bottom: 20px !ie7;
+    border: none;
+    max-height: 600px;
+    margin-bottom: 1em;
+    font-family: Monaco, Consolas,MenloLucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+}
+
+article code{
+    font-family: Monaco, Consolas,MenloLucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+}
+
+article img{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    vertical-align: middle;
+}

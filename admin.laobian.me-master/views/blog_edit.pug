@@ -1,0 +1,75 @@
+extends layout2.pug
+
+block content
+    h3 Edit blog
+    form
+            div(class='form-group')
+                label(for='title')
+                    | title
+                input(type='text' class='form-control' id='title' placeholder='Blog title' value=blog.title required='required' autocomplete='off')
+            div(class='form-group')
+                label(for='content')
+                    | content
+                textarea(class='form-control' id='content' value=blog.content)
+                    | #{blog.content}
+            div(class='form-group')
+                label(for='url')
+                    | url
+                input(type='text' class='form-control' id='url' placeholder='Blog url' value=blog.url required='required' autocomplete='off')
+            div(class='form-group')
+                label(for='createAt')
+                    | create at (UTC)
+                input(type='text' class='form-control' id='createAt' placeholder='Blog create time' value=blog.createAt required='required' autocomplete='off')
+            div(class='form-group')
+                label(for='excerpt')
+                    | excerpt
+                input(type='text' class='form-control' id='excerpt' placeholder='Blog excerpt' value=blog.excerpt required='required' autocomplete='off')
+            div(class='form-group')
+                label(for='visits')
+                    | visits
+                input(type='number' class='form-control' id='visits' placeholder='100' value=blog.visits required='required' autocomplete='off')
+            div(class='text-center')
+                button(type='submit' class='btn btn-primary btn-block' id='publish')
+                    | Publish
+                button(type='submit' class='btn btn-link btn-block' id='draft')
+                    | Save as draft
+                
+block scripts
+    script(type='text/javascript').
+        function submit(publish){
+            $.ajax({
+                url: '/blog/edit',
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    id: '#{blog.id}',
+                    title: $('#title').val(),
+                    content: $('#content').val(),
+                    createAt: $('#createAt').val(),
+                    url: $('#url').val(),
+                    excerpt: $('#excerpt').val(),
+                    visits: $('#visits').val(),
+                    publish: publish ? 1 : 0,
+                    contentHtml: marked($('#content').val())
+                },
+                success: function(data){
+                    if(data.error){
+                        alert(data.error);
+                    }else{
+                        window.location.href = '/blog/manage';
+                    }
+                }
+            });
+        }
+        
+        $('#publish').click(function(e){
+            e.preventDefault();
+            submit(true);
+        });
+        
+        $('#draft').click(function(e){
+            e.preventDefault();
+            submit(false);
+        });    
+        
+        $('#menu_blog').addClass('active');       

@@ -1,0 +1,24 @@
+extends layout2.pug
+
+block content
+    table(class='table table-hover')
+        thead
+            tr
+                td Title
+                td Url
+                td Create At
+                td Visits
+                td Edit
+        tbody
+            each item in blogs
+                tr
+                    td #{item.title}
+                    td #{item.url}
+                    td #{item.createAt}
+                    td #{item.visits}
+                    td 
+                        a(href='/blog/edit?id=' + item.id) Edit
+                            
+block scripts
+    script(type='text/javascript').        
+        $('#menu_blog').addClass('active');

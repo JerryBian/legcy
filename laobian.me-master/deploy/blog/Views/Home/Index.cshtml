@@ -1,0 +1,23 @@
+﻿@model IEnumerable<BlogPost>
+
+<main class="container">
+    <div class="row">
+        <section class="col-md-8 col-lg-8">
+            @foreach (var item in Model.OrderByDescending(_ => _.CreateTime).GroupBy(_ => _.CreateTime.Year))
+            {
+
+                <h2>@item.Key</h2>
+                <ul>
+                    @foreach (var post in item)
+                    {
+                        <li> <time>@post.CreateTime.ToString("yyyy-MM-dd")</time> <a href="/@post.FullUrl" title="@post.Title">@post.Title</a></li>
+                    }
+                </ul>
+            }
+        </section>
+        <aside class="col-md-4 col-lg-4 hidden-sm hidden-xs hidden-print">
+            @await Component.InvokeAsync("Sidebar")
+        </aside>
+    </div>
+    
+</main>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>
+        Login - Jerry Bian's chat
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='robots' content='noindex, nofollow' />
+
+    <link rel='stylesheet' style='text/css' href='http://static.laobian.me/lib/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' style='text/css' href='/style.css'>
+</head>
+
+<body>
+    <div class='panel panel-primary' id='loginpanel'>
+        <div class='panel-heading'>User your email and password to sign in.</div>
+        <div class='panel-body'>
+            <form class='form-horizontal' id='loginform'>
+                <div class='form-group'>
+                    <label for='email' class='col-sm-2 control-label'>Email</label>
+                    <div class='col-sm-10'>
+                        <input type='email' name='email' class='form-control' id='email' placeholder='Email' autocomplete="off" autofocus="autofocus">
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <label for='password' class='col-sm-2 control-label'>Password</label>
+                    <div class='col-sm-10'>
+                        <input type='password' name='password' class='form-control' id='password' placeholder='Password' autocomplete="off">
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <div class='col-sm-offset-2 col-sm-10'>
+                        <button type='submit' class='btn btn-primary'>Sign in</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src='http://static.laobian.me/lib/jquery/1.12.2/jquery.min.js'></script>
+    <script src='http://static.laobian.me/lib/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src='http://static.laobian.me/lib/js.cookie/2.1.0/js.cookie.min.js'></script>
+    <script type='text/javascript'>
+        $('#loginform').submit(function(e){
+            var data = {};
+            $(this).serializeArray().map(function(x){data[x.name] = x.value;}); 
+            $.ajax({
+                url: '/login',
+                type: 'POST',
+                data: data,
+                success: function(data, status){
+                    Cookies.set('user', data, { expires: 7 })
+                    window.location.href = '/';
+                },
+                error: function(){
+                    Cookies.remove('user');
+                }
+            });
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
+    <meta name='robots' content='noindex, nofollow' />
+    <meta http-equiv="mobile-agent" content="format=html5;url=http://chat.laobian.me/">
+    <script src='http://static.laobian.me/lib/js.cookie/2.1.0/js.cookie.min.js'></script>
+    <script>
+        var userName = Cookies.get('user');
+        if (!userName) {
+            window.location.href = '/login';
+        }
+    </script>
+
+    <title>
+        Family room - Jerry Bian's chat
+    </title>
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" style="text/css" href="http://static.laobian.me/lib/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel='stylesheet' style='text/css' href='http://static.laobian.me/lib/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' style='text/css' href='/style.css'>
+</head>
+
+<body>
+    <div class="container-fluid" id="main">
+        <div class="row" id="content">
+            <section class="col-xs-12 col-sm-12 col-md-10">
+                <ul data-bind='foreach: $data' id='messages'>
+                    <li>
+                        <p class='metadata'><span data-bind='text: userName'></span> at <span data-bind='text: postTime'></span></p>
+                        <div data-bind='html: body' class='body'></div>
+                    </li>
+                </ul>
+            </section>
+            <aside class="col-md-2 hidden-sm hidden-xs">
+                <div class='panel panel-info'>
+                    <div class="panel-body">
+                        <p>This chat room is used by family(Jerry & Sweety) private chating, it should not be public to anyone
+                            else.
+                        </p>
+                        <p>With Love.</p>
+                    </div>
+                    <div class="panel-footer">
+                        <a href="mailto:JerryBian@outlook.com">contact owner.</a>
+                    </div>
+                </div>
+
+                <div class='panel panel-info'>
+                    <div class="panel-heading">
+                        Chatting sessions
+                    </div>
+                    <div class="panel-body">
+                        <ul data-bind='foreach: $data' id='sessions'>
+                            <li><span data-bind='text: userName, attr: {title: title}'></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <footer id="footer">
+            <div>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#text" aria-controls="text" role="tab" data-toggle="tab">Text</a></li>
+                    <li><a href="#image" aria-controls="image" role="tab" data-toggle="tab">Image</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="text">
+                        <form id='textForm'>
+                            <div class="form-group">
+                                <label for="chatbox">Write down your new message.
+                                    <a href='https://daringfireball.net/projects/markdown/syntax'>Markdown syntax</a> supported.
+                                    <i id='typing'></i></label>
+                                <textarea id='chatbox' class="form-control"  data-emojiable="true"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message(Ctrl + Enter)</button>
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="image">
+                        <div class="fileUpload btn btn-success btn-block">
+                            <span>Select images files (jpg, jpeg, png, bmp, gif) and upload it</span>
+                            <input type="file" class="upload" id='imageUpload' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src='http://static.laobian.me/lib/jquery/1.12.2/jquery.min.js'></script>
+    <script src='http://static.laobian.me/lib/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src='http://static.laobian.me/lib/knockout/3.4.0/knockout.min.js'></script>
+    <script src='http://static.laobian.me/lib/socket.io/1.4.5/socket.io.js'></script>
+    <script src="http://static.laobian.me/lib/marked/0.3.5/marked.min.js"></script>
+    <script>
+        'use strict';
+
+        var active = true;
+        var typing = false;
+        var timer = undefined;
+        var title = document.title;
+        var typingUser = undefined;
+        var unreadMessages = 0;
+        var notifications = [];
+        
+        function guid() {
+            function s4() {
+                return Math.floor((1 + Math.random()) * 0x10000)
+                .toString(16)
+                .substring(1);
+            }
+            
+            return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+                s4() + '-' + s4() + s4() + s4();
+        }
+
+        function refreshLayout() {
+            $('#main').outerHeight($(window).height());
+            $('#content').outerHeight($('#main').outerHeight() - $('#footer').outerHeight() - 10);
+            $('#messages').outerHeight($('#content').outerHeight() * 0.95);
+            $('#image').outerHeight($('#text').outerHeight());
+            $('#messages').scrollTop($('#messages').prop("scrollHeight"));
+        }
+        
+        function ontimeout(){
+            typing = false;
+            socket.emit('stop typing', userName);
+        }
+        
+        function initNotify(){
+            if('Notification' in window){
+                if(Notification.permission !== 'denied'){
+                    Notification.requestPermission(function(permission){
+                        if(permission === 'granted'){
+                            console.log('Notification enabled.');
+                        }
+                    });
+                }
+            }
+        }
+        
+        function notify(body){
+            if('Notification' in window){
+                if(Notification.permission === 'granted'){
+                    var notification = new Notification("You have new messages arrived.", {
+                        body: body,
+                        icon: 'http://chat.laobian.me/favicon.ico'
+                    });
+                    notification.onclick = function(e){
+                        window.focus();
+                        e.preventDefault();
+                    };
+                    notifications.push(notification);
+                }else if(Notification.permission !== 'denied'){
+                    Notification.requestPermission(function(permission){
+                        if(permission === 'granted'){
+                            var notification = new Notification("You have new messages arrived.", {
+                                body: body,
+                                icon: 'http://chat.laobian.me/favicon.ico'
+                            });
+                            notification.onclick = function(e){
+                                window.focus();
+                                e.preventDefault();
+                            };
+                            notifications.push(notification);
+                        }
+                    });
+                }
+            }
+        }
+
+        window.onresize = function () {
+            refreshLayout();
+        }
+
+        $(window).blur(function () {
+            active = false;
+        });
+
+        $(window).focus(function () {
+            active = true;
+            unreadMessages = 0;
+            document.title = title;
+            
+            notifications.forEach(function(item){
+                item.close();
+            });
+            
+            notifications = [];
+        });
+
+        var messages = ko.observableArray();
+        var sessions = ko.observableArray();
+        ko.applyBindings(messages, document.getElementById('messages'));
+        ko.applyBindings(sessions, document.getElementById('sessions'));
+        $(function(){
+            refreshLayout();
+            initNotify();
+        });
+        
+        var sessionId = guid();
+        console.log('session id = ' + sessionId);
+        var socket = io('/', { query: "sessionId=" + sessionId + "&userName=" + userName});
+        $('#chatbox').on('keypress', function (e) {
+            if ((event.keyCode == 10 || event.keyCode == 13) && event.ctrlKey) {
+                $('form').submit();
+                return false;
+            }
+            
+            if(typing){
+                clearTimeout(timer);
+                timer = setTimeout(ontimeout, 3000);
+            }else{
+                typing = true;
+                socket.emit("typing", userName);
+            }
+            
+            return true;
+        });
+
+        $('#textForm').submit(function (e) {
+            var message = {};
+            message.userName = userName;
+            message.body = marked($('#chatbox').val());
+            if($.trim(message.body).length > 0){
+                socket.emit('chat', message);
+            }
+            
+            $('#chatbox').val('');
+            e.preventDefault();
+        });
+        
+        $('#imageUpload').change(function(e){
+            var file = document.querySelector('input[type=file]').files[0];
+            if ( file && /\.(jpe?g|png|gif|bmp)$/i.test(file.name) ) {
+                var reader = new FileReader();
+                reader.addEventListener('load', function(){
+                    var dataUrl = reader.result;
+                    if(dataUrl.length > 5){
+                        socket.emit('chat image', {userName: userName, image: dataUrl});
+                    }
+                }, false);
+                
+                reader.readAsDataURL(file);
+            }else{
+                console.log('invalid file type ' + file.name);
+            }
+            
+        });
+
+        socket.on('chat', function (message) {
+            if (message instanceof Array) {
+                messages.removeAll();
+                message.sort(function(a,b) {return (a.postTime > b.postTime) ? 1 : ((b.postTime > a.postTime) ? -1 : 0);} );
+                message.forEach(function (item) {
+                    item.postTime = new Date(item.postTime).toLocaleString();
+                    messages.push(item);
+                });
+                
+                $('#messages').scrollTop($('#messages').prop("scrollHeight"));
+            } else {
+                message.postTime = new Date(message.postTime).toLocaleString();
+                messages.push(message);
+                if (!active) {
+                    unreadMessages++;
+                    document.title = '(' + unreadMessages + ') ' + title;
+                    notify(message.body.replace(/<(?:.|\n)*?>/gm, '').substr(0, 5) + ' ...');
+                }
+                
+                $('#messages').scrollTop($('#messages').prop("scrollHeight"));
+            }
+        });
+        
+        socket.on('stop typing', function(message){
+            if(typingUser === message){
+                typingUser = "";
+                $("#typing").html('');
+            }
+        });
+        
+        socket.on('typing', function(message){
+            if(typingUser !== message){
+                typingUser = message;
+                $("#typing").html('[' + typingUser + ' is typing ...]');
+            }
+        });
+        
+        socket.on('publish user list', function(message){
+            sessions.removeAll();
+            message.sort(function(a,b) {return (a.joinTime > b.joinTime) ? 1 : ((b.joinTime > a.joinTime) ? -1 : 0);} );
+            message.forEach(function(item){
+                sessions.push({
+                    userName: item.userName,
+                    title: "joined at " + new Date(item.joinTime).toLocaleString() + ", user agent: " + item.userAgent
+                });
+            });
+        });
+    </script>
+</body>

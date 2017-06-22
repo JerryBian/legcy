@@ -1,0 +1,44 @@
+extends layout.pug
+
+block main
+    div(class='panel panel-primary')
+        div(class='panel-heading')
+            h3(class='panel-title')
+                | Login with your credential
+    div(class='panel-body')
+        form
+            div(class='form-group')
+                label(for='email')
+                    | Email address
+                input(type='email' class='form-control' id='email' placeholder='Email' required='required' autocomplete='off')
+            div(class='form-group')
+                label(for='password')
+                    | Password
+                input(type='password' class='form-control' id='password' placeholder='Password' required='required' autocomplete='off')
+            button(type='submit' class='btn btn-primary btn-block')
+                | Login
+                
+block scripts
+    script(type='text/javascript').
+        $('form').submit(function(e){
+            var callback = '#{callback}';
+            e.preventDefault();
+            
+            $.ajax({
+                url: "/login",
+                method: "POST",
+                dataType: 'json',
+                data: { 
+                    email: $('#email').val(),
+                    password: $('#password').val(),
+                    callback: callback
+                },
+                success: function(data){
+                    if(data.err){
+                        alert(data.err);
+                    }else{
+                        window.location.href = data.url;
+                    }
+                }
+            });
+        });

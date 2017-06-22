@@ -1,0 +1,50 @@
+extends layout2.pug
+
+block content
+    h3 Create new user
+    form
+            div(class='form-group')
+                label(for='email')
+                    | Email
+                input(type='email' class='form-control' id='email' placeholder='User email' required='required' autocomplete='off')
+            div(class='form-group')
+                label(for='userName')
+                    | Init user name
+                input(type='text' class='form-control' id='userName' placeholder='User name' required='required' autocomplete='off')
+            div(class='form-group')
+                label(for='password')
+                    | Init password
+                input(type='password' class='form-control' id='password' placeholder='User init password' required='required' autocomplete='off')
+            div(class='form-group')
+                label(for='allowed')
+                    | Allowed (JSON format)
+                input(type='text' placeholder='{host: admin, pathname: /}' value='{host: admin, pathname: /}' class='form-control' id='allowed')
+            div(class='text-center')
+                button(type='submit' class='btn btn-primary btn-block' id='save')
+                    | Save
+                    
+block scripts
+    script(type='text/javascript').
+        $('#save').click(function(e){
+            e.preventDefault();
+            $.ajax({
+                url: '/user/new',
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    email: $('#email').val(),
+                    userName: $('#userName').val(),
+                    password: $('#password').val(),
+                    allowed: $('#allowed').val()
+                },
+                success: function(data){
+                    if(data.error){
+                        alert(data.error);
+                    }else{
+                        window.location.href = '/user/manage';
+                    }
+                }
+            });
+        });
+        
+        $('#menu_user').addClass('active');

@@ -1,0 +1,10 @@
+D:\PhotonSample\src\ChatServer\obj\Debug\ChatServer.csprojResolveAssemblyReference.cache
+D:\deploy\ChatServer\bin\log4net.config
+D:\deploy\ChatServer\bin\x64\SQLite.Interop.dll
+D:\deploy\ChatServer\bin\x64\SQLite.Interop.pdb
+D:\deploy\ChatServer\bin\x86\SQLite.Interop.dll
+D:\deploy\ChatServer\bin\x86\SQLite.Interop.pdb
+D:\deploy\ChatServer\bin\ChatServer.dll
+D:\deploy\ChatServer\bin\ChatServer.pdb
+D:\PhotonSample\src\ChatServer\obj\Debug\ChatServer.dll
+D:\PhotonSample\src\ChatServer\obj\Debug\ChatServer.pdb

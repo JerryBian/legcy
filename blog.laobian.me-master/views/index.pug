@@ -1,0 +1,12 @@
+extends _layout.pug
+
+block content
+    section(class="post-list")
+        each item in all
+            h2 #{item.year}
+            ul
+                each post in item.posts
+                    li
+                        h3
+                            time #{post.createAt}
+                            a(href=post.url) #{post.title}

@@ -1,0 +1,42 @@
+extends layout.pug
+
+block main
+    nav(class='navbar navbar-inverse')
+        div(class='container-fluid')
+            div(class='navbar-header')
+                button(type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-targat='navbar-target' aria-expanded='false')
+                    span(class='sr-only')
+                        | toggle
+                    span(class='icon-bar')
+                    span(class='icon-bar')
+                    span(class='icon-bar')
+                a(class='navbar-brand' href='/')
+                    | Admin
+            div(class='collapse navbar-collapse' id='navbar-target')
+                ul(class='nav navbar-nav')
+                    li(class='dropdown' id='menu_blog')
+                        a(href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                            | Blog 
+                            span(class='caret')
+                        ul(class='dropdown-menu')
+                            li 
+                                a(href='/blog/new')
+                                    | New blog
+                            li 
+                                a(href='/blog/manage')
+                                    | Manage blogs
+                    li(class='dropdown' id='menu_user')
+                        a(href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                            | User 
+                            span(class='caret')
+                        ul(class='dropdown-menu')
+                            li 
+                                a(href='/user/new')
+                                    | New user
+                            li 
+                                a(href='/user/manage')
+                                    | Manage users
+                ul(class='nav navbar-nav navbar-right')
+                    li
+                        a(href='/login') Logout
+    block content

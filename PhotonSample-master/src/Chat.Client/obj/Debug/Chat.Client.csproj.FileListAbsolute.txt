@@ -1,0 +1,11 @@
+D:\PhotonSample\src\Chat.Client\bin\Debug\Chat.Client.exe.config
+D:\PhotonSample\src\Chat.Client\bin\Debug\Chat.Client.exe
+D:\PhotonSample\src\Chat.Client\bin\Debug\Chat.Client.pdb
+D:\PhotonSample\src\Chat.Client\bin\Debug\Photon3DotNet.dll
+D:\PhotonSample\src\Chat.Client\bin\Debug\websocket-sharp.dll
+D:\PhotonSample\src\Chat.Client\bin\Debug\Photon3DotNet.pdb
+D:\PhotonSample\src\Chat.Client\bin\Debug\Photon3DotNet.xml
+D:\PhotonSample\src\Chat.Client\obj\Debug\Chat.Client.exe
+D:\PhotonSample\src\Chat.Client\obj\Debug\Chat.Client.pdb
+D:\PhotonSample\src\Chat.Client\bin\Debug\Newtonsoft.Json.dll
+D:\PhotonSample\src\Chat.Client\bin\Debug\Newtonsoft.Json.xml

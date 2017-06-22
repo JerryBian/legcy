@@ -1,0 +1,15 @@
+5484: 15:02:28.178 - ---
+5484: 15:02:28.178 - Service: "Photon Socket Server" starting
+5484: 15:02:28.178 - Config File: D:\PhotonSample\deploy\bin_Win64\PhotonServer.config
+5484: 15:02:28.179 - Will produce at most: 10 crash dumps
+5484: 15:02:28.180 - Action: run as exe
+5484: 15:02:28.180 - 
+5484: 15:02:28.180 - ERROR: ***************************************************************
+5484: 15:02:28.180 - ERROR: Only one copy of "LoadBalancing" can run at a time
+5484: 15:02:28.180 - ERROR: ***************************************************************
+5484: 15:02:28.180 - 
+5484: 15:02:28.180 - MessageBox: Photon Socket Server: LoadBalancing - 4.0.28.2962
+
+Only one copy of "LoadBalancing" can run at a time
+5484: 15:02:31.050 - Service shutting down: instance already running. Errorcode: 100
+5484: 15:02:31.052 - Service shut down complete

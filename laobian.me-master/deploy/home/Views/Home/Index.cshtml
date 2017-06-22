@@ -1,0 +1,9 @@
+﻿@inject IOptions<AppSettings> settings
+
+<div class="page-header">
+    <h1>Navigation</h1>
+</div>
+<ul>
+    <li><a href="@settings.Value.BlogHost">Jerry Bian's Blog</a></li>
+    <li><a href="@settings.Value.AdminHost">Jerry Bian's Dashboard</a></li>
+</ul>

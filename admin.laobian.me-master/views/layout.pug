@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        meta(name='robots' content='noindex, nofollow')
+        meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+        title= title
+        link(href='http://static.laobian.me/lib/bootstrap/3.3.6/bootswatch/cosmo.min.css', rel='stylesheet')
+        link(href='http://static.laobian.me/lib/font-awesome/4.5.0/css/font-awesome.min.css', rel='stylesheet')
+        
+        link(href='/assets/style.css', rel='stylesheet')
+    body
+        div(class='container')
+            block main
+            footer
+                p &copy; Jerry Bian
+        
+        
+        script(type='text/javascript' src='http://static.laobian.me/lib/jquery/2.2.2/jquery.min.js')
+        script(type='text/javascript' src='http://static.laobian.me/lib/bootstrap/3.3.6/js/bootstrap.min.js')
+        script(type='text/javascript' src='http://static.laobian.me/lib/marked/0.3.5/marked.min.js')
+        
+        block scripts

@@ -1,0 +1,13 @@
+C:\Users\User\Desktop\Photon-OnPremise-Server-SDK_v4-0-29-11263\src-server\HivePlugin\bin\Debug\PhotonHivePlugin.dll
+C:\Users\User\Desktop\Photon-OnPremise-Server-SDK_v4-0-29-11263\src-server\HivePlugin\bin\Debug\PhotonHivePlugin.pdb
+C:\Users\User\Desktop\Photon-OnPremise-Server-SDK_v4-0-29-11263\src-server\HivePlugin\obj\Debug\PhotonHivePlugin.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\Photon-OnPremise-Server-SDK_v4-0-29-11263\src-server\HivePlugin\obj\Debug\PhotonHivePlugin.dll
+C:\Users\User\Desktop\Photon-OnPremise-Server-SDK_v4-0-29-11263\src-server\HivePlugin\obj\Debug\PhotonHivePlugin.pdb
+D:\PhotonSample\PhotonServer\HivePlugin\bin\Debug\PhotonHivePlugin.dll
+D:\PhotonSample\PhotonServer\HivePlugin\bin\Debug\PhotonHivePlugin.pdb
+D:\deploy\ChatServer\bin\PhotonHivePlugin.dll
+D:\deploy\ChatServer\bin\PhotonHivePlugin.pdb
+D:\deploy\Common\bin\PhotonHivePlugin.dll
+D:\deploy\Common\bin\PhotonHivePlugin.pdb
+D:\PhotonSample\PhotonServer\HivePlugin\obj\Debug\PhotonHivePlugin.dll
+D:\PhotonSample\PhotonServer\HivePlugin\obj\Debug\PhotonHivePlugin.pdb

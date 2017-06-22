@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>http://jerrybian.github.io/CommonLibrary4Net/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>First init release.
+	Add Throws for checking arguments.
+	Add FuncExt to expose any method to Task based opertion.
+	</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>.net C#</tags>
+  </metadata>
+</package>

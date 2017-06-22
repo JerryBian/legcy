@@ -1,0 +1,88 @@
+extends layout.pug
+
+block main
+    div(class='panel panel-default')
+        div(class='panel-heading')
+            h3(class='panel-title')
+                | Change your user name / email
+    div(class='panel-body')
+        form
+            div(class='form-group')
+                label(for='oldUserName')
+                    | Current user name: #{user.userName}
+            div(class='form-group')
+                label(for='newUserName')
+                    | New user name
+                input(type='text' value=user.userName class='form-control' id='newUserName' placeholder='Your new user name' required='required' autocomplete='off')
+            div(class='form-group')
+                label(for='oldEmail')
+                    | Current email: #{user.email}
+            div(class='form-group')
+                label(for='newEmail')
+                    | New email
+                input(type='email' value=user.email class='form-control' id='newEmail' placeholder='Your new email' required='required' autocomplete='off')
+            button(type='submit' class='btn btn-primary btn-block' id='changeUserName')
+                | Submit
+
+    div(class='panel panel-default')
+        div(class='panel-heading')
+            h3(class='panel-title')
+                | Change your password
+    div(class='panel-body')
+        form
+            div(class='form-group')
+                label(for='oldPassword')
+                    | Current password
+                input(type='password' class='form-control' id='oldPassword' placeholder='Your current password' required='required' autocomplete='off')
+            div(class='form-group')
+                label(for='newPassword')
+                    | New password
+                input(type='password' class='form-control' id='newPassword' placeholder='Your new password' required='required' autocomplete='off')
+            button(type='submit' class='btn btn-primary btn-block' id='changePassword')
+                | Submit
+
+block scripts
+    script(type='text/javascript').
+        $('#changeUserName').click(function(e){
+            e.preventDefault();
+        
+            $.ajax({
+                url: '/user/username',
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    id: '#{user.id}',
+                    email: $('#newEmail').val(),
+                    userName: $('#newUserName').val()
+                },
+                success: function(data){
+                    if(data.error){
+                        alert(data.error);
+                    }else{
+                        window.location.reload();
+                    }
+                }
+            });
+        });
+        
+        $('#changePassword').click(function(e){
+            e.preventDefault();
+        
+            $.ajax({
+                url: '/user/password',
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    id: '#{user.id}',
+                    oldPassword: $('#oldPassword').val(),
+                    newPassword: $('#newPassword').val()
+                },
+                success: function(data){
+                    if(data.error){
+                        alert(data.error);
+                    }else{
+                        window.location.reload();
+                    }
+                }
+            });
+        });
