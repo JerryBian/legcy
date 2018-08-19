@@ -1,0 +1,13 @@
+<script type="text/javascript" src="/assets/jquery/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+<script src="https://use.fontawesome.com/67e7f06212.js"></script>
+<script type="text/javascript">
+    var cat_avatar = "/assets/img/cat.jpg";
+    var jerry_avatar = "/assets/img/photo.jpg";
+    $("#avatar").hover(
+        function(){ $(this).attr("src", jerry_avatar) },
+        function(){ $(this).attr("src", cat_avatar) }
+    );
+
+    hljs.initHighlightingOnLoad();
+</script>
