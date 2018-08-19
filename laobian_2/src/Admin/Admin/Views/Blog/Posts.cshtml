@@ -1,0 +1,44 @@
+﻿@model IEnumerable<BlogPost>
+@{
+    ViewData["Title"] = "Posts";
+}
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+        <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"><strong>@item.Id: </strong><span>@item.Url</span></h5>
+                <small>
+                    @foreach (var tag in item.Tags)
+                    {
+                        <a href="#" class="badge badge-primary">@tag.Name</a>
+                    }
+                </small>
+            </div>
+            <table class="table table-bordered mb-1">
+                <thead>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Is Public</th>
+                        <th scope="col">Is English</th>
+                        <th scope="col">Visits</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var post in item.Contents)
+                    {
+                        <tr>
+                            <td>@post.Title</td>
+                            <td>@post.IsPublic</td>
+                            <td>@post.IsEnglish</td>
+                            <td>@post.VisitCount</td>
+                            <td><a href="#">Link</a> | <a href="/blog/post/update?id=@item.Id">Edit</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+
+</div>

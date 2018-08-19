@@ -1,0 +1,65 @@
+﻿@import "../lib/bootswatch/Yeti/bootstrap.css";
+@import "./post.css";
+
+html, body,
+h1, h2, h3, h4, h5, h6,
+button, input{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#main {
+    margin: 2.5rem auto;
+}
+
+    #main aside #post_metadata {
+        top: 0.5rem;
+    }
+
+.list-group {
+    font-size: inherit;
+}
+
+    .list-group h5 a {
+        text-decoration: none;
+    }
+
+    .list-group .tags a,
+    .list-group .tags a:hover {
+        background-color: #5bc0de;
+        text-decoration: none;
+    }
+
+
+#main #pagination {
+    margin: 1.5rem auto;
+}
+
+    #main #pagination .page-item .page-link {
+        color: #fff;
+        background-color: #008cba;
+        border-radius: 0;
+    }
+
+    #main #pagination .page-item .page-link,
+    #main #pagination .page-item > span {
+        padding: 0.25rem 0.5rem;
+    }
+
+    #main #pagination .page-item > span {
+        display: block;
+    }
+
+#main aside .card {
+    margin-bottom: 10px;
+}
+
+#main footer a {
+    text-transform: uppercase;
+}
+
+footer a,
+footer a:hover,
+footer a:focus {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,10 @@
+﻿@model PagedBlogPosts
+@inject IBlogService BlogService
+@{
+    var title = $"Tag: {ViewData["tag"]}";
+    title += Model.Pagination.CurrentPage > 1 ? $" (Page {Model.Pagination.CurrentPage})": string.Empty;
+    ViewData["Title"] = title;
+}
+
+<h2 class="mb-3">@title</h2>
+@Html.Partial("PostList", Model)

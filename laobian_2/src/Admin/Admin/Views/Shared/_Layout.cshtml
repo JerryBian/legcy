@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Admin</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src="https://use.fontawesome.com/8feb345f2c.js" async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div id="responsive-admin-menu">
+        <div id="responsive-menu">
+            <div class="menuicon">≡</div>
+        </div>
+
+        <div id="logo"></div>
+
+        <!--Menu-->
+        <div id="menu">
+            <a href="" title="blog" class="submenu" name="blog-sub">
+                <i class="fa fa-bold"></i><span>
+                    Blog
+                </span>
+            </a>
+            <div id="blog-sub" class="d-none">
+                <a href="/blog/posts" title="Manage all posts">
+                    <i class="fa fa-list"></i><span>
+                        Manage Posts
+                    </span>
+                </a>
+                <a href="/blog/post/add" title="Add new post">
+                    <i class="fa fa-plus"></i><span>
+                        New Post
+                    </span>
+                </a>
+                <a href="/blog/comments" title="Manage all comments">
+                    <i class="fa fa-commenting"></i><span>
+                        Manage Comments
+                    </span>
+                </a>
+            </div>
+
+        </div>
+        <!--Menu-->
+
+
+    </div>
+
+    <div id="content-wrapper">
+        @RenderBody()
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://nathancahill.github.io/Split.js/split.js"></script>
+    <script src="~/js/site.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<TagsViewModel>
+@inject IBlogService BlogService
+@{
+    <div class="card border-light mb-3">
+        <div class="card-body">
+            @Html.Raw(string.Join(" · ", Model.Select(_ => _.SummaryHtml)))
+        </div>
+    </div>
+
+
+    <div class="post">
+        @foreach (var item in Model.OrderBy(_ => _.Name))
+        {
+            <h3>@item.Name</h3>
+            <ul>
+                @foreach (var p in item.Posts)
+                {
+                    <li>
+                        <a href="@BlogService.BuildPostUrl(p)">@p.GetByLangWithDefault().Title</a>
+                    </li>
+
+                }
+            </ul>
+        }
+    </div>
+}

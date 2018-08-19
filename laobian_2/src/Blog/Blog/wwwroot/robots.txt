@@ -1,0 +1,3 @@
+﻿User-agent: *
+Disallow: /archives/
+Disallow: /tags/

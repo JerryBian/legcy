@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Laobian.Shared</AssemblyName>
+    <RootNamespace>Laobian.Shared</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AzureSql\**" />
+    <Compile Remove="AzureStorage\**" />
+    <EmbeddedResource Remove="AzureSql\**" />
+    <EmbeddedResource Remove="AzureStorage\**" />
+    <None Remove="AzureSql\**" />
+    <None Remove="AzureStorage\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommonMark.NET" Version="0.15.1" />
+    <PackageReference Include="Dapper" Version="1.50.4" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.6.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared.Interface\Shared.Interface.csproj" />
+  </ItemGroup>
+
+</Project>

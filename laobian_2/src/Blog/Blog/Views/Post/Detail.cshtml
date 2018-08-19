@@ -1,0 +1,56 @@
+﻿@model BlogPost
+@inject IBlogService BlogService
+@{
+    var lang = (string)ViewData["lang"];
+    var primaryPost = Model.GetByLangWithDefault(lang);
+    ViewData["Title"] = primaryPost.Title;
+}
+
+<article class="post">
+    <h2>
+        @primaryPost.Title
+    </h2>
+    <div>
+        @if (BlogLang.IsEnglish(lang))
+        {
+            var otherLangPost = Model.GetByNotLang(lang);
+            if (otherLangPost != null)
+            {
+                <div class="alert alert-success" role="alert">
+                    这篇文章有中文版本，请访问: <a href="@BlogService.BuildPostUrl(Model, BlogLang.Chinese)" class="alert-link">@otherLangPost.Title</a>。
+                </div>
+            }
+        }
+        else
+        {
+            var otherLangPost = Model.GetByNotLang(lang);
+            if (otherLangPost != null)
+            {
+                <div class="alert alert-success" role="alert">
+                    There is an English version of this post, please visit <a href="@BlogService.BuildPostUrl(Model)" class="alert-link">@otherLangPost.Title</a>。
+                </div>
+            }
+        }
+        @Html.Raw(primaryPost.Html)
+    </div>
+</article>
+
+@section sidebar{
+    <div class="card position-sticky" id="post_metadata">
+        <div class="card-body">
+            <div class="card-text">
+                <ul class="ml-2 p-0">
+                    <li>@primaryPost.VisitCount visits</li>
+                    <li>@primaryPost.CreateTime.ToStackOverflowStyle() <small>(C)</small></li>
+                    <li>@primaryPost.LastUpdateTime.ToStackOverflowStyle() <small>(U)</small></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts{ 
+    <script type="text/javascript">
+        $.ajax({ url: '/p/visit/@primaryPost.Id', type: 'POST' });
+    </script>
+}

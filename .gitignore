@@ -1,0 +1,15 @@
+*.sh
+*.cmd
+.vs/
+.DS_Store
+[Bb]in/
+[Oo]bj/
+script/
+
+*.code-workspace
+
+.vscode/
+
+Properties/
+*.user
+*.suo

@@ -1,0 +1,171 @@
+﻿@model BlogPost
+@{
+    ViewData["Title"] = "UpdatePost";
+    var postEn = Model.Contents.FirstOrDefault(_ => _.IsEnglish);
+    var postZh = Model.Contents.FirstOrDefault(_ => !_.IsEnglish);
+}
+
+<form id="post">
+    <div class="alert alert-info text-right" role="alert">
+        <button class="btn btn-success" type="submit">SUBMIT</button>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-11">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="allowComment">
+                <label class="form-check-label" for="allowComment">
+                    Allow Comment
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="url" class="col-sm-1 col-form-label">URL</label>
+        <div class="col-sm-11">
+            <input type="text" class="form-control" id="url" placeholder="Post URL" value="@Model.Url">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="tag" class="col-sm-1 col-form-label">TAGS</label>
+        <div class="col-sm-11">
+            <input type="text" class="form-control" id="tag" value="@Model.TagsString" placeholder="Enter post tags, separeted by |">
+        </div>
+    </div>
+
+    <ul class="nav nav-tabs" id="postContent" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="tab-english" data-toggle="tab" href="#english" role="tab" aria-controls="english" aria-selected="true">English Version</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="tab-chinese" data-toggle="tab" href="#chinese" role="tab" aria-controls="chinese" aria-selected="false">中文版本</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="english" role="tabpanel" aria-labelledby="tab-english">
+            <div class="form-group">
+                <label for="title_en">Title</label>
+                <input type="text" class="form-control" id="title_en" value="@postEn?.Title" placeholder="Enter post English title">
+            </div>
+            <div class="form-group">
+                <label for="content_en">English Content</label>
+                <div class="card" id="card_en">
+                    <div class="card-header text-right">
+                        <a href="#" id="content_en_fullscreen" data-target="card_en" role="button" title="Toggle fullscreen"><i class="fa fa-expand"></i></a>
+                    </div>
+                    <div class="card-body container-fluid">
+                        <div class="row">
+                            <div id="md_en" class="col-sm">
+                                <textarea id="content_en" rows="3" class="form-control">@postEn?.Markdown</textarea>
+                            </div>
+                            <div id="html_en" class="col-sm">
+                                <p>RIght</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="isPublic_en">
+                <label class="form-check-label" for="isPublic_en">Is Public</label>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="chinese" role="tabpanel" aria-labelledby="tab-chinese">
+            <div class="form-group">
+                <label for="title_zh">标题</label>
+                <input type="text" class="form-control" id="title_zh" value="@postZh?.Title" placeholder="输入文章中文标题">
+            </div>
+            <div class="form-group">
+                <label for="content_zh">中文内容</label>
+                <div class="card" id="card_zh">
+                    <div class="card-header text-right">
+                        <a href="#" id="content_zh_fullscreen" data-target="card_zh" role="button" title="Toggle fullscreen"><i class="fa fa-expand"></i></a>
+                    </div>
+                    <div class="card-body container-fluid">
+                        <div class="row">
+                            <div id="md_zh" class="col-sm">
+                                <textarea id="content_zh" rows="3" class="form-control">@postZh?.Markdown</textarea>
+                            </div>
+                            <div id="html_zh" class="col-sm">
+                                <p>RIght</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="isPublic_zh">
+                <label class="form-check-label" for="isPublic_zh">发布</label>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+<script type="text/javascript">
+        $("#allowComment").prop("checked", '@Model.AllowComment' == 'True' ? true : false);
+        $("#isPublic_en").prop("checked", '@(postEn != null && postEn.IsPublic)' == 'True' ? true : false);
+        $("#isPublic_zh").prop("checked", '@(postZh != null && postZh.IsPublic)' == 'True' ? true : false);
+
+        function toggleFullScreen(a) {
+            if (a.children('i').hasClass('fa-expand')) {
+                a.children('i').removeClass('fa-expand');
+                a.children('i').addClass('fa-compress');
+            }
+            else if (a.children('i').hasClass('fa-compress')) {
+                a.children('i').removeClass('fa-compress');
+                a.children('i').addClass('fa-expand');
+            }
+            $("#" + a.data("target")).toggleClass('div-fullscreen');
+            //$("body").toggleClass('overflow-hidden');
+        }
+
+        $("#content_zh_fullscreen").click(function (e) {
+            e.preventDefault();
+            toggleFullScreen($(this));
+        });
+
+        $("#content_en_fullscreen").click(function (e) {
+            e.preventDefault();
+            toggleFullScreen($(this));
+        });
+
+        $('form').submit(function (e) {
+            e.preventDefault();
+            var url = $("#url").val();
+            var allowComment = $("#allowComment").prop("checked");
+            var tags = $("#tag").val();
+            var md_zh = $("#content_zh").val();
+            var md_en = $("#content_en").val();
+            var title_zh = $("#title_zh").val();
+            var title_en = $("#title_en").val();
+            var isPublic_zh = $("#isPublic_zh").prop("checked");
+            var isPublic_en = $("#isPublic_en").prop("checked");
+
+            $.ajax({
+                url: "/blog/post/update",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    url: url,
+                    allowComment: allowComment,
+                    md_zh: md_zh,
+                    md_en: md_en,
+                    title_zh: title_zh,
+                    title_en: title_en,
+                    isPublic_zh: isPublic_zh,
+                    isPublic_en: isPublic_en,
+                    tags: tags,
+                    id: '@Model.Id'
+                }),
+                success: function (data, status) {
+                    alert(data);
+                }
+            });
+        });
+
+
+</script>
+}
+

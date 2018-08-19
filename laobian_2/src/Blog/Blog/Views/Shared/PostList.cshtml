@@ -1,0 +1,25 @@
+﻿@model PagedBlogPosts
+@inject IBlogService BlogService
+<div class="list-group post">
+    @foreach (var post in Model.Posts)
+    {
+        var postPrimary = post.GetByLangWithDefault();
+        <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 text-danger"><a href="@BlogService.BuildPostUrl(post)">@postPrimary.Title</a></h5>
+                <small>@postPrimary.CreateTime.ToRelativeTime()</small>
+            </div>
+
+            <p class="mb-1">@Html.Raw(post.HtmlDescription)</p>
+            <p class="tags">
+                @foreach (var tag in post.Tags)
+                {
+                    <a href="/tag/@tag.Name" class="badge badge-pill badge-info">@tag.Name</a>
+                }
+            </p>
+        </div>
+
+    }
+</div>
+
+<pagination pagination="Model.Pagination" url="@Model.Url"></pagination>
