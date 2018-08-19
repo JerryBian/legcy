@@ -1,0 +1,10 @@
+.vs/
+.DS_Store
+[Bb]in/
+[Oo]bj/
+Properties/
+/script/
+*.user
+*.suo
+*.min.js
+*.min.css

@@ -1,0 +1,38 @@
+﻿@model PagedBlogPostViewModel
+
+<div class="list-group post-index border-info">
+    @foreach (var post in Model.Posts)
+    {
+        <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h2 class="mb-1">
+                    <a href="@post.GetFullUrl()">@post.Title</a>
+                </h2>
+            </div>
+
+            <div class="container-fluid mt-1 mb-1">
+                <div class="row">
+                    @{
+                        var thumbnail = post.GetThumbnail();
+                        if (string.IsNullOrEmpty(thumbnail))
+                        {
+                            <div class="mb-1">@Html.Raw(post.GetDescriptionText())</div>
+                        }
+                        else
+                        {
+                            <div class="col-sm-9 m-0 p-0 mt-1">@Html.Raw(post.GetDescriptionText())</div>
+                            <div class="col-sm-3 d-none d-md-block">
+                                <img src="@thumbnail" class="img-thumbnail border-0" />
+                            </div>
+                        }
+                    }
+
+                </div>
+            </div>
+
+            <small class="text-muted">@post.CreateAt.ToRelativeTime() &middot; @Html.Raw(post.GetCategoryLinks())</small>
+        </div>
+    }
+</div>
+
+<pagination pagination="@Model.Pagination" url="@Model.Url"></pagination>

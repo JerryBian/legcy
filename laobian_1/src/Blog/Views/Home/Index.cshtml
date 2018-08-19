@@ -1,0 +1,22 @@
+﻿@model PagedPostViewModel
+
+<div class="list-group post-index border-info">
+    @foreach (var post in Model.Posts)
+    {
+        <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h2 class="mb-1">
+                    <a href="@post.GetFullUrl()">@post.Title</a>
+                </h2>
+            </div>
+
+            <div>
+                @Html.Raw(post.Excerpt)
+            </div>
+
+            <small class="text-muted">@post.CreateTime &middot; @Html.Raw(post.GetCategoryLink())</small>
+        </div>
+    }
+</div>
+
+<pagination pagination="@Model.Pagination" url="@Model.Url"></pagination>

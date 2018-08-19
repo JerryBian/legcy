@@ -1,0 +1,18 @@
+@model IdentityViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+<form asp-controller="Identity" asp-action="Login" asp-route-r="@ViewData["ReturnUrl"]" class="container mt-5" method="POST">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input asp-for="Email" class="form-control" placeholder="Enter email" autocomplete="off">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input asp-for="Password" class="form-control" placeholder="Password" autocomplete="off">
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Login</button>
+</form>

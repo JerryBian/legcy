@@ -1,0 +1,20 @@
+﻿@using Laobian.Share.Infrastructure.Mvc.Head
+@{
+    var headItem = (HeadItem)Context.Items[HeadItem.HeadItemKey];
+    <text>
+        @Html.Raw(HeadBuilder.Execute(headItem))
+    </text>
+}
+
+<environment names="Production">
+    <link rel="stylesheet" href="~/style.min.css" asp-append-version="true" asp-fallback-href="https://laobian.blob.core.windows.net/share/style.min.css" asp-fallback-test-class="hidden" 
+          asp-fallback-test-property="visibility" 
+          asp-fallback-test-value="hidden"/>
+</environment>
+
+<environment names="Development">
+    <link rel="stylesheet" href="~/lib/selectize/selectize.css" />
+    <link rel="stylesheet" href="~/lib/bootswatch/cosmo.css">
+    <link rel="stylesheet" href="~/lib/highlight/styles/tomorrow.css" />
+    <link rel="stylesheet" href="~/custom/css/style.css">
+</environment>

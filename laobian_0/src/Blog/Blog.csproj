@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Laobian.Blog</AssemblyName>
+    <RootNamespace>Laobian.Blog</RootNamespace>
+    <UserSecretsId>laobian-Blog</UserSecretsId>
+    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Share\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Share\Infrastructure\Infrastructure.csproj" />
+    <ProjectReference Include="..\Share\Model\Model.csproj" />
+    <ProjectReference Include="..\Share\Utility\Utility.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <Target Name="Uglify CSS" AfterTargets="PostBuildEvent">
+    <Exec Command="uglifycss --expand-vars --ugly-comments --output $(ProjectDir)/wwwroot/style.min.css $(ProjectDir)/wwwroot/lib/selectize/selectize.css $(ProjectDir)/wwwroot/lib/bootswatch/cosmo.css $(ProjectDir)/wwwroot/lib/highlight/styles/tomorrow.css $(ProjectDir)/wwwroot/custom/css/style.css" />
+  </Target>
+
+  <Target Name="Uglify JS" AfterTargets="PostBuildEvent">
+    <Exec Command="uglifyjs $(ProjectDir)/wwwroot/lib/jquery.js $(ProjectDir)/wwwroot/lib/bootstrap/popper.js $(ProjectDir)/wwwroot/lib/bootstrap/bootstrap.js $(ProjectDir)/wwwroot/lib/selectize/selectize.js $(ProjectDir)/wwwroot/lib/highlight/highlight.pack.js $(ProjectDir)/wwwroot/lib/anchor.js $(ProjectDir)/wwwroot/custom/js/script.js -o $(ProjectDir)/wwwroot/script.min.js -c --warning" />
+  </Target>
+
+</Project>

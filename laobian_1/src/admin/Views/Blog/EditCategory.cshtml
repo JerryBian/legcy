@@ -1,0 +1,53 @@
+﻿@model BlogCategory
+@{
+    ViewData["Title"] = "Update Category · Blog";
+}
+
+<div class="alert alert-light">
+    <h4 class="alert-heading">Update Category(id = @Model.Id)</h4>
+    <p class="mb-0">All fields are required. Be carefull not to lost your bits, no draft exists.</p>
+</div>
+<form>
+    <div class="form-group">
+        <label for="name">Category name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter category name" value="@Model.Name" autocomplete="off">
+    </div>
+    <div class="form-group">
+        <label for="url">Category URL</label>
+        <input type="text" class="form-control" id="url" placeholder="Enter category url" value="@Model.Url" autocomplete="off">
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+</form>
+
+@section Scripts{
+
+    <script type="text/javascript">
+        $('form').submit(function(e) {
+            e.preventDefault();
+
+            var name = $("#name").val();
+            var url = $("#url").val();
+
+            if (!name || !name.length) return;
+            if (!url || !url.length) return;
+
+            $.ajax("/blog/category/@Model.Id",
+                {
+                    method: "POST",
+                    contentType: "application/json; charset=UTF-8",
+                    dataType: "text",
+                    data: JSON.stringify({
+                        name: name,
+                        url: url
+                    }),
+                    success: function(result) {
+                        window.location.href = "/blog/category";
+                    },
+                    error: function(err) {
+                        alert("Erro happened! Please check logs.");
+                    }
+                });
+        });
+    </script>
+
+}

@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Laobian.Share.Model.BlogPost>
+
+<div class="list-group mb-3">
+    @foreach (var post in Model)
+    {
+        <a class="list-group-item list-group-item-action" href="@post.GetFullUrl()">@post.Title</a>
+    }
+</div>

@@ -1,0 +1,28 @@
+﻿@using Laobian.Share.Domain.Setting
+@using Laobian.Share.Model
+@model IEnumerable<Laobian.Share.Model.Setting>
+@{
+    ViewData["Title"] = "All Settings · Setting";
+}
+
+<table class="table table-bordered">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Setting Key</th>
+        <th scope="col">Setting Value</th>
+        <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>@s.Key</td>
+            <td>@s.Value</td>
+            <td>
+                <a href="/setting/update/@s.Key">Update</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

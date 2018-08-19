@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>Laobian.Blog</AssemblyName>
+    <RootNamespace>Laobian.Blog</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\share\Data\Data.csproj" />
+    <ProjectReference Include="..\share\Log\Log.csproj" />
+    <ProjectReference Include="..\share\Model\Model.csproj" />
+  </ItemGroup>
+
+</Project>

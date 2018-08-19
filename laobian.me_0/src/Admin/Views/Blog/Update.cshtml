@@ -1,0 +1,77 @@
+﻿@model BlogPost
+@{ 
+    ViewBag.Title = "Update existing blog";
+}
+
+<div active-index="0"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <aside active-index="-1" category="@SidebarCategory.Blog"></aside>
+
+        <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+            <h1>Add New Blog</h1>
+            <form>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" required aria-describedby="titleHelp" autocomplete="off" placeholder="Enter blog title" value="@Model.Title">
+                    <small id="titleHelp" class="form-text text-muted">This .</small>
+                </div>
+                <div class="form-group">
+                    <label for="url">Url</label>
+                    <input type="text" class="form-control" id="url" required aria-describedby="urlHelp" autocomplete="off" placeholder="Enter blog url" value="@Model.Url">
+                    <small id="titleHelp" class="form-text text-muted">This .</small>
+                </div>
+                <div class="form-group">
+                    <label for="contentEn">Content in English</label>
+                    <textarea class="form-control" id="contentEn" rows="5">@Model.MdContentEn</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contentCh">Content in Chinese</label>
+                    <textarea class="form-control" id="contentCh" rows="5">@Model.MdContentCh</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="tags">Tags</label>
+                    <input type="text" class="form-control" id="tags" required aria-describedby="tagHelp" autocomplete="off" placeholder="Enter blog tags" value="@Model.Tags">
+                    <small id="tagHelp" class="form-text text-muted">Use comma(,) to separate tags.</small>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" id="publish">
+                        Publish
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+            
+        </main>
+    </div>
+</div>
+
+@section script{
+    <script type="text/javascript">
+        var contentEnEditor = createEditor("contentEn", "blog_post_en_" + @Model.Id);
+        var contentChEditor = createEditor("contentCh", "blog_post_ch_" + @Model.Id);
+        $("#publish").prop("checked", @Model.Publish.ToString().ToLower());
+
+        $('form').submit(function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: '/blog/update/' + @Model.Id,
+                method: 'POST',
+                data: {
+                    title: $("#title").val(),
+                    url: $("#url").val(),
+                    mdContentEn: $("#contentEn").val(),
+                    mdContentCh: $("#contentCh").val(),
+                    tags: $("#tags").val(),
+                    publish: $("#publish").prop("checked")
+                },
+                success: function () {
+                    window.location.href = "/blog";
+                }
+            });
+
+        });
+    </script>
+}

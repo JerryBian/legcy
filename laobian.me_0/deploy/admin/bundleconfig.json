@@ -1,0 +1,35 @@
+﻿// Configure bundling and minification for the project.
+// More info at https://go.microsoft.com/fwlink/?LinkId=808241
+[
+  {
+    "outputFileName": "wwwroot/style.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/lib/roboto_regular/stylesheet.css",
+      "wwwroot/lib/bootstrap/bootstrap.css",
+      "wwwroot/lib/tether/css/tether.css",
+      "wwwroot/lib/font-awesome/css/font-awesome.css",
+      "wwwroot/lib/simpleMDE/simplemde.min.css",
+      "wwwroot/style.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/script.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery/jquery.js",
+      "wwwroot/lib/tether/js/tether.js",
+      "wwwroot/lib/bootstrap/bootstrap.js",
+      "wwwroot/lib/knockout/knockout.js",
+      "wwwroot/lib/simpleMDE/simplemde.min.js",
+      "wwwroot/lib/simple-ajax-uploader/simple-ajax-uploader.js",
+      "wwwroot/script.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optionally generate .map file
+    "sourceMap": false
+  }
+]

@@ -1,0 +1,98 @@
+﻿<select id="select" placeholder="Select a file base type">
+    <option value="">Select a file base type</option>
+    @foreach (var item in SharedFileTypeFactory.AllBaseTypes)
+    {
+        <option value="@item.Value">@item.Key</option>
+    }
+</select>
+
+<form>
+    <div class="form-group">
+        <button type="button" class="btn btn-primary btn-block" id="uploadBtn">Select file and Upload</button>
+    </div>
+    <div class="form-group progress">
+        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" id="progress" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="form-group">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="result" disabled="disabled">
+        </div>
+    </div>
+</form>
+
+<div id="list_file"></div>
+
+@section Scripts{
+    <script src="https://www.lpology.com/code/ajaxuploader/SimpleAjaxUploader.js"></script>
+
+    <script>
+        let listFiles = function() {
+            $.ajax({
+                url: "/file/list",
+                method: "POST",
+                success: function(result) {
+                    let fileHtml = '';
+                    for (let i = 0; i < result.length; i++) {
+                        let file = result[i];
+                        fileHtml += `<div class="container-fluid p-3">
+  <div class="row">
+    <div class="col-sm-2 text-center">
+      ${file.image_html}
+    </div>
+    <div class="col-sm-10">
+      <ul><li>${file.base_type}</li><li>${file.name}</li><li>${file.size} bytes</li><li>${file.create}</li><li>${
+                            file.uri}</li></ul>
+    </div>
+  </div>
+</div>`;
+                    }
+
+                    $("#list_file").html(fileHtml);
+                },
+                error: function(err) {
+                    alert("Erro happened! Please check logs.");
+                }
+            });
+        };
+
+        var uploader = new ss.SimpleUpload({
+            button: 'uploadBtn',
+            name: 'file',
+            url: '/file/upload',
+            responseType: 'text',
+            allowedExtensions: @Html.Raw(SharedFileTypeFactory.AllowedExtensions()),
+            onExtError: function() {
+                alert('Invalid file type.');
+            },
+            onSubmit: function(filename, extension) {
+                if (!$('#select').val()) {
+                    alert('File base type must be selected');
+                    return false;
+                }
+                this.setProgressBar(document.getElementById("progress"));
+            },
+            onComplete: function(filename, response) {
+                $("#result").val(response);
+                listFiles();
+            }
+        });
+
+
+        listFiles();
+
+        var select = $('select');
+        if (select) {
+            select.selectize({
+                sortField: [
+                    {
+                        field: 'text',
+                        direction: 'desc'
+                    }
+                ],
+                onChange: function(value) {
+                    uploader.setOptions({ customHeaders: { 'Base-Type': value } });
+                }
+            });
+        }
+    </script>
+}

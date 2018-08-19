@@ -1,0 +1,15 @@
+.vs/
+.DS_Store
+[Bb]in/
+[Oo]bj/
+script/
+
+*.code-workspace
+
+.vscode/
+
+Properties/
+*.user
+*.suo
+*.min.js
+*.min.css

@@ -1,0 +1,35 @@
+@using Laobian.Share.Domain.Blog
+@using Laobian.Share.Model
+@model IEnumerable<Laobian.Share.Model.BlogPost>
+@{
+    ViewData["Title"] = "Post Management · Blog";
+}
+<table class="table table-bordered">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Created At</th>
+        <th scope="col">Last Updated At</th>
+        <th scope="col">Categories</th>
+        <th scope="col">Is Publish</th>
+        <th scope="col">Is Private</th>
+        <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.Title</td>
+            <td>@p.CreateAt</td>
+            <td>@p.LastUpdateAt</td>
+            <td>@string.Join(',', p.BlogCategories.Select(_ => _.Name))</td>
+            <td>@p.IsPublish</td>
+            <td>@p.IsPrivate</td>
+            <td>
+                <a href="/blog/post/update/@p.Id">Update</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

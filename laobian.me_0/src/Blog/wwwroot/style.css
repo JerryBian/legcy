@@ -1,0 +1,117 @@
+﻿body, html {
+    line-height: 1.4;
+    background-color: #fff;
+    color: #333;
+    font-size: 18px;
+    word-break: break-word;
+    word-wrap: break-word;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+aside i {
+    margin-right: 5px;
+}
+
+main {
+    margin: 3% auto;
+    width: 98%;
+}
+
+#post-info {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+
+main time {
+    color: #bdc3c7;
+}
+
+main h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+main h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+main h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+main a,
+main a:link,
+main a:visited {
+    text-decoration: none;
+    color: #34495e;
+}
+
+    main a:hover {
+        color: #2c3e50;
+    }
+
+main li {
+    margin-bottom: 5px;
+}
+
+
+main article a,
+main article a:link,
+main article a:hover,
+main article a:visited {
+    text-decoration: underline;
+}
+
+main article img {
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+main article p {
+    clear: both;
+    margin-top: 0;
+    margin-bottom: 1em;
+    letter-spacing: -0.3px;
+    word-spacing: -0.5px;
+}
+
+main article pre {
+    margin-bottom: 1em;
+    padding: 5px;
+    /*padding-bottom: 20px !ie7;*/
+    width: auto;
+    /*width: 650px !ie7;*/
+    max-height: 600px;
+    overflow: auto;
+    font-family: Consolas,Menlo,Monaco,'Lucida Console','Liberation Mono','DejaVu Sans Mono','Bitstream Vera Sans Mono','Courier New',monospace,sans-serif;
+    font-size: 13px;
+    background-color: #eff0f1;
+    border: none;
+}
+
+main article blockquote {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #fff9e3;
+    border-left: 2px solid #ffeb8e;
+}
+
+    main article blockquote *:last-child {
+        margin-bottom: 0;
+    }

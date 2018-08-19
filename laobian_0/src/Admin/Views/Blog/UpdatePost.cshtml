@@ -1,0 +1,106 @@
+@model BlogUpdatePostViewModel
+@{
+    ViewData["Title"] = "Update Post · Blog";
+}
+<div class="alert alert-light">
+    <h4 class="alert-heading">Update post(id = @Model.Id)</h4>
+    <p class="mb-0">All fields are required. Be carefull not to lost your bits, no draft exists.</p>
+</div>
+<form>
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" value="@Model.Title" id="title" placeholder="Your post title">
+    </div>
+    <div class="form-group">
+        <label for="url">Url</label>
+        <input type="text" class="form-control" value="@Model.Url" id="url" placeholder="Your post url">
+    </div>
+    <div class="form-group">
+        <label for="category">Post categories</label>
+        <select multiple class="form-control" id="category">
+            @foreach (var c in Model.AllCategories)
+            {
+                if (Model.BlogCategories.FirstOrDefault(_ => _.Id == c.Id) != null)
+                {
+                    <option value="@c.Id" selected>@c.Name</option>
+                }
+                else
+                {
+                    <option value="@c.Id">@c.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="markdown">Markdown content</label>
+        <textarea class="form-control" id="markdown" rows="11">@Model.Markdown</textarea>
+    </div>
+    <div class="form-group">
+        <label for="html">HTML content</label>
+        <textarea class="form-control" id="html" rows="11">@Model.Html</textarea>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="isPublish">
+        <label class="form-check-label" for="isPublish">Is this publish?</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="isPrivate">
+        <label class="form-check-label" for="isPrivate">Is this private?</label>
+    </div>
+    <button type="button" id="submit" class="btn btn-primary btn-lg btn-block mt-3">Submit</button>
+</form>
+
+@section Scripts{
+    <script type="text/javascript">
+        $("#isPublish").prop("checked", '@Model.IsPublish'.toLowerCase() === 'true');
+        $("#isPrivate").prop("checked", '@Model.IsPrivate'.toLowerCase() === 'true');
+        $('form').submit(function(e) { e.preventDefault() });
+
+        function getFormFields(callback) {
+            var title = $("#title").val();
+            var url = $("#url").val();
+            var markdown = $("#markdown").val();
+            var html = $("#html").val();
+            var categories = $("#category").val();
+            var isPublish = $("#isPublish").prop("checked");
+            var isPrivate = $("#isPrivate").prop("checked");
+
+            if (!title || !title.length) return;
+            if (!url || !url.length) return;
+            if (!markdown || !markdown.length) return;
+            if (!html || !html.length) return;
+            if (!categories || !categories.length) return;
+
+            callback({
+                id: '@Model.Id',
+                title: title,
+                url: url,
+                html: html,
+                markdown: markdown,
+                categories: categories,
+                is_publish: isPublish,
+                is_private: isPrivate
+            });
+        }
+
+        $("#submit").click(function(e) {
+            e.preventDefault();
+
+            getFormFields(function(formField) {
+                $.ajax("/blog/post/update",
+                    {
+                        method: "POST",
+                        contentType: "application/json; charset=UTF-8",
+                        dataType: "text",
+                        data: JSON.stringify(formField),
+                        success: function(result) {
+                            window.location.href = "/blog/post";
+                        },
+                        error: function(err) {
+                            alert("Erro happened! Please check logs.");
+                        }
+                    });
+            });
+        });
+    </script>
+}

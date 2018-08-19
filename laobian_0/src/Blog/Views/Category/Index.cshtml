@@ -1,0 +1,28 @@
+﻿@model BlogCategoryViewModel
+<label for="select">Select category of posts</label>
+<select id="select" placeholder="Select a category...">
+    <option value="">Select a year...</option>
+    @foreach (var cat in Model.Categories)
+    {
+        if (cat.Id == Model.SelecteCategory)
+        {
+            <option value="@cat.GetFullUrl()" selected>@cat.Name</option>
+        }
+        else
+        {
+            <option value="@cat.GetFullUrl()">@cat.Name</option>
+        }
+    }
+</select>
+
+<div class="mt-3 mb-1">
+    <ul class="p-0 pl-4">
+        @foreach (var post in Model.Posts)
+        {
+            <li class="mb-1">
+                <label class="text-muted">@post.CreateAt.ToShortDateString2()</label>
+                <a href="@post.GetFullUrl()">@post.Title</a>
+            </li>
+        }
+    </ul>
+</div>

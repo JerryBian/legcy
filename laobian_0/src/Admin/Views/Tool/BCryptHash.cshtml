@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "";
+}
+
+<div class="alert alert-info invisible mt-3" role="alert" id="hashResult">
+    Hash generated successfully! Hash: <strong id="hash"></strong>
+</div>
+
+<form class="container mt-3" action="/tool/bcrypt" id="bcryptForm">
+    <div class="form-group">
+        <label for="hashKey">Input Key</label>
+        <input type="text" class="form-control" id="hashKey" placeholder="Enter hash key" autocomplete="off" required>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Generate BCrypt Hash</button>
+</form>
+
+@section Scripts{
+    <script type="text/javascript">
+        $("#bcryptForm").submit(function(e) {
+            e.preventDefault();
+
+            var hashKey = $("#hashKey").val();
+            if (hashKey == null || !hashKey.length) {
+                return;
+            }
+
+            $.ajax("/tool/bcrypt",
+                {
+                    method: "POST",
+                    contentType: "text/plain; charset=UTF-8",
+                    dataType: "text",
+                    data: hashKey,
+                    success: function(data) {
+                        $("#hash").text(data);
+                        $("#hashResult").removeClass('invisible');
+                        $("#hashResult").removeClass("visible");
+                        $("#hashResult").addClass("visible");
+                    }
+                });
+        });
+    </script>
+}

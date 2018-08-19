@@ -1,0 +1,134 @@
+﻿@using Laobian.Share.Infrastructure.Identity
+@using Laobian.Share.Infrastructure.Mvc.Head
+@{
+    var defaultTitle = "Admin Zone";
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+    @{
+        var headItem = (HeadItem) Context.Items[HeadItem.HeadItemKey];
+        headItem.BaseTitle = defaultTitle;
+        <text>
+            @Html.Raw(HeadBuilder.Execute(headItem))
+        </text>
+    }
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootswatch/sandstone.css">
+        <link rel="stylesheet" href="~/lib/selectize/selectize.css"/>
+        <link rel="stylesheet" href="~/lib/fancybox/fancybox.css"/>
+        <link rel="stylesheet" href="~/custom/css/style.css">
+    </environment>
+    <environment names="Production">
+        <link rel="stylesheet" href="~/style.min.css" asp-append-version="true">
+    </environment>
+
+</head>
+<body>
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/">@defaultTitle</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarBlog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        BLOG
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarBlog">
+                        <a class="dropdown-item" href="/blog/post/new"><i class="fas fa-plus"></i> Create New Post</a>
+                        <a class="dropdown-item" href="/blog/post"><i class="fas fa-bars"></i> Post Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/blog/category/new"><i class="fas fa-plus"></i> Create New Category</a>
+                        <a class="dropdown-item" href="/blog/category"><i class="fas fa-bars"></i> Category Management</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarTool" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        TOOL
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarTool">
+                        <a class="dropdown-item" href="/tool/bcrypt">BCrypt Hash</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarTool" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        FILE
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarTool">
+                        <a class="dropdown-item" href="/file/upload"><i class="fas fa-file"></i> Upload</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/setting">Setting</a>
+                </li>
+            </ul>
+
+        </div>
+
+        @if (Context.User.Identity.IsAuthenticated)
+        {
+            <div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarBlog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @{
+                                var user = (User) Context.Items[IdentityConstant.ItemKey];
+                            }
+
+                            @user.FullName
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarBlog">
+                            <a class="dropdown-item" href="/identity/logout">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        }
+    </nav>
+</div>
+<div class="container-fluid" id="main">
+    @RenderBody()
+    <hr/>
+    <footer>
+        <p>&copy; @DateTime.UtcNow.Year - @defaultTitle</p>
+    </footer>
+</div>
+
+<environment names="Development">
+    <script type="text/javascript" src="~/lib/jquery.js"></script>
+    <script type="text/javascript" src="~/lib/bootstrap/popper.js"></script>
+    <script type="text/javascript" src="~/lib/bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="~/lib/selectize/selectize.js"></script>
+    <script type="text/javascript" src="~/lib/clipboard.js"></script>
+    <script type="text/javascript" src="~/lib/SimpleAjaxUploader.js"></script>
+    <script type="text/javascript" src="~/lib/list.js"></script>
+    <script type="text/javascript" src="~/lib/fancybox/fancybox.js"></script>
+    <script type="text/javascript" src="~/lib/fontawesome-all.js"></script>
+    <script type="text/javascript" src="~/custom/js/script.js"></script>
+</environment>
+<environment names="Production">
+    <script type="text/javascript" src="~/script.min.js" asp-append-version="true"></script>
+</environment>
+
+@RenderSection("Scripts", false)
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97849167-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-97849167-1');
+</script>
+
+</body>
+</html>

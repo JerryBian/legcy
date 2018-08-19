@@ -1,0 +1,47 @@
+﻿@model BlogPost
+@{
+    ViewBag.Title = Model.Title;
+}
+
+<main class="container">
+    <div class="row">
+        <h1 title="@Model.Title">@Model.Title</h1>
+        <div id="post-info"><i class="fa fa-calendar"></i> @Model.CreateTime.ToString("r") | <i class="fa fa-eye"></i> @Model.Visits.ToString("##,#") visits</div>
+        @if (ViewBag.Lang == "ch" && !string.IsNullOrEmpty(Model.HtmlContentEn))
+            {
+            <div class="alert alert-info">
+                You can find English version <a href="@Model.FullUrl?lang=en"><strong>here</strong></a>.
+            </div>
+
+        }
+        else
+        {
+            if (!string.IsNullOrEmpty(Model.HtmlContentCh))
+            {
+                <div class="alert alert-info">
+                    该文章有中文版本，你可以在<a href="@Model.FullUrl?lang=ch"><strong>这里</strong></a>阅读。
+                </div>
+            }
+
+        }
+        <article>
+            @if (ViewBag.Lang == "ch")
+            {
+                @Html.Raw(Model.HtmlContentCh)
+            }
+            else
+            {
+                @Html.Raw(Model.HtmlContentEn)
+            }
+        </article>
+        <div class="alert alert-warning" role="alert">
+            <ul>
+                <li>Please contact with me via email <a href="mailto:JerryBian@outlook.com">JerryBian@outlook.com</a></li>
+                <li>This article is updated at <span>@Model.UpdateTime.ToString("r")</span></li>
+                <li>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a></li>
+            </ul>
+            
+        </div>
+    </div>
+
+</main>

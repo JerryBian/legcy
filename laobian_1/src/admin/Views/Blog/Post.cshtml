@@ -1,0 +1,59 @@
+﻿@model IEnumerable<BlogPost>
+@{
+    ViewData["Title"] = "Post Management · Blog";
+}
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Created At</th>
+            <th scope="col">Last Updated At</th>
+            <th scope="col">Categories</th>
+            <th scope="col">Is Publish</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.Title</td>
+                <td>@p.CreateTime</td>
+                <td>@p.UpdateTime</td>
+                <td>@p.Category.Name</td>
+                <td>@p.IsPublish</td>
+                <td>
+                    <a href="/blog/post/@p.Id">Update</a> |
+                    <a href="javascript:;" onclick="toggle_publish(@p.Id)">
+                        @if (p.IsPublish)
+                        {
+                            <text>UnPublish</text>
+                        }
+                        else
+                        {
+                            <text>Publish</text>
+                        }
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+    <script>
+        function toggle_publish(id) {
+            $.ajax({
+                url: "/blog/post/publish/" + id,
+                method: "POST",
+                success: function (result) {
+                    window.location.reload();
+                },
+                error: function (err) {
+                    alert("Erro happened! Please check logs.");
+                }
+            });
+        }
+
+    </script>
+}

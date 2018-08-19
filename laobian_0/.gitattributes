@@ -1,0 +1,64 @@
+* text=auto
+*.sql text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.tif binary
+*.tiff binary
+*.ico binary
+*.svg binary
+*.eps binary
+
+*.cs     diff=csharp
+
+*.sln        text eol=crlf
+*.csproj     text eol=crlf
+
+*.bat      text eol=crlf
+*.css      text
+*.htm      text
+*.html     text
+*.js       text
+*.json     text
+*.jsx      text
+*.less     text
+*.sass     text
+*.scss     text
+*.sh       text eol=lf
+*.sql      text
+*.tag      text
+*.ts       text
+*.tsx      text
+*.xml      text
+*.xhtml    text
+*.dockerignore    text
+Dockerfile    text
+
+*.markdown   text
+*.md         text
+*.txt        text
+AUTHORS      text
+CHANGELOG    text
+CHANGES      text
+CONTRIBUTING text
+COPYING      text
+copyright    text
+*COPYRIGHT*  text
+INSTALL      text
+license      text
+LICENSE      text
+NEWS         text
+readme       text
+*README*     text
+TODO         text
+
+*.ttf   binary
+*.eot   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary
+
+*.exe binary
+*.js linguist-vendored
+*.css linguist-vendored

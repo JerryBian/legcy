@@ -1,0 +1,32 @@
+@using Laobian.Share.Domain.Blog
+@using Laobian.Share.Model
+@model IEnumerable<Laobian.Share.Model.BlogCategory>
+@{
+    ViewData["Title"] = "Category Management · Blog";
+}
+
+<table class="table table-bordered">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Category Name</th>
+        <th scope="col">Category URL</th>
+        <th scope="col">Create At</th>
+        <th scope="col">Last Update At</th>
+        <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var c in Model)
+    {
+        <tr>
+            <td>@c.Name</td>
+            <td>@c.Url</td>
+            <td>@c.CreateAt</td>
+            <td>@c.LastUpdateAt</td>
+            <td>
+                <a href="/blog/category/update/@c.Id">Update</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

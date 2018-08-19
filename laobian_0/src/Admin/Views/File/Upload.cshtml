@@ -1,0 +1,45 @@
+﻿@using Newtonsoft.Json
+@{
+    ViewData["Title"] = "Upload · File";
+}
+<form>
+    <div class="form-group">
+        <button type="button" class="btn btn-primary btn-block" id="uploadBtn">Select file and Upload</button>
+    </div>
+    <div class="form-group progress">
+        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" id="progress" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="form-group">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="result" disabled="disabled">
+        </div>
+    </div>
+</form>
+
+<img id="resultImg" class="img-fluid"/>
+
+@section Scripts{
+    <script>
+        var uploader = new ss.SimpleUpload({
+            button: 'uploadBtn',
+            name: 'file',
+            url: '/file/upload',
+            responseType: 'text',
+            allowedExtensions: @Html.Raw(JsonConvert.SerializeObject(FileDescripter.AllowedExtension)),
+            maxSize: @FileDescripter.MaxSizeInKb,
+            onSizeError: function() {
+                alert('Files may not exceed @FileDescripter.MaxSizeInKb KB.');
+            },
+            onExtError: function() {
+                alert('Invalid file type.');
+            },
+            onSubmit: function(filename, extension) {
+                this.setProgressBar(document.getElementById("progress"))
+            },
+            onComplete: function(filename, response) {
+                $("#result").val(response);
+                $("#resultImg").attr("src", response);
+            }
+        });
+    </script>
+}

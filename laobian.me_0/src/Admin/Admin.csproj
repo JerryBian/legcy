@@ -1,0 +1,125 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <RuntimeIdentifiers>ubuntu.14.04-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
+    <UserSecretsId>admin.laobian.me</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+    <AssemblyName>Laobian.Admin</AssemblyName>
+    <RootNamespace>Laobian.Admin</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\img\debut_dark.png" />
+    <Content Include="wwwroot\img\debut_dark_@2X.png" />
+    <Content Include="wwwroot\img\hamburger-retina.gif" />
+    <Content Include="wwwroot\img\hamburger.gif" />
+    <Content Include="wwwroot\lib\bootstrap\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootstrap\bootstrap.js" />
+    <Content Include="wwwroot\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="wwwroot\lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="wwwroot\lib\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="wwwroot\lib\font-awesome\less\animated.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\bordered-pulled.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\core.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\fixed-width.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\font-awesome.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\icons.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\larger.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\list.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\mixins.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\path.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\rotated-flipped.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\screen-reader.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\stacked.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\variables.less" />
+    <Content Include="wwwroot\lib\font-awesome\scss\font-awesome.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_animated.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_core.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_icons.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_larger.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_list.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_mixins.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_path.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_stacked.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_variables.scss" />
+    <Content Include="wwwroot\lib\jquery\jquery.js" />
+    <Content Include="wwwroot\lib\knockout\knockout.js" />
+    <Content Include="wwwroot\lib\roboto_regular\Roboto-Regular-demo.html" />
+    <Content Include="wwwroot\lib\roboto_regular\Roboto-Regular-webfont.eot" />
+    <Content Include="wwwroot\lib\roboto_regular\Roboto-Regular-webfont.svg" />
+    <Content Include="wwwroot\lib\roboto_regular\Roboto-Regular-webfont.ttf" />
+    <Content Include="wwwroot\lib\roboto_regular\Roboto-Regular-webfont.woff" />
+    <Content Include="wwwroot\lib\roboto_regular\specimen_files\grid_12-825-55-15.css" />
+    <Content Include="wwwroot\lib\roboto_regular\specimen_files\Roboto-Regular-cleartype.png" />
+    <Content Include="wwwroot\lib\roboto_regular\specimen_files\specimen_stylesheet.css" />
+    <Content Include="wwwroot\lib\roboto_regular\stylesheet.css" />
+    <Content Include="wwwroot\lib\simple-ajax-uploader\simple-ajax-uploader.js" />
+    <Content Include="wwwroot\lib\simpleMDE\simplemde.min.css" />
+    <Content Include="wwwroot\lib\simpleMDE\simplemde.min.js" />
+    <Content Include="wwwroot\lib\tether\css\tether-theme-arrows-dark.css" />
+    <Content Include="wwwroot\lib\tether\css\tether-theme-arrows-dark.min.css" />
+    <Content Include="wwwroot\lib\tether\css\tether-theme-arrows.css" />
+    <Content Include="wwwroot\lib\tether\css\tether-theme-arrows.min.css" />
+    <Content Include="wwwroot\lib\tether\css\tether-theme-basic.css" />
+    <Content Include="wwwroot\lib\tether\css\tether-theme-basic.min.css" />
+    <Content Include="wwwroot\lib\tether\css\tether.css" />
+    <Content Include="wwwroot\lib\tether\css\tether.min.css" />
+    <Content Include="wwwroot\lib\tether\js\tether.js" />
+    <Content Include="wwwroot\lib\tether\js\tether.min.js" />
+    <Content Include="wwwroot\lib\wangEditor\css\wangEditor.css" />
+    <Content Include="wwwroot\lib\wangEditor\css\wangEditor.less" />
+    <Content Include="wwwroot\lib\wangEditor\css\wangEditor.min.css" />
+    <Content Include="wwwroot\lib\wangEditor\fonts\icomoon.eot" />
+    <Content Include="wwwroot\lib\wangEditor\fonts\icomoon.svg" />
+    <Content Include="wwwroot\lib\wangEditor\fonts\icomoon.ttf" />
+    <Content Include="wwwroot\lib\wangEditor\fonts\icomoon.woff" />
+    <Content Include="wwwroot\lib\wangEditor\js\lib\jquery-1.10.2.min.js" />
+    <Content Include="wwwroot\lib\wangEditor\js\lib\jquery-2.2.1.js" />
+    <Content Include="wwwroot\lib\wangEditor\js\wangEditor.js" />
+    <Content Include="wwwroot\lib\wangEditor\js\wangEditor.min.js" />
+    <Content Include="wwwroot\robots.txt">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\script.js" />
+    <Content Include="wwwroot\style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.0-beta1" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="1.1.2-preview-10036" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.0-msbuild3-final" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Infrastuture\Infrastuture.csproj" />
+    <ProjectReference Include="..\Common\Service\Service.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Home\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<BlogCategory>
+@{
+    ViewData["Title"] = "Category Management · Blog";
+}
+
+<table class="table table-bordered">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Category Name</th>
+        <th scope="col">Category URL</th>
+        <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var c in Model)
+    {
+        <tr>
+            <td>@c.Name</td>
+            <td>@c.Url</td>
+            <td>
+                <a href="/blog/category/@c.Id">Update</a> | 
+                <a href="javascript:;" onclick="delete_category(@c.Id)">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+@section Scripts{
+    <script>
+        function delete_category(id) {
+            $.ajax({
+                url: "/blog/category/" + id,
+                method: "DELETE",
+                success: function(result) {
+                    window.location.href = "/blog/category";
+                },
+                error: function(err) {
+                    alert("Erro happened! Please check logs.");
+                }
+            });
+        }
+        
+    </script>
+}
