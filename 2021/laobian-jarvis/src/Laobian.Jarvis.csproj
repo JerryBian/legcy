@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyVersion>2.0.0</AssemblyVersion>
+    <FileVersion>2.0.0</FileVersion>
+    <VersionPrefix>2.0.0</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Authors>Jerry Bian</Authors>
+    <Company>Laobian</Company>
+    <Product>Laobian</Product>
+    <Description>Laobian.Jarvis is handy assistant for managing private system</Description>
+    <Copyright>Copyright © Jerry Bian</Copyright>
+    <Summary>Laobian.Jarvis is handy assistant for managing private system</Summary>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Title>Laobian.Jarvis</Title>
+    <PackageId>Laobian.Jarvis</PackageId>
+    <PackageTags>Laobian, Jarvis</PackageTags>
+    <PackageIconUrl>https://jerrybian.github.io/static/img/stamp.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/JerryBian/laobian-jarvis</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RootNamespace>Laobian.Jarvis</RootNamespace>
+    <AssemblyName>Laobian.Jarvis</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>laobian</ToolCommandName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Colorful.Console" Version="1.2.9" />
+    <PackageReference Include="CommandLineParser" Version="2.4.3" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(Configuration)'=='Debug'">
+    <ProjectReference Include="..\..\common\src\Laobian.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(Configuration)'=='Release'">
+    <PackageReference Include="Laobian.Common" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>
